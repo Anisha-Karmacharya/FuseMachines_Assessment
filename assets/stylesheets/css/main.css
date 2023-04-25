@@ -120,7 +120,10 @@ section {
   transition: color 0.3s;
 }
 .nav .dropdown__group .dropdown__list .dropdown__link:hover {
-  color: #9C4DF4;
+  color: rgba(93, 90, 111, 0.6);
+}
+.nav .show-dropdown .dropdown__arrow {
+  transform: rotate(180deg);
 }
 .nav__toggle {
   position: relative;
