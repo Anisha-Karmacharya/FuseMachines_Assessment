@@ -1,13 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 @font-face {
   font-family: "Metropolis-Bold";
-  src: url("../../../fonts/Metropolis/Metropolis-Bold.otf");
+  src: url("../../fonts/Metropolis/Metropolis-Bold.otf");
 }
 @font-face {
-  font-family: "Metropolis-Regular";
-  src: url("../../../fonts/Metropolis/Metropolis-Regular.otf");
+  font-family: "Metropolis";
+  src: url("../../fonts/Metropolis/Metropolis-Regular.otf");
 }
+/**---Header height---**/
+/**---Fonts---**/
+/* Font weight */
 /**---Colors---**/
+/**---Z-Index---**/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -19,6 +24,7 @@ html {
 }
 
 body {
+  font-family: Metropolis;
   background-color: #F7F5FA;
 }
 
@@ -33,6 +39,97 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+@font-face {
+  font-family: "Metropolis-Bold";
+  src: url("../../fonts/Metropolis/Metropolis-Bold.otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../../fonts/Metropolis/Metropolis-Regular.otf");
+}
+/**---Header height---**/
+/**---Fonts---**/
+/* Font weight */
+/**---Colors---**/
+/**---Z-Index---**/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #F7F5FA;
+  padding: 1em;
+}
+
+.nav {
+  height: 3.5rem;
+}
+.nav__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__toggle {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+.nav__toggle-menu, .nav__toggle-close {
+  font-size: 1.75rem;
+  color: #9C4DF4;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  inset: 0;
+  cursor: pointer;
+  transition: opacity 0.1s, transform 0.4s;
+}
+.nav__toggle-close {
+  opacity: 0;
+}
+.nav__link {
+  color: #0A033C;
+  font-weight: 600;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+.nav__link:hover {
+  background-color: #F2E6FF;
+}
+.nav .show-menu {
+  opacity: 1;
+  top: 3.5rem;
+  pointer-events: initial;
+}
+.show-icon .nav__toggle-menu {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+.show-icon .nav__toggle-close {
+  opacity: 1;
+  transform: rotate(90deg);
+}
+
+@media screen and (max-width: 1118px) {
+  .nav__menu {
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    width: 100%;
+    height: calc(100ch - 3.5rem);
+    overflow: auto;
+    padding-block: 1.5rem 4rem;
+    transition: top 0.4s, opacity 0.3s;
+    background-color: #F7F5FA;
+    pointer-events: none;
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

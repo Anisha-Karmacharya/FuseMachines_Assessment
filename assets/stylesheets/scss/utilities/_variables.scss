@@ -1,4 +1,25 @@
 // Variables
+@font-face {
+    font-family: 'Metropolis-Bold';
+    src: url("../../fonts/Metropolis/Metropolis-Bold.otf");
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../../fonts/Metropolis/Metropolis-Regular.otf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+/**---Header height---**/ 
+$header-height: 3.5rem;
+
+/**---Fonts---**/ 
+$primary-font: 'Metropolis';
+$secondary-font: 'Inter', sans-serif;
+  /* Font weight */
+ $font-normal: 400;
+ $font-medium: 500;
+ $font-semi-bold: 600;
+ $font-bold: 700;
+
 /**---Colors---**/ 
 $background-color: #F7F5FA;
 $banner-background: #0A033C;
@@ -11,3 +32,7 @@ $purple: #9C4DF4;
 $purple-light: #F2E6FF;
 $yellow: #FFC107;
 $white: #FFFFFF;
+
+/**---Z-Index---**/ 
+$z-tooltip: 10;
+$z-fixed: 100;
