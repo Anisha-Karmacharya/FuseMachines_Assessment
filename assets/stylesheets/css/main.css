@@ -196,7 +196,7 @@ section {
 }
 @media screen and (min-width: 1118px) {
   .header {
-    padding: 1em 3em;
+    padding: 15px 80px;
   }
   .nav {
     height: calc(3.5rem+1rem);
@@ -332,6 +332,27 @@ section {
 .footer__information, .footer__information a {
   font-size: 16px;
   color: #5D5A6F;
+}
+.footer__information a:hover {
+  color: #9C4DF4;
+}
+
+@media screen and (min-width: 992px) {
+  .footer {
+    padding: 30px 80px;
+  }
+  .footer__container {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 4.5em;
+  }
+  .footer__title {
+    margin-bottom: 1.5rem;
+  }
+  .footer__data {
+    row-gap: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
