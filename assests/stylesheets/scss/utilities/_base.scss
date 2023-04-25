@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Metropolis-Bold';
+    src: url("../../../fonts/Metropolis/Metropolis-Bold.otf");
+}
+@font-face {
+    font-family: 'Metropolis-Regular';
+    src: url("../../../fonts/Metropolis/Metropolis-Regular.otf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+// variable
+:root{
+    --background-color: #F7F5FA;
+    --banner-background: #0A033C;
+    --banner-background-alt:#EDE9F2;
+    --text-color: #0A033C;
+    --text-color-alt:#5D5A6F;
+    --text-color-light:#5D5A6F99;
+    --orange:  #FF6652;
+    --purple: #9C4DF4;
+    --purple-light: #F2E6FF;
+    --yellow: #FFC107;
+    --white: #FFFFFF;
+
+}
+// Base
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--background-color);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
