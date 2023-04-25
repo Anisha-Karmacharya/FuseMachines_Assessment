@@ -354,5 +354,95 @@ section {
     row-gap: 1.5rem;
   }
 }
+@font-face {
+  font-family: "Metropolis-Bold";
+  src: url("../../fonts/Metropolis/Metropolis-Bold.otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../../fonts/Metropolis/Metropolis-Regular.otf");
+}
+/**---Header height---**/
+/**---Fonts---**/
+/**---Font-Size---**/
+/**---Font-Weight---**/
+/**---Colors---**/
+/**---Z-Index---**/
+.button {
+  padding: 1rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  transition: 0.3s;
+  font-family: Inter, sans-serif;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.button__primary--purple {
+  background-color: #9C4DF4;
+  color: #FFFFFF;
+}
+
+@font-face {
+  font-family: "Metropolis-Bold";
+  src: url("../../fonts/Metropolis/Metropolis-Bold.otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../../fonts/Metropolis/Metropolis-Regular.otf");
+}
+/**---Header height---**/
+/**---Fonts---**/
+/**---Font-Size---**/
+/**---Font-Weight---**/
+/**---Colors---**/
+/**---Z-Index---**/
+.subscribe {
+  margin: 1em;
+}
+.subscribe__container {
+  background-color: #0A033C;
+  border-radius: 20px;
+  padding: 3em 1em;
+}
+.subscribe__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.subscribe__info h3 {
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 45px;
+  margin-bottom: 1.5rem;
+}
+.subscribe__info p {
+  font-size: 16px;
+  color: #5D5A6F;
+  margin-bottom: 1.5rem;
+}
+.subscribe__newsletter {
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+}
+.subscribe__input {
+  width: 70%;
+  padding: 1.25rem;
+  background: none;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+}
+.subscribe__input::placeholder {
+  color: #FFFFFF;
+  font-family: Metropolis;
+}
+.subscribe .button {
+  border-radius: 0 0.5em 0.5em 0;
+}
 
 /*# sourceMappingURL=main.css.map */
