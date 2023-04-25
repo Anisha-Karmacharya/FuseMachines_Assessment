@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 @font-face {
   font-family: "Metropolis-Bold";
   src: url("../../fonts/Metropolis/Metropolis-Bold.otf");
@@ -10,7 +11,8 @@
 }
 /**---Header height---**/
 /**---Fonts---**/
-/* Font weight */
+/**---Font-Size---**/
+/**---Font-Weight---**/
 /**---Colors---**/
 /**---Z-Index---**/
 * {
@@ -24,6 +26,7 @@ html {
 }
 
 body {
+  margin: 3.5rem 0 0 0;
   font-family: Metropolis;
   background-color: #F7F5FA;
 }
@@ -41,6 +44,10 @@ img {
   height: auto;
 }
 
+section {
+  padding: 5.5rem 0 1rem;
+}
+
 @font-face {
   font-family: "Metropolis-Bold";
   src: url("../../fonts/Metropolis/Metropolis-Bold.otf");
@@ -51,7 +58,8 @@ img {
 }
 /**---Header height---**/
 /**---Fonts---**/
-/* Font weight */
+/**---Font-Size---**/
+/**---Font-Weight---**/
 /**---Colors---**/
 /**---Z-Index---**/
 .header {
@@ -130,6 +138,64 @@ img {
     pointer-events: none;
     opacity: 0;
   }
+}
+@font-face {
+  font-family: "Metropolis-Bold";
+  src: url("../../fonts/Metropolis/Metropolis-Bold.otf");
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../../fonts/Metropolis/Metropolis-Regular.otf");
+}
+/**---Header height---**/
+/**---Fonts---**/
+/**---Font-Size---**/
+/**---Font-Weight---**/
+/**---Colors---**/
+/**---Z-Index---**/
+.footer {
+  display: grid;
+  max-width: 968px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.footer__container {
+  display: grid;
+  row-gap: 2rem;
+}
+.footer__title {
+  margin-bottom: 1rem;
+  font-size: 22px;
+  font-weight: 600;
+}
+.footer__logo img {
+  margin-bottom: 0.75rem;
+}
+.footer__data {
+  display: grid;
+  row-gap: 0.75rem;
+}
+.footer__data .footer__social {
+  display: flex;
+  column-gap: 0.25em;
+  padding: 0.5em 0;
+}
+.footer__data .footer__social-link {
+  color: #0A033C;
+  font-size: 18px;
+  background-color: transparent;
+  padding: 10px;
+  transition: 0.1s;
+}
+.footer__data .footer__social-link:hover {
+  background-color: #FF6652;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 25px;
+}
+.footer__information, .footer__information a {
+  font-size: 16px;
+  color: #5D5A6F;
 }
 
 /*# sourceMappingURL=main.css.map */
