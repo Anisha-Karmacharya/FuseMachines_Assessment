@@ -1,20 +1,6 @@
-// Variables
-@font-face {
-    font-family: 'Metropolis-Bold';
-    src: url("../../fonts/Metropolis/Metropolis-Bold.otf");
-}
-@font-face {
-    font-family: 'Metropolis';
-    src: url("../../fonts/Metropolis/Metropolis-Regular.otf");
-}
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
 /**---Header height---**/ 
 $header-height: 3.5rem;
-
-/**---Fonts---**/ 
-$primary-font: 'Metropolis';
-$secondary-font: 'Inter', sans-serif;
-
 /**---Font-Size---**/ 
 $h1-font-size: 65px;
 $h2-font-size: 45px;

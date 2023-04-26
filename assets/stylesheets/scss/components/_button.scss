@@ -1,0 +1,16 @@
+@import "../utilities/variables";
+.button {
+  padding: 1rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: #{$font-medium};
+  letter-spacing: 1px;
+  transition: 0.3s;
+  font-family: var(--secondary-font);
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  &__primary--purple {
+    background-color: #{$purple};
+    color: #{$white};
+  }
+}

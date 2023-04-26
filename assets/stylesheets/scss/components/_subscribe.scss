@@ -1,0 +1,99 @@
+@import "../utilities/variables";
+.subscribe{
+    margin:1em;
+    &__container{
+        background-color: #{$banner-background};
+        border-radius: 20px;
+        padding: 3em 1em;
+        display: grid;
+        // grid-template-columns:  1fr 350px 1fr;
+        position: relative;
+    }
+    &__image-left{
+        .eclipse{
+            width: 75px;
+            height: 75px;
+            &-1{
+                position: absolute;
+                top: 5%;
+                left: 5%;
+                // z-index: 10;
+            }
+            &-2{
+                position: absolute;
+                top: 40%;
+                left: 25%;
+            }
+            &-3{
+                position: absolute;
+                top: 70%;
+                left: 12.5%;
+            }
+        }
+    }
+    &__image-right{
+        .eclipse{
+            width: 75px;
+            height: 75px;
+            &-4{
+                position: absolute;
+                top: 5%;
+                right: 5%;
+                // z-index: 10;
+            }
+            &-5{
+                position: absolute;
+                top: 40%;
+                right: 20%;
+            }
+            &-6{
+                position: absolute;
+                top: 80%;
+                right: 10%;
+           
+            }
+        }
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 1;
+        padding: 1em;
+        h3{
+            font-weight: #{$font-bold};
+            color: #{$white};
+            font-size: #{$h2-font-size};
+            margin-bottom: 1.5rem;
+        }
+        p{
+            font-size: #{$small-font-size};
+            color: #{$text-color-alt};
+            margin-bottom: 1.5rem;
+        }
+
+    }
+    &__newsletter{
+        background: #FFFFFF33;
+        display: flex;
+        justify-content: space-between;
+        border-radius: .5rem;
+    }
+    &__input{
+        width: 70%;
+        padding: 1.25rem;
+        background: none;
+        color: #{$white};
+        border: none;
+        outline: none;
+        &::placeholder{
+            color: #{$white};
+            font-family: var(--primary-font);
+        }
+    }
+    .button{
+        border-radius: 0 .5em .5em 0;
+    }
+}

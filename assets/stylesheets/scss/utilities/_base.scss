@@ -1,6 +1,24 @@
 
 @import './variables';
 // Base
+@font-face {
+    font-family: 'Metropolis-Bold';
+    src: url("../../fonts/Metropolis/Metropolis-Bold.otf");
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../../fonts/Metropolis/Metropolis-Regular.otf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+
+/**---Fonts---**/ 
+:root{
+    --primary-font: 'Metropolis';
+    --secondary-font: 'Inter', sans-serif;
+}
+
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -12,7 +30,7 @@ html{
 }
 body{
     margin: #{$header-height} 0 0 0;
-    font-family:  #{$primary-font};
+    font-family: var(--primary-font);
     background-color:#{$background-color};
 }
 ul{
