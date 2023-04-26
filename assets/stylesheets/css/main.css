@@ -348,7 +348,6 @@ section {
   padding: 1rem 1.75rem;
   border-radius: 0.5rem;
   font-weight: 500;
-  letter-spacing: 1px;
   transition: 0.3s;
   font-family: var(--secondary-font);
   display: inline-flex;
@@ -359,6 +358,84 @@ section {
 .button__primary--purple {
   background-color: #9C4DF4;
   color: #FFFFFF;
+  letter-spacing: 0.5px;
+}
+.button__secondary--purple {
+  background-color: transparent;
+  color: #9C4DF4;
+  border-color: #9C4DF4;
+}
+.button__tertiary--purple {
+  border: none;
+  background-color: #F2E6FF;
+  color: #9C4DF4;
+  font-size: 14px;
+  padding: 0.75rem 1.75rem;
+}
+
+/**---Header height---**/
+/**---Font-Size---**/
+/**---Font-Weight---**/
+/**---Colors---**/
+/**---Z-Index---**/
+.joinCourses__container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 1em;
+  background-color: #E4E2F4;
+  border-radius: 20px;
+}
+.joinCourses__banner {
+  padding: 1.15em;
+}
+.joinCourses__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+.joinCourses__info h2 {
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.joinCourses__info p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 1em;
+}
+.joinCourses__images {
+  position: relative;
+}
+.joinCourses__images .mainImage {
+  position: relative;
+  z-index: 2;
+}
+.joinCourses__images .html {
+  position: absolute;
+  top: 5%;
+  left: -10%;
+  z-index: 2;
+}
+.joinCourses__images .java {
+  position: absolute;
+  top: -15%;
+  left: 65%;
+}
+.joinCourses__images .php {
+  position: absolute;
+  top: 10%;
+  left: 55%;
+}
+.joinCourses__images .pattern__purple {
+  position: absolute;
+  top: -7%;
+  left: 15%;
+  width: 125px;
 }
 
 /**---Header height---**/

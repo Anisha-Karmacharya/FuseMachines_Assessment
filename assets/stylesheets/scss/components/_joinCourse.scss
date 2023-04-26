@@ -1,0 +1,62 @@
+@import "../utilities/variables";
+.joinCourses{
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        margin: 1em;
+        background-color: #{$banner-background-light};
+        border-radius: 20px;
+    }
+    &__banner{
+        padding: 1.15em;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        h2{
+            font-size: #{$h2-font-size};
+            text-align: center;
+            margin-bottom: 0.5em;
+        }
+        p{
+            font-size: #{$small-font-size};
+            text-align: center;
+            line-height: 25px;
+            margin-bottom: 1em;
+        }
+    }
+    &__images{
+        position: relative;
+        .mainImage{
+            position: relative;
+            z-index: 2;
+        }
+        .html{
+            position: absolute;
+            top: 5%;
+            left: -10%;
+            z-index: 2;
+        }
+        .java{
+            position: absolute;
+            top: -15%;
+            left: 65%
+        }
+        .php{
+            position: absolute;
+            top: 10%;
+            left: 55%
+        }
+        .pattern__purple{
+            position: absolute;
+            top: -7%;
+            left: 15%;
+            width: 125px;
+        }
+    }
+}

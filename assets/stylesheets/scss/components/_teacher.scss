@@ -1,0 +1,44 @@
+@import "../utilities/variables";
+.joinAsTeacher {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 1em;
+  &__images {
+    position: relative;
+    order: 2;
+    left: 15%;
+    width: 300px;
+    background: linear-gradient(
+      315deg,
+      rgba(255, 102, 82, 0) 0%,
+      #{$orange} 100%
+    );
+    border-radius: 255px 255px 0px 255px;
+  }
+  &__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+    padding: 1em;
+    h2{
+        color: #{$text-color};
+        font-size: #{$h2-font-size};
+        font-weight: #{$font-bold};
+        line-height: 55px;
+        text-align: center;
+    }
+    p{
+        color: #{$text-color-alt};
+        text-align: center;
+        padding: 1em;
+        line-height: 30px;
+    }
+    .button{
+
+    }
+  }
+}
