@@ -32,6 +32,7 @@ body {
   margin: 3.5rem 0 0 0;
   font-family: var(--primary-font);
   background-color: #F7F5FA;
+  overflow-x: hidden;
 }
 
 ul {
@@ -363,7 +364,12 @@ section {
 .button__secondary--purple {
   background-color: transparent;
   color: #9C4DF4;
-  border-color: #9C4DF4;
+  border: 1px solid #9C4DF4;
+  border-radius: 5px;
+}
+.button__secondary--purple:hover {
+  background-color: #9C4DF4;
+  color: #FFFFFF;
 }
 .button__tertiary--purple {
   border: none;
@@ -371,6 +377,93 @@ section {
   color: #9C4DF4;
   font-size: 14px;
   padding: 0.75rem 1.75rem;
+}
+.button__primary--orange {
+  background-color: #FF6652;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+}
+.button__secondary--orange {
+  background-color: transparent;
+  color: #FF6652;
+  border: 1px solid #FF6652;
+}
+.button__normal {
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  color: #0A033C;
+}
+.button__normal:hover {
+  background-color: #FF6652;
+  color: #FFFFFF;
+}
+
+/**---Header height---**/
+/**---Font-Size---**/
+/**---Font-Weight---**/
+/**---Colors---**/
+/**---Z-Index---**/
+.lesson__info {
+  padding: 1em;
+}
+.lesson__info h2 {
+  font-weight: 700;
+  color: #0A033C;
+  font-size: 45px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.lesson__info p {
+  font-size: 16px;
+  color: #5D5A6F;
+  text-align: center;
+  line-height: 25px;
+}
+.lesson__provided {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lesson__provided_filter {
+  display: flex;
+  justify-content: center;
+  column-gap: 0.5em;
+  padding: 1em;
+}
+.lesson__provided_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  padding: 1em;
+}
+.lesson__provided_cards .lesson__card {
+  background-color: #FFFFFF;
+  padding: 1em;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.lesson__provided_cards .lesson__card .grade {
+  margin-bottom: 8px;
+}
+.lesson__provided_cards .lesson__card h4 {
+  font-weight: 600;
+}
+.lesson__provided_cards .lesson__card p {
+  font-size: 14px;
+  color: #5D5A6F;
+  margin: 10px 0;
+  line-height: 25px;
+  text-align: center;
+}
+.lesson__provided_cards .lesson__card .button__secondary--purple {
+  padding: 0.5em 1em;
+  font-size: 14px;
 }
 
 /**---Header height---**/
@@ -541,7 +634,7 @@ section {
   z-index: 1;
   padding: 1em;
 }
-.subscribe__info h3 {
+.subscribe__info h2 {
   font-weight: 700;
   color: #FFFFFF;
   font-size: 45px;

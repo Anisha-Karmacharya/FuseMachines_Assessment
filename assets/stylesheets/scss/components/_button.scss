@@ -17,7 +17,13 @@
   &__secondary--purple {
     background-color:transparent;
     color: #{$purple};  
-    border-color: #{$purple};
+    border: 1px solid #{$purple};
+    border-radius: 5px;
+    &:hover{
+      background-color: #{$purple};
+      color: #{$white};
+     
+    }
   }
   &__tertiary--purple{
     border: none;
@@ -25,5 +31,25 @@
     color: #{$purple};
     font-size: #{$smaller-font-size};
     padding: 0.75rem 1.75rem;
+  }
+  &__primary--orange {
+    background-color: #{$orange};
+    color: #{$white};
+    letter-spacing: 0.5px;
+  }
+  &__secondary--orange {
+    background-color:transparent;
+    color: #{$orange};  
+    border: 1px solid #{$orange};
+  }
+  &__normal{
+    border: none;
+    background-color: transparent;
+    font-weight: #{$font-bold};
+    color: #{$text-color};
+    &:hover{
+      background-color: #{$orange};
+    color: #{$white};
+    }
   }
 }
