@@ -1,8 +1,28 @@
-// Variables
+
+/**---Header height---**/ 
+$header-height: 3.5rem;
+/**---Font-Size---**/ 
+$h1-font-size: 65px;
+$h2-font-size: 45px;
+$h3-font-size: 25px;
+$p-font-size: 22px;
+$normal-font-size: 18px;
+$small-font-size: 16px;
+$smaller-font-size: 14px;
+
+
+/**---Font-Weight---**/ 
+ $font-normal: 400;
+ $font-medium: 500;
+ $font-semi-bold: 600;
+ $font-bold: 700;
+
 /**---Colors---**/ 
 $background-color: #F7F5FA;
 $banner-background: #0A033C;
 $banner-background-alt:#EDE9F2;
+$banner-background-light:#E4E2F4;
+;
 $text-color: #0A033C;
 $text-color-alt:#5D5A6F;
 $text-color-light:#5D5A6F99;
@@ -11,3 +31,7 @@ $purple: #9C4DF4;
 $purple-light: #F2E6FF;
 $yellow: #FFC107;
 $white: #FFFFFF;
+
+/**---Z-Index---**/ 
+$z-tooltip: 10;
+$z-fixed: 100;

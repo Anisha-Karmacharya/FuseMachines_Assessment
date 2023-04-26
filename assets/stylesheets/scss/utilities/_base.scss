@@ -1,14 +1,24 @@
-@font-face {
-    font-family: 'Metropolis-Bold';
-    src: url("../../../fonts/Metropolis/Metropolis-Bold.otf");
-}
-@font-face {
-    font-family: 'Metropolis-Regular';
-    src: url("../../../fonts/Metropolis/Metropolis-Regular.otf");
-}
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
 @import './variables';
 // Base
+@font-face {
+    font-family: 'Metropolis-Bold';
+    src: url("../../fonts/Metropolis/Metropolis-Bold.otf");
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../../fonts/Metropolis/Metropolis-Regular.otf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+
+/**---Fonts---**/ 
+:root{
+    --primary-font: 'Metropolis';
+    --secondary-font: 'Inter', sans-serif;
+}
+
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -19,7 +29,10 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    margin: #{$header-height} 0 0 0;
+    font-family: var(--primary-font);
     background-color:#{$background-color};
+    overflow-x: hidden;
 }
 ul{
     list-style: none;
@@ -32,3 +45,5 @@ img{
     max-width: 100%;
     height: auto;
 }
+section{
+    padding: 2.5rem 0 1rem;}

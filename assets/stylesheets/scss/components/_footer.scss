@@ -1,0 +1,67 @@
+@import "../utilities/variables";
+.footer{
+    display: grid;
+    max-width: 968px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    &__container{
+        display: grid;
+        row-gap: 2rem;
+    }
+    &__title{
+        margin-bottom: 1rem;
+        font-size: #{$p-font-size};
+        font-weight: #{$font-semi-bold};
+    }
+    &__logo img{
+        margin-bottom: 0.75rem;
+    }
+    &__data{
+        display: grid;
+        row-gap: .75rem;
+        .footer__social{
+            display: flex;
+            column-gap: .25em;
+            padding: .5em 0;
+            &-link{
+                color: #{$text-color};
+                font-size: #{$normal-font-size};
+                background-color: transparent;
+                padding:  10px;
+                transition: .1s;
+                &:hover{
+                    background-color: #{$orange};
+                    color: #{$white};
+                    padding:  10px;
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+    &__information, &__information a{
+        font-size: #{$small-font-size};
+        color: #{$text-color-alt};
+    }
+    &__information a:hover{
+        color: #{$purple};
+    }
+}
+@media screen and (min-width: 992px){
+    .footer{
+        padding: 30px 80px;
+        &__container{
+            display: grid;
+            width: 100vw;
+            grid-template-columns: repeat(5, 1fr);
+            column-gap: 4.5em;
+        }
+        &__title{
+            margin-bottom: 1.5rem;
+        }
+        &__data{
+            row-gap: 1.5rem;
+           
+        }
+    }
+}
