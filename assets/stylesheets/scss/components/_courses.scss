@@ -3,7 +3,7 @@
     &__info{
         padding: 1em;
         h2{
-            font-weight: #{$font-bold};
+            font-family: var(--bold-font);
             color: #{$text-color};
             font-size: #{$h2-font-size};
             margin-bottom: 1.5rem;
@@ -46,7 +46,7 @@
                     margin-bottom: 8px;
                 }
                 h4{
-                    font-weight: #{$font-semi-bold};
+                    font-family: var(--semi-bold-font);
                 }
                 p{
                     font-size: #{$smaller-font-size};

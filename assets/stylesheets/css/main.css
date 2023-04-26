@@ -9,6 +9,14 @@
   src: url("../../fonts/Metropolis/Metropolis-Bold.otf");
 }
 @font-face {
+  font-family: "Metropolis-Semi-Bold";
+  src: url("../../fonts/Metropolis/Metropolis-SemiBold.otf");
+}
+@font-face {
+  font-family: "Metropolis-Medium";
+  src: url("../../../fonts/Metropolis/Metropolis-Medium.otf");
+}
+@font-face {
   font-family: "Metropolis";
   src: url("../../fonts/Metropolis/Metropolis-Regular.otf");
 }
@@ -16,6 +24,9 @@
 :root {
   --primary-font: "Metropolis";
   --secondary-font: "Inter", sans-serif;
+  --bold-font:"Metropolis-Bold";
+  --semi-bold-font: "Metropolis-Semi-Bold";
+  --medium-font: "Metropolis-Medium" ;
 }
 
 * {
@@ -26,6 +37,11 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 
 body {
@@ -110,7 +126,7 @@ section {
 }
 .nav .dropdown__group .dropdown__list .dropdown__link {
   font-size: 14px;
-  font-weight: 600;
+  font-family: var(--semi-bold-font);
   color: #5D5A6F;
   transition: color 0.3s;
 }
@@ -140,7 +156,7 @@ section {
 }
 .nav__link {
   color: #0A033C;
-  font-weight: 600;
+  font-family: var(--semi-bold-font);
   padding: 1.25rem 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -149,6 +165,9 @@ section {
 }
 .nav__link:hover {
   background-color: #F2E6FF;
+}
+.nav .active {
+  color: #9C4DF4;
 }
 .nav__right .bx-shopping-bag {
   color: #FF6652;
@@ -289,7 +308,7 @@ section {
 .footer__title {
   margin-bottom: 1rem;
   font-size: 22px;
-  font-weight: 600;
+  font-family: var(--semi-bold-font);
 }
 .footer__logo img {
   margin-bottom: 0.75rem;
@@ -383,7 +402,8 @@ section {
 .button__orange--primary {
   background-color: #FF6652;
   color: #FFFFFF;
-  letter-spacing: 0.5px;
+  font-family: var(--semi-bold-font);
+  font-size: 14px;
 }
 .button__orange--secondary {
   background-color: transparent;
@@ -399,12 +419,22 @@ section {
 .button__normal {
   border: none;
   background-color: transparent;
-  font-weight: 700;
+  font-family: var(--bold-font);
   color: #0A033C;
 }
 .button__normal:hover {
   background-color: #FF6652;
   color: #FFFFFF;
+}
+.button__white {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 0.5em;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  font-family: var(--semi-bold-font);
+  font-size: 14px;
 }
 
 /**---Header height---**/
@@ -423,7 +453,7 @@ section {
   padding: 1em 1.5em;
 }
 .landing__info h1 {
-  font-weight: 700;
+  font-family: var(--bold-font);
   color: #0A033C;
   font-size: 65px;
   margin-bottom: 1.5rem;
@@ -486,7 +516,7 @@ section {
   padding: 1em 1.5em;
 }
 .classes__info h2 {
-  font-weight: 700;
+  font-family: var(--bold-font);
   color: #0A033C;
   font-size: 45px;
   margin-bottom: 1.5rem;
@@ -553,17 +583,6 @@ section {
   column-gap: 1em;
   padding: 0 1em;
 }
-.classes__features div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 0.5em;
-  background-color: #FFFFFF;
-  padding: 0.5em;
-  border-radius: 10px;
-  font-weight: 600;
-  font-size: 14px;
-}
 .classes__features div img {
   width: 44px;
   height: 44px;
@@ -578,7 +597,7 @@ section {
   padding: 1em;
 }
 .lesson__info h2 {
-  font-weight: 700;
+  font-family: var(--bold-font);
   color: #0A033C;
   font-size: 45px;
   margin-bottom: 1.5rem;
@@ -622,7 +641,7 @@ section {
   margin-bottom: 8px;
 }
 .lesson__provided_cards .lesson__card h4 {
-  font-weight: 600;
+  font-family: var(--semi-bold-font);
 }
 .lesson__provided_cards .lesson__card p {
   font-size: 14px;
@@ -732,7 +751,7 @@ section {
 .joinAsTeacher__info h2 {
   color: #0A033C;
   font-size: 45px;
-  font-weight: 700;
+  font-family: var(--bold-font);
   line-height: 55px;
   text-align: center;
 }
@@ -742,60 +761,61 @@ section {
   padding: 1em;
   line-height: 30px;
 }
+
 /**---Header height---**/
 /**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
 /**---Z-Index---**/
-.subscribe {
+.banner__subscribe {
   margin: 1em;
 }
-.subscribe__container {
+.banner__subscribe_container {
   background-color: #0A033C;
   border-radius: 20px;
   padding: 3em 1em;
   display: grid;
   position: relative;
 }
-.subscribe__image-left .eclipse {
+.banner__subscribe_image-left .eclipse {
   width: 75px;
   height: 75px;
 }
-.subscribe__image-left .eclipse-1 {
+.banner__subscribe_image-left .eclipse-1 {
   position: absolute;
   top: 5%;
   left: 5%;
 }
-.subscribe__image-left .eclipse-2 {
+.banner__subscribe_image-left .eclipse-2 {
   position: absolute;
   top: 40%;
   left: 25%;
 }
-.subscribe__image-left .eclipse-3 {
+.banner__subscribe_image-left .eclipse-3 {
   position: absolute;
   top: 70%;
   left: 12.5%;
 }
-.subscribe__image-right .eclipse {
+.banner__subscribe_image-right .eclipse {
   width: 75px;
   height: 75px;
 }
-.subscribe__image-right .eclipse-4 {
+.banner__subscribe_image-right .eclipse-4 {
   position: absolute;
   top: 5%;
   right: 5%;
 }
-.subscribe__image-right .eclipse-5 {
+.banner__subscribe_image-right .eclipse-5 {
   position: absolute;
   top: 40%;
   right: 20%;
 }
-.subscribe__image-right .eclipse-6 {
+.banner__subscribe_image-right .eclipse-6 {
   position: absolute;
   top: 80%;
   right: 10%;
 }
-.subscribe__info {
+.banner__subscribe_info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -804,24 +824,24 @@ section {
   z-index: 1;
   padding: 1em;
 }
-.subscribe__info h2 {
-  font-weight: 700;
+.banner__subscribe_info h2 {
+  font-family: var(--bold-font);
   color: #FFFFFF;
   font-size: 45px;
   margin-bottom: 1.5rem;
 }
-.subscribe__info p {
+.banner__subscribe_info p {
   font-size: 16px;
   color: #5D5A6F;
   margin-bottom: 1.5rem;
 }
-.subscribe__newsletter {
+.banner__subscribe_newsletter {
   background: rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: space-between;
   border-radius: 0.5rem;
 }
-.subscribe__input {
+.banner__subscribe_input {
   width: 70%;
   padding: 1.25rem;
   background: none;
@@ -829,12 +849,138 @@ section {
   border: none;
   outline: none;
 }
-.subscribe__input::placeholder {
+.banner__subscribe_input::placeholder {
   color: #FFFFFF;
   font-family: var(--primary-font);
 }
-.subscribe .button {
+.banner__subscribe .button {
   border-radius: 0 0.5em 0.5em 0;
+}
+.banner__header {
+  background-color: #EDE9F2;
+  margin: 6.5em 1em 1em 1em;
+  padding: 3em 2em;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+.banner__header h2 {
+  font-family: var(--bold-font);
+  color: #0A033C;
+  font-size: 35px;
+  margin-bottom: 1.5rem;
+}
+
+/**---Header height---**/
+/**---Font-Size---**/
+/**---Font-Weight---**/
+/**---Colors---**/
+/**---Z-Index---**/
+.bookshop {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.bookshop h3 {
+  font-size: 30px;
+  font-family: var(--semi-bold-font);
+  margin-bottom: 0.75em;
+}
+.bookshop .more {
+  color: #9C4DF4;
+  font-family: var(--regular-font);
+  position: relative;
+  left: 85%;
+}
+.bookshop__filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 0 1em;
+}
+.bookshop__searchSort {
+  display: flex;
+  column-gap: 1em;
+  margin: 1em;
+}
+.bookshop .landing__input {
+  padding: 0;
+  border: none;
+}
+.bookshop .landing__select {
+  border-radius: 10px;
+}
+.bookshop .button__purple--primary {
+  padding: 1em;
+}
+.bookshop .button__purple--primary i {
+  font-size: 18px;
+  font-weight: 600;
+}
+.bookshop__general .book__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  padding: 1em 1.25em;
+  column-gap: 1em;
+}
+.bookshop__general .book__cards .book__card--image {
+  background-color: #FFFFFF;
+  padding: 0.75em;
+  border-radius: 10px;
+}
+.bookshop__general .book__cards .book__card--image img {
+  border-radius: 10px;
+}
+.bookshop__general .book__cards .book__card .book__info {
+  padding: 1em 0;
+}
+.bookshop__general .book__cards .book__card .book__info--title {
+  font-size: 18px;
+  font-family: var(--semi-bold-font);
+  padding: 0.15em 0;
+}
+.bookshop__general .book__cards .book__card .book__info--price {
+  font-size: 16px;
+  font-family: var(--regular-font);
+  font-weight: 600;
+  color: #FF6652;
+}
+.bookshop .books {
+  display: flex;
+  column-gap: 1em;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding: 1em 0;
+}
+.bookshop .books .book .book__info {
+  padding: 1em 0;
+}
+.bookshop .books .book .book__info--title {
+  font-size: 18px;
+  font-family: var(--semi-bold-font);
+  padding: 0.15em 0;
+}
+.bookshop .books .book .book__info--price {
+  font-size: 16px;
+  font-family: var(--regular-font);
+  font-weight: 600;
+  color: #FF6652;
+}
+.bookshop .books .book__img {
+  background-color: #FFFFFF;
+  width: 200px;
+  flex-shrink: 0;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+.bookshop .books .book__img img {
+  border-radius: 5px;
+}
+.bookshop ::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 
 /*# sourceMappingURL=main.css.map */

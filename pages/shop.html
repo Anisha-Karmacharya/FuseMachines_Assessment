@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fuse-Assessment</title>
-    <link rel="stylesheet" href="./assets/stylesheets/css/main.css" />
+    <title>Fusemachine-Assessment</title>
+    <link rel="stylesheet" href="../assets/stylesheets/css/main.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -16,7 +16,7 @@
       <nav class="nav">
         <div class="nav__data">
           <a href="/index.html" class="nav__logo"
-            ><img src="./assets/img/Logo.png" alt="Eduvi logo"
+            ><img src="../assets/img/Logo.png" alt="Eduvi logo"
           /></a>
           <div class="nav__toggle" id="nav-toggle">
             <i class="bx bx-menu nav__toggle-menu"></i>
@@ -26,7 +26,9 @@
         <!-- NAV MENU -->
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
-            <li class="nav__item"><a href="./pages/shop.html" class="nav__link">Shop</a></li>
+            <li class="nav__item">
+              <a href="./shop.html" class="nav__link active">Shop</a>
+            </li>
             <!-- NAV DROPDOWN -->
             <li class="nav__item dropdown__item">
               <div class="nav__link dropdown__button">
@@ -137,202 +139,197 @@
         </div>
       </nav>
     </header>
-
-    <main class="main">
-      <!-- LANDING -->
-      <section class="landing">
-        <div>
-          <div class="button button__orange--tertiary">
-            <p>Never Stop Learning</p>
-          </div>
-          <div class="landing__info">
-            <h1>Grow up your skills by online courses with Eduvi</h1>
-            <p>
-              Eduvi is a Global training provider based across the UK that
-              specialises in accredited and bespoke training courses. We crush
-              the barriers togetting a degree.
-            </p>
-          </div>
-          <div class="landing__search">
-            <select class="form-control landing__select">
-              <option>Kindergarten</option>
-              <option>HighSchool</option>
-              <option>College</option>
-            </select>
-            <input
-              type="input"
-              placeholder="Class/Course"
-              class="landing__input"
-            />
-
-            <button class="button button__purple--primary">
-              <i class="bx bx-search search__icon"></i> Search
-            </button>
-          </div>
-        </div>
-
-        <!-- <div class="landing__image">
-          <div class="landing__image--img" style="background-image: url('./assets/img/landing__svg.svg'); width: 95%; border-radius: 25px;background-repeat: no-repeat;">
-            <img src="./assets/img/landing_image.png" alt="" class="main__image"/>
-          </div>
-          <img src="./assets/img/1.png" alt="" class="object-1" />
-          <img src="./assets/img/2.png" alt="" class="object-2" />
-          <img src="./assets/img/3.png" alt="" class="object-3" />
-          <img src="./assets/img/4.png" alt="" class="object-4" />
-          <img src="./assets/img/Vector.png" alt="" class="vector">
-        </div> -->
+    <main class="shop">
+      <!-- HEADER BANNER -->
+      <section class="banner__header">
+        <h2>
+          Eduvi Online<br />
+          Book Shop
+        </h2>
+        <img src="../assets/img/bookshelf.png" alt="" />
       </section>
-      <!-- CLASSES -->
-      <section class="classes">
-        <div class="classes__info">
-          <h2>High quality video, audio & live classes</h2>
-          <p>
-            High-definition video is video of higher resolution and quality than
-            standard-definition. While there is no standardized meaning for
-            high-definition, generally any video image with considerably more
-            than 80 vertical scan lines or 576 vertical lines is considered
-            high-definition.
-          </p>
-          <button class="button button__purple--primary">Visit Courses</button>
-        </div>
-        <div class="classes__image">
-          <img src="./assets/img/video.png" alt="" />
-          <div class="classes__image-extra">
-            <div class="receiver">
-              <img src="./assets/img/student.png" alt="" />
-            </div>
-
-            <i class="bx bxs-phone button__call"></i>
-            <i class="bx bx-chevron-up button__arrow"></i>
+      <section class="bookshop">
+        <div class="bookshop__header">
+          <div class="bookshop__filter">
+            <div class="button button__orange--primary">All Books</div>
+            <div class="button button__white">Kindergarten</div>
+            <div class="button button__white">High School</div>
+            <div class="button button__white">College</div>
           </div>
-        </div>
-        <div class="classes__features">
-          <div class="button__white"><img src="./assets/img/audio.png" alt="" /> Audio Classes</div>
-          <div  class="button__white"><img src="./assets/img/live.png" alt="" />Live Classes</div>
-          <div  class="button__white">
-            <img src="./assets/img/record.png" alt="" />Recorded Classes
-          </div>
-        </div>
-      </section>
-      <!-- LESSON -->
-      <section class="lesson">
-        <div class="lesson__info">
-          <h2>Qualified lessons for students</h2>
-          <p>
-            A lesson or class is a structured period of time where learning is
-            intended to occur. It involves one or more students being taught by
-            a teacher or instructor.
-          </p>
-        </div>
-        <div class="lesson__provided">
-          <div class="lesson__provided_filter">
-            <button class="button button__normal">Kindergarten</button>
-            <button class="button button__orange--primary">High School</button>
-            <button class="button button__normal">College</button>
-          </div>
-          <div class="lesson__provided_cards">
-            <div class="lesson__card">
-              <img src="./assets/img/grade.png" alt="grade" class="grade" />
-              <h4>Standard One</h4>
-              <p>
-                Standard 1 is a foundation Standard that reflects 7 important
-                concepts...
-              </p>
-              <button class="button button__purple--secondary">
-                Class Details
-              </button>
-            </div>
-            <div class="lesson__card">
-              <img src="./assets/img/grade.png" alt="grade" class="grade" />
-              <h4>Standard One</h4>
-              <p>
-                Standard 1 is a foundation Standard that reflects 7 important
-                concepts...
-              </p>
-              <button class="button button__purple--secondary">
-                Class Details
-              </button>
-            </div>
-            <div class="lesson__card">
-              <img src="./assets/img/grade.png" alt="grade" class="grade" />
-              <h4>Standard One</h4>
-              <p>
-                Standard 1 is a foundation Standard that reflects 7 important
-                concepts...
-              </p>
-              <button class="button button__purple--secondary">
-                Class Details
-              </button>
-            </div>
-            <div class="lesson__card">
-              <img src="./assets/img/grade.png" alt="grade" class="grade" />
-              <h4>Standard One</h4>
-              <p>
-                Standard 1 is a foundation Standard that reflects 7 important
-                concepts...
-              </p>
-              <button class="button button__purple--secondary">
-                Class Details
-              </button>
-            </div>
-          </div>
-          <button class="button button__purple--primary">
-            View More Classes
-          </button>
-        </div>
-      </section>
-      <!-- JOIN COURSES -->
-      <section class="joinCourses">
-        <div class="joinCourses__container">
-          <div class="joinCourses__banner">
-            <div class="button button__purple--tertiary">College level</div>
-            <div class="joinCourses__info">
-              <h2>
-                Don’t waste time in COVID-19 pandemic. <br />Develop your
-                skills.
-              </h2>
-              <p>
-                High-definition video is video of higher resolution and quality
-                than standard-definition. While there is no standardized meaning
-                for high-definition, generally any video.
-              </p>
+          <div class="bookshop__searchSort">
+            <div class="landing__search">
+              <input
+                type="input"
+                placeholder="Class/Course"
+                class="landing__input"
+              />
+  
               <button class="button button__purple--primary">
-                Register Now
+                <i class="bx bx-search search__icon"></i>
               </button>
             </div>
-          </div>
-          <div class="joinCourses__images">
-            <img
-              src="./assets/img/student_with_laptop.png"
-              alt=""
-              class="mainImage"
-            />
-            <img src="./assets/img/html.png" alt="html icon" class="html" />
-            <img src="./assets/img/php.png" alt="php icon" class="php" />
-            <img src="./assets/img/java.png" alt="java icon" class="java" />
-            <img
-              src="./assets/img/pattern__purple.svg"
-              alt="pattern"
-              class="pattern__purple"
-            />
+            <div class="bookshop__general__sort">
+              <select class="form-control landing__select">
+                <option>Kindergarten</option>
+                <option>HighSchool</option>
+                <option>College</option>
+              </select>
+            </div>
           </div>
         </div>
-      </section>
-      <!-- JOIN AS TEACHER SECTION -->
-      <section class="joinAsTeacher">
-        <div class="joinAsTeacher__images">
-          <img src="./assets/img/student_with_copy.png" alt="" />
+
+        <div class="bookshop__general">
+          <div class="book__cards">
+             <div class="book__card">
+               <div class="book__card--image"><img src="../assets/img/Image.png" alt=""></div>
+                 <div class="book__info">
+                   <p class="book__info--title">The Three Musketeers</p>
+                   <span class="book__info--price">$39.00</span>
+                 </div>
+             </div>
+             <div class="book__card">
+               <div class="book__card--image"><img src="../assets/img/Image.png" alt=""></div>
+               <div class="book__card--detail">
+                 <div class="book__info">
+                   <p class="book__info--title">The Three Musketeers</p>
+                   <span class="book__info--price">$39.00</span>
+                 </div>
+               </div>
+             </div>
+             <div class="book__card">
+               <div class="book__card--image"><img src="../assets/img/Image.png" alt=""></div>
+               <div class="book__card--detail">
+                 <div class="book__info">
+                   <p class="book__info--title">The Three Musketeers</p>
+                   <span class="book__info--price">$39.00</span>
+                 </div>
+               </div>
+             </div>
+             <div class="book__card">
+               <div class="book__card--image"><img src="../assets/img/Image.png" alt=""></div>
+               <div class="book__card--detail">
+                 <div class="book__info">
+                   <p class="book__info--title">The Three Musketeers</p>
+                   <span class="book__info--price">$39.00</span>
+                 </div>
+               </div>
+             </div>
+             <div class="book__card">
+               <div class="book__card--image"><img src="../assets/img/Image.png" alt=""></div>
+               <div class="book__card--detail">
+                 <div class="book__info">
+                   <p class="book__info--title">The Three Musketeers</p>
+                   <span class="book__info--price">$39.00</span>
+                 </div>
+               </div>
+             </div>
+             <div class="book__card">
+               <div class="book__card--image"><img src="../assets/img/Image.png" alt=""></div>
+               <div class="book__card--detail">
+                 <div class="book__info">
+                   <p class="book__info--title">The Three Musketeers</p>
+                   <span class="book__info--price">$39.00</span>
+                 </div>
+               </div>
+             </div>
+             <div class="book__card">
+               <div class="book__card--image"><img src="../assets/img/Image.png" alt=""></div>
+               <div class="book__card--detail">
+                 <div class="book__info">
+                   <p class="book__info--title">The Three Musketeers</p>
+                   <span class="book__info--price">$39.00</span>
+                 </div>
+               </div>
+             </div>
+             <div class="book__card">
+               <div class="book__card--image"><img src="../assets/img/Image.png" alt=""></div>
+               <div class="book__card--detail">
+                 <div class="book__info">
+                   <p class="book__info--title">The Three Musketeers</p>
+                   <span class="book__info--price">$39.00</span>
+                 </div>
+               </div>
+             </div>
+             <div class="book__card">
+               <div class="book__card--image"><img src="../assets/img/Image.png" alt=""></div>
+               <div class="book__card--detail">
+                 <div class="book__info">
+                   <p class="book__info--title">The Three Musketeers</p>
+                   <span class="book__info--price">$39.00</span>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <!-- <div class="pagination">Page 5 of 80</div> -->
+         </div>
+        <div class="bookshop__popular">
+          <h3>Popular Books</h3>
+          <div class="books">
+            <div class="book">
+              <div class="book__img">
+                <img src="../assets/img/Image.png" alt="The Three Musketeers" />
+              </div>
+              <div class="book__info">
+                <p class="book__info--title">The Three Musketeers</p>
+                <span class="book__info--price">$39.00</span>
+              </div>
+            </div>
+            <div class="book">
+              <div class="book__img">
+                <img src="../assets/img/Image.png" alt="The Three Musketeers" />
+              </div>
+              <div class="book__info">
+                <p class="book__info--title">The Three Musketeers</p>
+                <span class="book__info--price">$39.00</span>
+              </div>
+            </div>
+            <div class="book">
+              <div class="book__img">
+                <img src="../assets/img/Image.png" alt="The Three Musketeers" />
+              </div>
+              <div class="book__info">
+                <p class="book__info--title">The Three Musketeers</p>
+                <span class="book__info--price">$39.00</span>
+              </div>
+            </div>
+          
+          </div>
+          <span class="more">See More</span>
         </div>
-        <div class="joinAsTeacher__info">
-          <h2>Want to share your knowledge? Join us a Mentor</h2>
-          <p>
-            High-definition video is video of higher resolution and quality than
-            standard-definition. While there is no standardized meaning for
-            high-definition, generally any video.
-          </p>
-          <button class="button button__purple--primary">
-            Career Information
-          </button>
+        <div class="bookshop__NewArrival">
+          <h3>New Arrival</h3>
+          <div class="books">
+            <div class="book">
+              <div class="book__img">
+                <img src="../assets/img/Image.png" alt="The Three Musketeers" />
+              </div>
+              <div class="book__info">
+                <p class="book__info--title">The Three Musketeers</p>
+                <span class="book__info--price">$39.00</span>
+              </div>
+            </div>
+            <div class="book">
+              <div class="book__img">
+                <img src="../assets/img/Image.png" alt="The Three Musketeers" />
+              </div>
+              <div class="book__info">
+                <p class="book__info--title">The Three Musketeers</p>
+                <span class="book__info--price">$39.00</span>
+              </div>
+            </div>
+            <div class="book">
+              <div class="book__img">
+                <img src="../assets/img/Image.png" alt="The Three Musketeers" />
+              </div>
+              <div class="book__info">
+                <p class="book__info--title">The Three Musketeers</p>
+                <span class="book__info--price">$39.00</span>
+              </div>
+            </div>
+          </div>
+          <span class="more">See More</span>
+        </div>
+        </div>
         </div>
       </section>
       <!-- SUBSCRIBE SECTION -->
@@ -340,17 +337,17 @@
         <div class="banner__subscribe_container">
           <div class="banner__subscribe_image-left">
             <img
-              src="./assets/img/Ellipse 1.png"
+              src="../assets/img/Ellipse 1.png"
               alt="happy kid image"
               class="eclipse-1"
             />
             <img
-              src="./assets/img/Ellipse 2.png"
+              src="../assets/img/Ellipse 2.png"
               alt="boy"
               class="eclipse-2"
             />
             <img
-              src="./assets/img/Ellipse 3.png"
+              src="../assets/img/Ellipse 3.png"
               alt="working person"
               class="eclipse-3"
             />
@@ -372,17 +369,17 @@
           </div>
           <div class="banner__subscribe_image-right">
             <img
-              src="./assets/img/Ellipse 4.png"
+              src="../assets/img/Ellipse 4.png"
               alt=" person working on his laptop"
               class="eclipse-4"
             />
             <img
-              src="./assets/img/Ellipse 5.png"
+              src="../assets/img/Ellipse 5.png"
               alt="graduation"
               class="eclipse-5"
             />
             <img
-              src="./assets/img/Ellipse 6.png"
+              src="../assets/img/Ellipse 6.png"
               alt="curious child"
               class="eclipse-6"
             />
@@ -390,12 +387,13 @@
         </div>
       </section>
     </main>
+
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__content">
           <a href="" class="footer__logo"
-            ><img src="./assets/img/Logo.png" alt="Eduvi Logo"
+            ><img src="../assets/img/Logo.png" alt="Eduvi Logo"
           /></a>
           <ul class="footer__data">
             <div class="footer__social">
@@ -471,6 +469,6 @@
         </div>
       </div>
     </footer>
-    <script src="./assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
   </body>
 </html>
