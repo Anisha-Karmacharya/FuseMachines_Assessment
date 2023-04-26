@@ -280,6 +280,7 @@ section {
   max-width: 968px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .footer__container {
   display: grid;
@@ -549,7 +550,6 @@ section {
 }
 .classes__features {
   display: flex;
-  justify-content: space-between;
   column-gap: 1em;
   padding: 0 1em;
 }
