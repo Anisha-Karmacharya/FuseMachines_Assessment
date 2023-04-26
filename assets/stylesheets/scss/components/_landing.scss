@@ -1,0 +1,107 @@
+@import "../utilities/variables";
+.landing{
+    margin: 1em;
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 1.5em;
+        h1{
+            font-weight: #{$font-bold};
+            color: #{$text-color};
+            font-size: #{$h1-font-size};
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        p{
+            font-size: #{$small-font-size};
+            color: #{$text-color-alt};
+            text-align: center;
+            line-height: 25px;
+            margin-bottom: 1em;
+        }
+    }
+    &__search{
+        background: #{$white};
+        display: flex;
+        justify-content: space-between;
+        border-radius: .5rem;
+        padding: 0.35em;
+    }
+    &__input{
+        width: 70%;
+        padding: 1.25rem;
+        background: none;
+        color: #{$text-color-alt};
+        border-left: 1px solid #0000002c;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+        outline: none;
+        margin-left: 0.75em;
+        &::placeholder{
+            color: #{$text-color-light};
+            font-family: var(--primary-font);
+            font-weight: #{$font-medium};
+        }
+    }
+    &__select{
+        font-family: var(--primary-font);
+        color: #{$text-color-light};
+        border: none;
+        padding: 1.25rem;
+        &:focus{
+            border: none;
+        }
+    }
+    .search__icon{
+        font-size: 20px;
+    }
+    // &__image{
+    //     display: flex;
+    //     flex-direction: column;
+    //     position: relative;
+    //     &--img{
+    //         margin-left: 1em;
+    //         padding: 1em;
+    //         .main__image{
+    //             position: relative;
+    //             transform: translateY(-1%);
+    //             // width: 95% !important;
+    //         }
+            
+    //     }
+    //     .object-1{
+    //         position: absolute;
+    //         bottom: -5%;
+    //         left: 70%;
+    //         z-index: 1;
+    //     }
+    //     .object-2{
+    //         position: absolute;
+    //         top: -10%;
+    //         right: 65%;
+            
+    //     }
+    //     .object-3{
+    //         position: absolute;
+    //         top: 15%;
+    //         left: 60%;
+    //         z-index: 1;
+    //     }
+    //     .object-4{
+    //         position: absolute;
+    //         bottom: 15%;
+    //         right: 60%;
+    //         z-index: 1;
+    //     }
+    //     .vector{
+    //         position: absolute;
+    //         top: 25%;
+    //         left: 5%;
+    //         width: 95%;
+            
+    //     }
+    // }
+}

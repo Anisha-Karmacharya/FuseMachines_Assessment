@@ -19,6 +19,7 @@
     color: #{$purple};  
     border: 1px solid #{$purple};
     border-radius: 5px;
+    padding: 0.75rem 1rem;
     &:hover{
       background-color: #{$purple};
       color: #{$white};
@@ -41,6 +42,12 @@
     background-color:transparent;
     color: #{$orange};  
     border: 1px solid #{$orange};
+  }
+  &__orange--tertiary {
+    background-color:#{$white};
+    color: #{$orange};  
+    padding: 0.75em 1.25em;
+    font-size: #{$smaller-font-size};
   }
   &__normal{
     border: none;

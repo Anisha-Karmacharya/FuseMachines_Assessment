@@ -139,11 +139,12 @@
     </header>
 
     <main class="main">
+      <!-- LANDING -->
       <section class="landing">
+        <div class="button button__orange--tertiary">
+          <p>Never Stop Learning</p>
+        </div>
         <div class="landing__info">
-          <div>
-            <p>Never Stop Learning</p>
-          </div>
           <h1>Grow up your skills by online courses with Eduvi</h1>
           <p>
             Eduvi is a Global training provider based across the UK that
@@ -151,42 +152,30 @@
             barriers togetting a degree.
           </p>
         </div>
-        <div class="landing__image">
-          <img src="./assets/img/1.png" alt="" />
-          <img src="./assets/img/2.png" alt="" />
-          <img src="./assets/img/3.png" alt="" />
-          <img src="./assets/img/4.png" alt="" />
-          <img
-            src="./assets/img/landing_image.png"
-            alt=""
-            class="landing__image--img"
+        <div class="landing__search">
+          <select class="form-control landing__select">
+            <option>Kindergarten</option>
+            <option>HighSchool</option>
+            <option>College</option>
+           </select>
+          <input
+            type="input"
+            placeholder="Class/Course"
+            class="landing__input"
           />
-          <svg
-            width="518"
-            height="647"
-            viewBox="0 0 518 647"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 62.1432C0 34.5746 0 20.7903 5.78448 12.8805C10.829 5.98262 18.5758 1.56341 27.0809 0.731874C36.8336 -0.22164 48.699 6.79396 72.4299 20.8252L494.43 270.339C503.022 275.419 507.318 277.959 510.439 281.477C513.202 284.59 515.286 288.244 516.56 292.207C518 296.685 518 301.675 518 311.657V599C518 615.802 518 624.202 514.73 630.62C511.854 636.265 507.265 640.854 501.62 643.73C495.202 647 486.802 647 470 647H48C31.1984 647 22.7976 647 16.3803 643.73C10.7354 640.854 6.14601 636.265 3.2698 630.62C0 624.202 0 615.802 0 599V62.1432Z"
-              fill="url(#paint0_linear_1_552)"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_1_552"
-                x1="259"
-                y1="72.0216"
-                x2="259"
-                y2="647"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#FF6652" stop-opacity="0" />
-                <stop offset="1" stop-color="#FF6652" />
-              </linearGradient>
-            </defs>
-          </svg>
+
+          <button class="button button__purple--primary"><i class='bx bx-search search__icon' ></i> Search</button>
         </div>
+        <!-- <div class="landing__image">
+          <div class="landing__image--img" style="background-image: url('./assets/img/landing__svg.svg'); width: 95%; border-radius: 25px;background-repeat: no-repeat;">
+            <img src="./assets/img/landing_image.png" alt="" class="main__image"/>
+          </div>
+          <img src="./assets/img/1.png" alt="" class="object-1" />
+          <img src="./assets/img/2.png" alt="" class="object-2" />
+          <img src="./assets/img/3.png" alt="" class="object-3" />
+          <img src="./assets/img/4.png" alt="" class="object-4" />
+          <img src="./assets/img/Vector.png" alt="" class="vector">
+        </div> -->
       </section>
       <!-- CLASSES -->
       <section class="classes">
@@ -204,19 +193,23 @@
         <div class="classes__image">
           <img src="./assets/img/video.png" alt="" />
           <div class="classes__image-extra">
-            <div class="receiver"><img src="./assets/img/student.png" alt="" /></div>
-            
-            <i class='bx bxs-phone button__call'></i>
-            <i class='bx bx-chevron-up button__arrow' ></i>
+            <div class="receiver">
+              <img src="./assets/img/student.png" alt="" />
+            </div>
+
+            <i class="bx bxs-phone button__call"></i>
+            <i class="bx bx-chevron-up button__arrow"></i>
           </div>
         </div>
         <div class="classes__features">
-          <div> <img src="./assets/img/audio.png" alt=""> Audio Classes</div>
-          <div> <img src="./assets/img/live.png" alt="">Live Classes</div>
-          <div> <img src="./assets/img/record.png" alt="">Recorded Classes</div>
+          <div><img src="./assets/img/audio.png" alt="" /> Audio Classes</div>
+          <div><img src="./assets/img/live.png" alt="" />Live Classes</div>
+          <div>
+            <img src="./assets/img/record.png" alt="" />Recorded Classes
+          </div>
         </div>
       </section>
-       <!-- LESSON -->
+      <!-- LESSON -->
       <section class="lesson">
         <div class="lesson__info">
           <h2>Qualified lessons for students</h2>
@@ -228,49 +221,59 @@
         </div>
         <div class="lesson__provided">
           <div class="lesson__provided_filter">
-            <button class=" button button__normal">Kindergarten</button>
-            <button class=" button button__orange--primary ">High School</button>
-            <button class=" button button__normal">College</button>
+            <button class="button button__normal">Kindergarten</button>
+            <button class="button button__orange--primary">High School</button>
+            <button class="button button__normal">College</button>
           </div>
           <div class="lesson__provided_cards">
             <div class="lesson__card">
-              <img src="./assets/img/grade.png" alt="grade" class="grade">
+              <img src="./assets/img/grade.png" alt="grade" class="grade" />
               <h4>Standard One</h4>
               <p>
                 Standard 1 is a foundation Standard that reflects 7 important
                 concepts...
               </p>
-              <button class="button button__purple--secondary">Class Details</button>
+              <button class="button button__purple--secondary">
+                Class Details
+              </button>
             </div>
             <div class="lesson__card">
-              <img src="./assets/img/grade.png" alt="grade" class="grade">
+              <img src="./assets/img/grade.png" alt="grade" class="grade" />
               <h4>Standard One</h4>
               <p>
                 Standard 1 is a foundation Standard that reflects 7 important
                 concepts...
               </p>
-              <button class="button button__purple--secondary">Class Details</button>
+              <button class="button button__purple--secondary">
+                Class Details
+              </button>
             </div>
             <div class="lesson__card">
-              <img src="./assets/img/grade.png" alt="grade" class="grade">
+              <img src="./assets/img/grade.png" alt="grade" class="grade" />
               <h4>Standard One</h4>
               <p>
                 Standard 1 is a foundation Standard that reflects 7 important
                 concepts...
               </p>
-              <button class="button button__purple--secondary">Class Details</button>
+              <button class="button button__purple--secondary">
+                Class Details
+              </button>
             </div>
             <div class="lesson__card">
-              <img src="./assets/img/grade.png" alt="grade" class="grade">
+              <img src="./assets/img/grade.png" alt="grade" class="grade" />
               <h4>Standard One</h4>
               <p>
                 Standard 1 is a foundation Standard that reflects 7 important
                 concepts...
               </p>
-              <button class="button button__purple--secondary">Class Details</button>
+              <button class="button button__purple--secondary">
+                Class Details
+              </button>
             </div>
           </div>
-          <button  class="button button__purple--primary">View More Classes</button>
+          <button class="button button__purple--primary">
+            View More Classes
+          </button>
         </div>
       </section>
       <!-- JOIN COURSES -->
@@ -279,22 +282,33 @@
           <div class="joinCourses__banner">
             <div class="button button__purple--tertiary">College level</div>
             <div class="joinCourses__info">
-              <h2>Don’t waste time in COVID-19 pandemic. Develop your skills.</h2>
-            <p>
-              High-definition video is video of higher resolution and quality
-              than standard-definition. While there is no standardized meaning
-              for high-definition, generally any video.
-            </p>
-            <button class="button button__purple--primary">Register Now</button>
+              <h2>
+                Don’t waste time in COVID-19 pandemic. Develop your skills.
+              </h2>
+              <p>
+                High-definition video is video of higher resolution and quality
+                than standard-definition. While there is no standardized meaning
+                for high-definition, generally any video.
+              </p>
+              <button class="button button__purple--primary">
+                Register Now
+              </button>
             </div>
-            
           </div>
           <div class="joinCourses__images">
-            <img src="./assets/img/student_with_laptop.png" alt="" class="mainImage"/>
-            <img src="./assets/img/html.png" alt="html icon" class="html"/>
-            <img src="./assets/img/php.png" alt="php icon" class="php"/>
-            <img src="./assets/img/java.png" alt="java icon" class="java"/>
-            <img src="./assets/img/pattern__purple.svg" alt="pattern" class="pattern__purple">
+            <img
+              src="./assets/img/student_with_laptop.png"
+              alt=""
+              class="mainImage"
+            />
+            <img src="./assets/img/html.png" alt="html icon" class="html" />
+            <img src="./assets/img/php.png" alt="php icon" class="php" />
+            <img src="./assets/img/java.png" alt="java icon" class="java" />
+            <img
+              src="./assets/img/pattern__purple.svg"
+              alt="pattern"
+              class="pattern__purple"
+            />
           </div>
         </div>
       </section>
@@ -310,16 +324,26 @@
             standard-definition. While there is no standardized meaning for
             high-definition, generally any video.
           </p>
-          <button class="button button__purple--primary">Career Information</button>
+          <button class="button button__purple--primary">
+            Career Information
+          </button>
         </div>
       </section>
       <!-- SUBSCRIBE SECTION -->
       <section class="subscribe">
         <div class="subscribe__container">
           <div class="subscribe__image-left">
-            <img src="./assets/img/Ellipse 1.png" alt="happy kid image" class="eclipse-1"/>
-            <img src="./assets/img/Ellipse 2.png" alt="boy" class="eclipse-2"/>
-            <img src="./assets/img/Ellipse 3.png" alt="working person" class="eclipse-3"/>
+            <img
+              src="./assets/img/Ellipse 1.png"
+              alt="happy kid image"
+              class="eclipse-1"
+            />
+            <img src="./assets/img/Ellipse 2.png" alt="boy" class="eclipse-2" />
+            <img
+              src="./assets/img/Ellipse 3.png"
+              alt="working person"
+              class="eclipse-3"
+            />
           </div>
           <div class="subscribe__info">
             <h2>Subscribe For Get Update Every New Courses</h2>
@@ -342,8 +366,16 @@
               alt=" person working on his laptop"
               class="eclipse-4"
             />
-            <img src="./assets/img/Ellipse 5.png" alt="graduation" class="eclipse-5"/>
-            <img src="./assets/img/Ellipse 6.png" alt="curious child" class="eclipse-6"/>
+            <img
+              src="./assets/img/Ellipse 5.png"
+              alt="graduation"
+              class="eclipse-5"
+            />
+            <img
+              src="./assets/img/Ellipse 6.png"
+              alt="curious child"
+              class="eclipse-6"
+            />
           </div>
         </div>
       </section>
