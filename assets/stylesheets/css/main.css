@@ -48,7 +48,7 @@ img {
 }
 
 section {
-  padding: 5.5rem 0 1rem;
+  padding: 2.5rem 0 1rem;
 }
 
 /**---Header height---**/
@@ -354,12 +354,54 @@ section {
   display: inline-flex;
   align-items: center;
   column-gap: 0.5rem;
+  border: none;
 }
 .button__primary--purple {
   background-color: #9C4DF4;
   color: #FFFFFF;
 }
 
+/**---Header height---**/
+/**---Font-Size---**/
+/**---Font-Weight---**/
+/**---Colors---**/
+/**---Z-Index---**/
+.joinAsTeacher {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 1em;
+}
+.joinAsTeacher__images {
+  position: relative;
+  order: 2;
+  left: 15%;
+  width: 300px;
+  background: linear-gradient(315deg, rgba(255, 102, 82, 0) 0%, #FF6652 100%);
+  border-radius: 255px 255px 0px 255px;
+}
+.joinAsTeacher__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+  padding: 1em;
+}
+.joinAsTeacher__info h2 {
+  color: #0A033C;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 55px;
+  text-align: center;
+}
+.joinAsTeacher__info p {
+  color: #5D5A6F;
+  text-align: center;
+  padding: 1em;
+  line-height: 30px;
+}
 /**---Header height---**/
 /**---Font-Size---**/
 /**---Font-Weight---**/

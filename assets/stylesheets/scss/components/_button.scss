@@ -9,6 +9,7 @@
   display: inline-flex;
   align-items: center;
   column-gap: 0.5rem;
+  border: none;
   &__primary--purple {
     background-color: #{$purple};
     color: #{$white};
