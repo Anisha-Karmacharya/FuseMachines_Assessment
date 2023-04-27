@@ -84,3 +84,27 @@
         }
     }
 }
+/* Tablets and desktops */
+@media screen and (min-width: 768px) {
+    .classes{
+        margin: 5em;
+        &__image{
+            display: flex;
+            justify-content: center;
+            width: 70%;
+            transform: translateX(20%);
+            &-extra{
+                display: flex;
+                column-gap: 0em;
+                .receiver{
+                    display: flex;
+                    justify-content: center;
+                    width: auto;
+                }
+            }
+        }
+        &__features{
+            justify-content: center;
+        }
+    }
+  }
