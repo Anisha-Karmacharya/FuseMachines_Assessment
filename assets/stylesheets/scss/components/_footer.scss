@@ -47,6 +47,23 @@
         color: #{$purple};
     }
 }
+@media screen and (min-width: 768px) {
+    .footer{
+        padding: 15px 40px;
+        &__container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 4.5em;
+        }
+        &__title{
+            margin-bottom: 1.5rem;
+        }
+        &__data{
+            row-gap: 0.85rem;
+           
+        }
+    } 
+}
 @media screen and (min-width: 992px){
     .footer{
         padding: 30px 80px;

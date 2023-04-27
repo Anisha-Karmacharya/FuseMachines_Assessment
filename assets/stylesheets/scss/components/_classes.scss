@@ -87,19 +87,20 @@
 /* Tablets and desktops */
 @media screen and (min-width: 768px) {
     .classes{
-        margin: 5em;
+        padding: 15px 80px;
+        margin: 3em;
         &__image{
             display: flex;
             justify-content: center;
-            width: 70%;
-            transform: translateX(20%);
+            width: 100%;
+            transform: translateX(-5%);
             &-extra{
                 display: flex;
                 column-gap: 0em;
                 .receiver{
                     display: flex;
                     justify-content: center;
-                    width: auto;
+                    // width: 20%;
                 }
             }
         }
