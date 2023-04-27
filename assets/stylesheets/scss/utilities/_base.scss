@@ -6,6 +6,14 @@
     src: url("../../fonts/Metropolis/Metropolis-Bold.otf");
 }
 @font-face {
+    font-family: 'Metropolis-Semi-Bold';
+    src: url("../../fonts/Metropolis/Metropolis-SemiBold.otf");
+}
+@font-face {
+    font-family: 'Metropolis-Medium';
+    src: url("../../../fonts/Metropolis/Metropolis-Medium.otf");
+}
+@font-face {
     font-family: 'Metropolis';
     src: url("../../fonts/Metropolis/Metropolis-Regular.otf");
 }
@@ -16,6 +24,9 @@
 :root{
     --primary-font: 'Metropolis';
     --secondary-font: 'Inter', sans-serif;
+    --bold-font:'Metropolis-Bold';
+    --semi-bold-font: 'Metropolis-Semi-Bold';
+    --medium-font: 'Metropolis-Medium'
 }
 
 
@@ -28,6 +39,10 @@
 html{
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+    }
 body{
     margin: #{$header-height} 0 0 0;
     font-family: var(--primary-font);

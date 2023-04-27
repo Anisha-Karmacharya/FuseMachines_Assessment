@@ -50,7 +50,7 @@
                 row-gap: .5rem;
                 .dropdown__link{
                     font-size: #{$smaller-font-size};
-                    font-weight: #{$font-semi-bold};
+                    font-family: var(--semi-bold-font);
                     color: #{$text-color-alt};
                     transition: color .3s;
                     &:hover{
@@ -84,7 +84,7 @@
     }
     &__link{
         color: #{$text-color};
-        font-weight: #{$font-semi-bold};
+        font-family: var(--semi-bold-font);
         padding: 1.25rem 1.5rem;
         display: flex;
         justify-content: space-between;
@@ -93,6 +93,9 @@
         &:hover{
             background-color: #{$purple-light};
         }
+    }
+    .active{
+        color: #{$purple};
     }
     &__right{
         & .bx-shopping-bag{

@@ -7,7 +7,7 @@
         align-items: center;
         padding: 1em 1.5em;
         h2{
-            font-weight: #{$font-bold};
+            font-family: var(--bold-font);
             color: #{$text-color};
             font-size: #{$h2-font-size};
             margin-bottom: 1.5rem;
@@ -76,15 +76,7 @@
         column-gap: 1em;
         padding: 0 1em;
         div{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            column-gap: 0.5em;
-            background-color: #{$white};
-            padding: 0.5em;
-            border-radius: 10px;
-            font-weight: #{$font-semi-bold};
-            font-size: #{$smaller-font-size};
+           
             img{
                 width: 44px;
                 height: 44px;

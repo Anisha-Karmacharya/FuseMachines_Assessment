@@ -1,0 +1,117 @@
+@import "../utilities/variables";
+.bookshop {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  h3{
+    font-size: #{$h3-font-size};
+    font-family: var(--semi-bold-font);
+    margin-bottom: 0.75em;
+  }
+  .more{
+    color: #{$purple};
+    font-family: var( --regular-font);
+    position: relative;
+    left: 85%;
+  }
+  &__filter{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 0 1em;
+  }
+  &__searchSort{
+    display: flex;
+    column-gap: 1em;
+    margin: 1em;
+    justify-content: space-between;
+  }
+  .landing__input{
+    padding: 0;
+    border: none;
+  }
+  .landing__select{
+    border-radius: 10px;
+  }
+  .button__purple--primary {
+    padding: 1em;
+    i{
+        font-size: #{$normal-font-size};
+        font-weight: #{$font-semi-bold};
+      }
+  }
+  &__general {
+    .book__cards{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        padding: 1em 1.25em;
+        column-gap: 1.5em;
+        .book__card{
+            &--image{
+                background-color: #{$white};
+                padding: 0.75em;
+                border-radius: 10px;
+                img{border-radius: 10px;}
+            }
+            .book__info{
+                padding: 1em 0;
+                &--title{
+                    font-size: #{$normal-font-size};
+                    font-family: var(--semi-bold-font);
+                    padding: 0.15em 0;
+                }
+                &--price{
+                    font-size: #{$small-font-size};
+                    font-family: var(--regular-font);
+                    font-weight: 600;
+                    color: #{$orange};
+                }
+            }
+        }
+    }
+  }
+  .books {
+    display: flex;
+    column-gap: 1em;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 1em 0;
+    
+    .book {
+      display: flex;
+      background-color: #{$white};
+      border-radius: 5px;
+      padding: 0.5em;
+      column-gap: 1em;
+        .book__info{
+            padding: 1em 0;
+            width: 200px;
+            &--title{
+                font-size: #{$normal-font-size};
+                font-family: var(--semi-bold-font);
+                margin-bottom: 0.5em;
+            }
+            &--price{
+                font-size: #{$small-font-size};
+                font-family: var(--regular-font);
+                font-weight: 600;
+                color: #{$orange};
+            }
+        }
+      &__img {
+        background-color: #{$white};
+        width: 80px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        img {
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+}

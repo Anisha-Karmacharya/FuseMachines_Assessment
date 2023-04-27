@@ -36,7 +36,9 @@
   &__orange--primary {
     background-color: #{$orange};
     color: #{$white};
-    letter-spacing: 0.5px;
+    font-family: var(--semi-bold-font);
+    font-size: #{$smaller-font-size};
+    // letter-spacing: 0.5px;
   }
   &__orange--secondary {
     background-color:transparent;
@@ -52,11 +54,21 @@
   &__normal{
     border: none;
     background-color: transparent;
-    font-weight: #{$font-bold};
+    font-family: var(--bold-font);
     color: #{$text-color};
     &:hover{
       background-color: #{$orange};
       color: #{$white};
     }
+  }
+  &__white{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 0.5em;
+    background-color: #{$white};
+    border-radius: 10px;
+    font-family: var(--semi-bold-font);
+    font-size: #{$smaller-font-size};
   }
 }
