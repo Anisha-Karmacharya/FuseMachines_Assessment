@@ -903,6 +903,7 @@ section {
   display: flex;
   column-gap: 1em;
   margin: 1em;
+  justify-content: space-between;
 }
 .bookshop .landing__input {
   padding: 0;
@@ -922,7 +923,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 200px);
   padding: 1em 1.25em;
-  column-gap: 1em;
+  column-gap: 1.5em;
 }
 .bookshop__general .book__cards .book__card--image {
   background-color: #FFFFFF;
