@@ -35,6 +35,10 @@
   margin: 0;
 }
 
+*:focus {
+  outline: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -461,7 +465,7 @@ section {
 /**---Colors---**/
 /**---Z-Index---**/
 .landing {
-  padding: 1em;
+  padding: 2.5rem;
 }
 .landing__info {
   display: flex;
@@ -1098,6 +1102,30 @@ section {
 .bookshop ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+@media screen and (min-width: 768px) {
+  .bookshop__searchSort .landing__search {
+    width: 100%;
+  }
+  .bookshop .more {
+    left: 90%;
+  }
+  .bookshop__popular, .bookshop__NewArrival {
+    padding: 1em;
+  }
+  .bookshop__general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bookshop__general .book__cards {
+    grid-template-columns: repeat(3, 225px);
+    padding: 1em;
+  }
+  .bookshop__general .book__cards > * {
+    margin-bottom: 1em;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
