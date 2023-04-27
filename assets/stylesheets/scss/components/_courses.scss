@@ -63,3 +63,44 @@
         }
     }
 }
+/* Tablets and desktops */
+@media screen and (min-width: 768px) {
+    .lesson{
+        &__info{
+            margin: 0 5em;
+            // margin-right: 391px;
+        }
+        &__provided{
+            &_cards{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);   
+                .lesson__card{
+                    background-color: #{$white};
+                    padding: 1em;
+                    border-radius: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .grade{
+                        margin-bottom: 8px;
+                    }
+                    h4{
+                        font-family: var(--semi-bold-font);
+                    }
+                    p{
+                        font-size: #{$smaller-font-size};
+                        color: #{$text-color-alt};
+                        margin: 10px 0;
+                        line-height: 25px;
+                        text-align: center;
+                    }
+                    .button__secondary--purple{
+                        padding: 0.5em 1em;
+                        font-size: #{$smaller-font-size};
+                    }
+                }
+            }
+        }
+    }
+  }

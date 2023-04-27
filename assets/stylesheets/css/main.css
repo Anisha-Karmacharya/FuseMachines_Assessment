@@ -68,6 +68,13 @@ section {
   padding: 2.5rem 0 1rem;
 }
 
+/* Tablets and desktops */
+@media screen and (min-width: 768px) {
+  section {
+    margin-top: 100px;
+    padding: 15px 80px;
+  }
+}
 /**---Header height---**/
 /**---Font-Size---**/
 /**---Font-Weight---**/
@@ -421,6 +428,7 @@ section {
   background-color: transparent;
   font-family: var(--bold-font);
   color: #0A033C;
+  font-size: 14px;
 }
 .button__normal:hover {
   background-color: #FF6652;
@@ -444,7 +452,7 @@ section {
 /**---Colors---**/
 /**---Z-Index---**/
 .landing {
-  margin: 1em;
+  padding: 1em;
 }
 .landing__info {
   display: flex;
@@ -680,6 +688,42 @@ section {
   font-size: 14px;
 }
 
+/* Tablets and desktops */
+@media screen and (min-width: 768px) {
+  .lesson__info {
+    margin: 0 5em;
+  }
+  .lesson__provided_cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .lesson__provided_cards .lesson__card {
+    background-color: #FFFFFF;
+    padding: 1em;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .lesson__provided_cards .lesson__card .grade {
+    margin-bottom: 8px;
+  }
+  .lesson__provided_cards .lesson__card h4 {
+    font-family: var(--semi-bold-font);
+  }
+  .lesson__provided_cards .lesson__card p {
+    font-size: 14px;
+    color: #5D5A6F;
+    margin: 10px 0;
+    line-height: 25px;
+    text-align: center;
+  }
+  .lesson__provided_cards .lesson__card .button__secondary--purple {
+    padding: 0.5em 1em;
+    font-size: 14px;
+  }
+}
 /**---Header height---**/
 /**---Font-Size---**/
 /**---Font-Weight---**/
