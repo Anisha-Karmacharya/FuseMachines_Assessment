@@ -954,13 +954,21 @@ section {
   scrollbar-width: none;
   padding: 1em 0;
 }
+.bookshop .books .book {
+  display: flex;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 0.5em;
+  column-gap: 1em;
+}
 .bookshop .books .book .book__info {
   padding: 1em 0;
+  width: 200px;
 }
 .bookshop .books .book .book__info--title {
   font-size: 18px;
   font-family: var(--semi-bold-font);
-  padding: 0.15em 0;
+  margin-bottom: 0.5em;
 }
 .bookshop .books .book .book__info--price {
   font-size: 16px;
@@ -970,9 +978,8 @@ section {
 }
 .bookshop .books .book__img {
   background-color: #FFFFFF;
-  width: 200px;
+  width: 80px;
   flex-shrink: 0;
-  padding: 0.5em;
   border-radius: 5px;
 }
 .bookshop .books .book__img img {

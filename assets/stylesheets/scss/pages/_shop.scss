@@ -77,13 +77,20 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
     padding: 1em 0;
+    
     .book {
+      display: flex;
+      background-color: #{$white};
+      border-radius: 5px;
+      padding: 0.5em;
+      column-gap: 1em;
         .book__info{
             padding: 1em 0;
+            width: 200px;
             &--title{
                 font-size: #{$normal-font-size};
                 font-family: var(--semi-bold-font);
-                padding: 0.15em 0;
+                margin-bottom: 0.5em;
             }
             &--price{
                 font-size: #{$small-font-size};
@@ -94,9 +101,8 @@
         }
       &__img {
         background-color: #{$white};
-        width: 200px;
+        width: 80px;
         flex-shrink: 0;
-        padding: 0.5em;
         border-radius: 5px;
         img {
           border-radius: 5px;
