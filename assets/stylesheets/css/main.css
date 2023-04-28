@@ -1508,6 +1508,45 @@ section {
   font-weight: 600;
   color: #FF6652;
 }
+.bookshop__general .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 0.75em;
+  margin-bottom: 1em;
+}
+.bookshop__general .pagination__left, .bookshop__general .pagination__right {
+  background-color: #F2E6FF;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+.bookshop__general .pagination__left i {
+  font-size: 20px;
+  color: #9C4DF4;
+}
+.bookshop__general .pagination__right {
+  background-color: #9C4DF4;
+}
+.bookshop__general .pagination__right i {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.bookshop__general .pagination__page p {
+  color: #0A033C;
+  font-weight: 500;
+}
+.bookshop__general .pagination__page .current {
+  border-radius: 6px;
+  display: inline-flex;
+  background-color: #FFFFFF;
+  color: #0A033C;
+  padding: 0.75em 1em;
+}
 .bookshop .books {
   display: flex;
   column-gap: 1em;
@@ -1577,6 +1616,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .bookshop__general .book__cards {
     grid-template-columns: repeat(3, auto);
