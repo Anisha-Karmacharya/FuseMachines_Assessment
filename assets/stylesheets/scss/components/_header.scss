@@ -142,21 +142,25 @@
         }
     }
 }
+// 
+
 // FOR LARGE DEVICE
 @media screen and (min-width: 1118px){
     .header{
         padding: 15px 80px;
     }
     .nav{
-        height: calc(#{$header-height}+1rem);
+        // height: calc(#{$header-height}+1rem);
         display: flex;
         justify-content: space-between;
+        align-items: center;
         &__menu{
             display: flex;
             justify-content: space-between;
+            
         }
         &__link{
-            padding: 1.25rem 1rem;
+            padding: 1rem 0.5rem;
             &:hover{
                 background-color: transparent;
                 color: #{$purple};
@@ -167,11 +171,11 @@
         }
         &__list{
             display: flex;
-            
+            column-gap: 0.25rem;
             height: 100%;
         }
         &__right{
-            margin-left: 3.5em;
+            margin-left: 1.35rem;
         }
         .dropdown{
             &__button{
@@ -224,6 +228,14 @@
                     cursor: initial;
                 }
             }
+            
+        }
+    }
+}
+@media screen and (min-width: 1400px){
+    .nav{
+        &__menu{
+            column-gap: 4.5em;
             
         }
     }

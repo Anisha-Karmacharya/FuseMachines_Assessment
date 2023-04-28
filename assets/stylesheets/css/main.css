@@ -217,16 +217,16 @@ section {
     padding: 15px 80px;
   }
   .nav {
-    height: calc(3.5rem+1rem);
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .nav__menu {
     display: flex;
     justify-content: space-between;
   }
   .nav__link {
-    padding: 1.25rem 1rem;
+    padding: 1rem 0.5rem;
   }
   .nav__link:hover {
     background-color: transparent;
@@ -237,10 +237,11 @@ section {
   }
   .nav__list {
     display: flex;
+    column-gap: 0.25rem;
     height: 100%;
   }
   .nav__right {
-    margin-left: 3.5em;
+    margin-left: 1.35rem;
   }
   .nav .dropdown__button {
     column-gap: 0.25rem;
@@ -291,6 +292,11 @@ section {
     opacity: 1;
     pointer-events: initial;
     cursor: initial;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .nav__menu {
+    column-gap: 4.5em;
   }
 }
 /**---Header height---**/
@@ -363,21 +369,32 @@ section {
     row-gap: 0.85rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1100px) {
+  .footer {
+    padding: 15px 40px;
+  }
+  .footer__container {
+    column-gap: 3em;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .footer__content {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 1300px) {
   .footer {
     padding: 30px 80px;
   }
   .footer__container {
-    display: grid;
-    width: 100vw;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 4.5em;
+    column-gap: 6.5em;
   }
-  .footer__title {
-    margin-bottom: 1.5rem;
+  .footer__content {
+    width: 150px;
   }
-  .footer__data {
-    row-gap: 1.5rem;
+}
+@media screen and (min-width: 140px) {
+  .footer__content {
+    width: 180px;
   }
 }
 /**---Header height---**/
@@ -558,6 +575,7 @@ section {
   box-shadow: 0px 50px 170px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   position: relative;
+  z-index: 2;
 }
 .classes__image img {
   border-radius: 15px;
@@ -602,17 +620,32 @@ section {
 }
 .classes__features {
   display: flex;
-  column-gap: 1em;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
   padding: 0 1em;
 }
 .classes__features div img {
   width: 44px;
   height: 44px;
 }
+.classes .pattern__orange {
+  position: absolute;
+  z-index: 1;
+  top: 90%;
+  left: 80%;
+  width: 180px;
+  height: 185px;
+}
 
 /* Tablets and desktops */
 @media screen and (min-width: 768px) {
   .classes {
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    justify-content: center;
+    align-items: center;
     padding: 15px 80px;
     margin: 3em;
   }
@@ -632,6 +665,38 @@ section {
   }
   .classes__features {
     justify-content: center;
+  }
+  .classes .pattern__orange {
+    top: 111%;
+    left: 66%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .classes .pattern__orange {
+    top: 95%;
+    left: 75%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .classes__image {
+    transform: translateX(-1%);
+  }
+  .classes .pattern__orange {
+    top: 95%;
+    left: 75%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .classes__image {
+    width: max-content;
+    transform: translateX(1%);
+  }
+  .classes__image-extra .receiver {
+    width: max-content;
+  }
+  .classes .pattern__orange {
+    top: 87%;
+    left: 78%;
   }
 }
 /**---Header height---**/
@@ -687,14 +752,20 @@ section {
   margin-bottom: 8px;
 }
 .lesson__provided_cards .lesson__card h4 {
-  font-family: var(--semi-bold-font);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 25px;
+  /* identical to box height */
+  text-align: center;
 }
 .lesson__provided_cards .lesson__card p {
   font-size: 14px;
   color: #5D5A6F;
   margin: 10px 0;
-  line-height: 25px;
   text-align: center;
+  line-height: 30px;
+  width: 225px;
+  font-weight: 400;
 }
 .lesson__provided_cards .lesson__card .button__secondary--purple {
   padding: 0.5em 1em;
@@ -714,8 +785,35 @@ section {
   }
   .lesson__provided_cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     padding: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .lesson__provided_cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .lesson__provided_cards .lesson__card {
+    padding: 2em 1.75em;
+  }
+}
+@media screen and (min-width: 110px) {
+  .lesson__provided_cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .lesson__provided_cards .lesson__card {
+    padding: 2em 1.75em;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .lesson__provided > * {
+    margin-bottom: 2em;
+  }
+  .lesson__provided_cards {
+    gap: 2em;
+  }
+  .lesson__provided_cards .lesson__card {
+    height: 350px;
+    width: 300px;
   }
 }
 /**---Header height---**/
@@ -818,6 +916,71 @@ section {
     width: 125px;
   }
 }
+@media screen and (min-width: 992px) {
+  .joinCourses__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding: 3em 0;
+  }
+  .joinCourses__info {
+    align-items: flex-start;
+  }
+  .joinCourses__info h2 {
+    width: 442px;
+    text-align: left;
+  }
+  .joinCourses__info p {
+    text-align: left;
+  }
+  .joinCourses__images .mainImage {
+    transform: translateY(-32.5%);
+    left: 0;
+  }
+  .joinCourses__images .html {
+    top: -35%;
+    left: -5%;
+  }
+  .joinCourses__images .java {
+    top: -60%;
+    left: 70%;
+  }
+  .joinCourses__images .php {
+    top: -30%;
+    left: 60%;
+  }
+  .joinCourses__images .pattern__purple {
+    top: -40%;
+    left: 25%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .joinCourses__container {
+    margin: 1rem 2.5rem;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .joinCourses__images .mainImage {
+    transform: translateY(-36.5%);
+    left: 0;
+  }
+  .joinCourses__images .html {
+    top: -25%;
+    left: -5%;
+  }
+  .joinCourses__images .java {
+    top: -50%;
+    left: 70%;
+  }
+  .joinCourses__images .php {
+    top: -25%;
+    left: 60%;
+  }
+  .joinCourses__images .pattern__purple {
+    top: -40%;
+    left: 30%;
+  }
+}
 /**---Header height---**/
 /**---Font-Size---**/
 /**---Font-Weight---**/
@@ -836,6 +999,7 @@ section {
   width: 300px;
   background: linear-gradient(315deg, rgba(255, 102, 82, 0) 0%, #FF6652 100%);
   border-radius: 255px 255px 0px 255px;
+  background-clip: content-box;
 }
 .joinAsTeacher__info {
   display: flex;
@@ -870,9 +1034,35 @@ section {
   .joinAsTeacher__info {
     padding: 0;
     order: 2;
+    align-items: flex-start;
   }
   .joinAsTeacher__info h2 {
     width: 400px;
+    text-align: left;
+  }
+  .joinAsTeacher__info p {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 992px) {
+  .joinAsTeacher {
+    padding: 1em 6.5em;
+  }
+  .joinAsTeacher__info h2 {
+    width: 100%;
+  }
+  .joinAsTeacher__images {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+  }
+  .joinAsTeacher__images > img {
+    margin-left: 5em;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .joinAsTeacher__images {
+    width: 500px;
   }
 }
 /**---Header height---**/
@@ -985,6 +1175,62 @@ section {
   margin-bottom: 1.5rem;
 }
 
+@media screen and (min-width: 992px) {
+  .banner__subscribe_container {
+    padding: 6em 1em;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .banner__subscribe {
+    margin: 2.5em;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .banner__subscribe_container {
+    padding: 6em 20em;
+  }
+  .banner__subscribe_image-left .eclipse {
+    width: 75px;
+    height: 75px;
+  }
+  .banner__subscribe_image-left .eclipse-1 {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+  }
+  .banner__subscribe_image-left .eclipse-2 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+  }
+  .banner__subscribe_image-left .eclipse-3 {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+  }
+  .banner__subscribe_image-right .eclipse {
+    width: 75px;
+    height: 75px;
+  }
+  .banner__subscribe_image-right .eclipse-4 {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+  }
+  .banner__subscribe_image-right .eclipse-5 {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+  }
+  .banner__subscribe_image-right .eclipse-6 {
+    position: absolute;
+    top: 70%;
+    right: 10%;
+  }
+  .banner__subscribe_info > * {
+    margin-bottom: 1em;
+  }
+}
 /**---Header height---**/
 /**---Font-Size---**/
 /**---Font-Weight---**/
@@ -1004,7 +1250,7 @@ section {
   color: #9C4DF4;
   font-family: var(--regular-font);
   position: relative;
-  left: 85%;
+  left: 80%;
 }
 .bookshop__filter {
   display: flex;
@@ -1034,7 +1280,7 @@ section {
 }
 .bookshop__general .book__cards {
   display: grid;
-  grid-template-columns: repeat(2, 200px);
+  grid-template-columns: repeat(2, auto);
   padding: 1em 1.25em;
   column-gap: 1.5em;
 }
@@ -1099,6 +1345,17 @@ section {
 .bookshop .books .book__img img {
   border-radius: 5px;
 }
+.bookshop .review {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5em;
+  padding-right: 0.5em;
+}
+.bookshop .review .bxs-star {
+  padding: 2px;
+  color: #FFC107;
+}
 .bookshop ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
@@ -1120,11 +1377,59 @@ section {
     align-items: center;
   }
   .bookshop__general .book__cards {
-    grid-template-columns: repeat(3, 225px);
+    grid-template-columns: repeat(3, auto);
     padding: 1em;
   }
   .bookshop__general .book__cards > * {
     margin-bottom: 1em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bookshop {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(6, auto);
+    width: auto;
+  }
+  .bookshop .more {
+    left: 0;
+  }
+  .bookshop__header {
+    grid-column: 2/7;
+  }
+  .bookshop__popular {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+  }
+  .bookshop__NewArrival {
+    grid-column: 1/2;
+    grid-row: 3/7;
+  }
+  .bookshop__general {
+    grid-column: 2/7;
+    grid-row: 2/7;
+  }
+  .bookshop .books {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .bookshop__header {
+    margin: 1em 1.5em;
+  }
+  .bookshop__popular {
+    white-space: nowrap;
+  }
+  .bookshop__general .book__cards {
+    column-gap: 2.5rem;
+  }
+  .bookshop__general .book__cards .book__card--image img {
+    width: 275px;
+    object-fit: contain;
   }
 }
 
