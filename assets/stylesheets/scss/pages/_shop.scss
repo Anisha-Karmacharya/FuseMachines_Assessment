@@ -213,3 +213,24 @@
     }
   }
 }
+@media screen and (min-width: 1800px) {
+  // .shop{
+      
+  // }
+  .bookshop {
+    padding: 1em 6.5em;
+    &__general {
+      .book__cards {
+        column-gap: 4rem;
+        .book__card {
+          &--image {
+            img {
+              width: 350px;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -240,3 +240,14 @@
         }
     }
 }
+@media screen and (min-width: 1800px) {
+    .header{
+        padding: 1.5em 7em;
+    }
+    .nav{
+        &__menu{
+            column-gap: 15em;
+            
+        }
+    }
+}

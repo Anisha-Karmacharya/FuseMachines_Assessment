@@ -190,3 +190,16 @@
     }
 
 }
+@media screen and (min-width: 1800px) {
+    .banner {
+        &__subscribe{
+            margin: 1.75em 7em;
+            &_container{
+                padding: 7em 30em;
+            }
+        
+        }
+    
+        
+    }
+  }
