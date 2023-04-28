@@ -26,7 +26,9 @@
         <!-- NAV MENU -->
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
-            <li class="nav__item"><a href="./pages/shop.html" class="nav__link">Shop</a></li>
+            <li class="nav__item">
+              <a href="./pages/shop.html" class="nav__link">Shop</a>
+            </li>
             <!-- NAV DROPDOWN -->
             <li class="nav__item dropdown__item">
               <div class="nav__link dropdown__button">
@@ -166,14 +168,27 @@
             />
 
             <button class="button button__purple--primary">
-              <i class="bx bx-search search__icon"></i> <p>Search</p>
+              <i class="bx bx-search search__icon"></i>
+              <p>Search</p>
             </button>
           </div>
         </div>
 
-        <div class="landing__image" style="background-image: url('./assets/img/landing__svg.svg'); width: 95%; border-radius: 25px;background-repeat: no-repeat;">
-          <div class="landing__image--img" >
-            <img src="./assets/img/landing_image.png" alt="" class="main__image"/>
+        <div
+          class="landing__image"
+          style="
+            background-image: url('./assets/img/landing__svg.svg');
+            width: 95%;
+            border-radius: 25px;
+            background-repeat: no-repeat;
+          "
+        >
+          <div class="landing__image--img">
+            <img
+              src="./assets/img/landing_image.png"
+              alt=""
+              class="main__image"
+            />
           </div>
           <img src="./assets/img/1.png" alt="" class="object-1" />
           <img src="./assets/img/2.png" alt="" class="object-2" />
@@ -196,7 +211,7 @@
         </div>
         <div class="classes__image">
           <img src="./assets/img/video.png" alt="" />
-          
+
           <div class="classes__image-extra">
             <div class="receiver">
               <img src="./assets/img/student.png" alt="" />
@@ -207,13 +222,17 @@
           </div>
         </div>
         <div class="classes__features">
-          <div class="button__white"><img src="./assets/img/audio.png" alt="" /> Audio Classes</div>
-          <div  class="button__white"><img src="./assets/img/live.png" alt="" />Live Classes</div>
-          <div  class="button__white">
+          <div class="button__white">
+            <img src="./assets/img/audio.png" alt="" /> Audio Classes
+          </div>
+          <div class="button__white">
+            <img src="./assets/img/live.png" alt="" />Live Classes
+          </div>
+          <div class="button__white">
             <img src="./assets/img/record.png" alt="" />Recorded Classes
           </div>
         </div>
-        <img src="./assets/img/pattern__orange.svg" class="pattern__orange"/>
+        <img src="./assets/img/pattern__orange.svg" class="pattern__orange" />
       </section>
       <!-- LESSON -->
       <section class="lesson">
@@ -221,8 +240,8 @@
           <h2>Qualified lessons for students</h2>
           <p>
             A lesson or class is a structured period of time where learning is
-            intended to occur. It <br/>involves one or more students being taught by
-            a teacher or instructor.
+            intended to occur. It <br />involves one or more students being
+            taught by a teacher or instructor.
           </p>
         </div>
         <div class="lesson__provided">
@@ -389,11 +408,7 @@
               alt="happy kid image"
               class="eclipse-1"
             />
-            <img
-              src="./assets/img/Ellipse 2.png"
-              alt="boy"
-              class="eclipse-2"
-            />
+            <img src="./assets/img/Ellipse 2.png" alt="boy" class="eclipse-2" />
             <img
               src="./assets/img/Ellipse 3.png"
               alt="working person"
@@ -516,6 +531,77 @@
         </div>
       </div>
     </footer>
+    <!-- LOGIN OVERLAY -->
+    <div class="overlay">
+      <div class="login" id="login">
+        <div class="login__container" id="login-container">
+          <div class="login__header">
+            <img src="../assets/img/Logo.png" alt="Eduvi logo" class="logo" />
+            <i class="bx bx-x" id="close-modal"></i>
+          </div>
+          <div class="login__content">
+            <div class="login__image">
+              <h2>Welcome to Eduvi Online Learning Platform</h2>
+              <img src="../assets/img/Login.png" alt="" class="login--img" />
+            </div>
+            <div class="line"></div>
+            <div class="login__form">
+              <div class="login__google">
+                <div>
+                  <i class="bx bxl-google-plus"></i>
+                  <button>Sign In with google</button>
+                </div>
+
+                <p><span> Or signin with your email</span></p>
+              </div>
+              <form id="login-form" class="login__email">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <div class="input-container">
+                    <i class="bx bx-envelope input-icon"></i>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+                  <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <div class="input-container">
+                    <i class="bx bx-lock-alt input-icon"></i>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      placeholder="Enter your password"
+                    />
+                    <i class="bx bx-show input-icon toggle-password"></i>
+                  </div>
+                  <span class="error-message" id="password-error"></span>
+                </div>
+                <div class="form-group user-preference">
+                  <label
+                    ><input
+                      type="checkbox"
+                      id="remember-me"
+                      class="checkbox"
+                    />Keep me signedin</label
+                  >
+                  <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="button button__purple--primary">
+                  Sign In
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- OVERLAY ENDS -->
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
