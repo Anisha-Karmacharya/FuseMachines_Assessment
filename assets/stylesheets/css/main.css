@@ -1361,6 +1361,18 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
+  position: relative;
+}
+.banner__header P {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-size: 16px;
+  color: rgba(10, 3, 60, 0.4);
+  font-weight: 500;
+}
+.banner__header P span {
+  color: #9C4DF4;
 }
 .banner__header h2 {
   font-family: var(--bold-font);
@@ -1423,6 +1435,12 @@ section {
   }
   .banner__subscribe_info > * {
     margin-bottom: 1em;
+  }
+  .banner__header {
+    margin: 7em 3em 1.5em 3em;
+  }
+  .banner__header_container {
+    padding: 8em 16em;
   }
 }
 @media screen and (min-width: 1800px) {
@@ -1660,6 +1678,9 @@ section {
   }
 }
 @media screen and (min-width: 1300px) {
+  .bookshop {
+    padding: 1em 2.5em;
+  }
   .bookshop__header {
     margin: 1em 1.5em;
   }
