@@ -1834,22 +1834,30 @@ section {
   border: 1px solid #dedde4;
   width: 340px;
   border-radius: 10px;
+  background-color: white;
 }
 .overlay .login__email .input-container > i {
   color: #5D5A6F;
   padding: 0.5em;
 }
+.overlay .login__email .input-container #email {
+  width: 250px;
+}
 .overlay .login__email .input-container > input {
   border: none;
   color: #5D5A6F;
   padding: 0.5em;
+  font-family: var(--primary-font);
 }
 .overlay .login__email .input-container > input::placeholder {
   color: #5D5A6F;
   font-family: var(--primary-font);
 }
-.overlay .login__email .input-container > input:focus {
-  outline: none;
+.overlay .login__email .input-container > input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px white inset;
+}
+.overlay .login__email .input-container > input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px white inset;
 }
 .overlay .login__email .input-container .toggle-password {
   cursor: pointer;
@@ -1893,6 +1901,13 @@ section {
 .overlay .login .line {
   width: 1px;
   background: linear-gradient(180deg, rgba(10, 3, 60, 0) 0%, #0a033c 51.56%, rgba(10, 3, 60, 0) 100%);
+}
+.overlay .login .error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  font-family: var(--primary-font);
+  font-weight: 600;
 }
 
 .show-modal {

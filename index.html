@@ -10,6 +10,13 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <meta property="og:title" content="Eduvi - Never Stop Learning" />
+    <meta property="og:site_name" content="Eduvi">
+    <meta property="og:description" content="Eduvi is a Global training provider based across the UK that specialises in accredited and bespoke training courses. We crush the barriers togetting a degree." />
+    <!-- <meta property="og:image" content="https://example.com/images/fuse-assessment-preview.jpg" />
+    <meta property="og:url" content="https://example.com/fuse-assessment" /> -->
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
   </head>
   <body>
     <header class="header">
@@ -554,7 +561,7 @@
 
                 <p><span> Or signin with your email</span></p>
               </div>
-              <form id="login-form" class="login__email">
+              <form id="login-form" class="login__email" onsubmit="return validateForm()">
                 <div class="form-group">
                   <label for="email">Email</label>
                   <div class="input-container">
@@ -583,18 +590,10 @@
                   <span class="error-message" id="password-error"></span>
                 </div>
                 <div class="form-group user-preference">
-                  <label
-                    ><input
-                      type="checkbox"
-                      id="remember-me"
-                      class="checkbox"
-                    />Keep me signedin</label
-                  >
+                  <label><input type="checkbox" id="remember-me" class="checkbox" />Keep me signed in</label>
                   <a href="#">Forgot Password?</a>
                 </div>
-                <button type="submit" class="button button__purple--primary">
-                  Sign In
-                </button>
+                <button type="submit" class="button button__purple--primary">Sign In</button>
               </form>
             </div>
           </div>

@@ -45,3 +45,23 @@ closeModal.addEventListener("click", ()=> {
     modal.classList.remove('show-modal');
     modal.classList.add("hide-modal")
 })
+
+// FORM VALIDATION
+function validateForm() {
+  var email = document.forms["login-form"]["email"].value;
+  var password = document.forms["login-form"]["password"].value;
+
+  if (email == "") {
+    document.getElementById("email-error").innerHTML = "*Email is required";
+    return false;
+  } else {
+    document.getElementById("email-error").innerHTML = "";
+  }
+
+  if (password == "") {
+    document.getElementById("password-error").innerHTML = "*Password is required";
+    return false;
+  } else {
+    document.getElementById("password-error").innerHTML = "";
+  }
+}
