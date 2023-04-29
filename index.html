@@ -554,7 +554,7 @@
 
                 <p><span> Or signin with your email</span></p>
               </div>
-              <form id="login-form" class="login__email">
+              <form id="login-form" class="login__email" onsubmit="return validateForm()">
                 <div class="form-group">
                   <label for="email">Email</label>
                   <div class="input-container">
@@ -583,18 +583,10 @@
                   <span class="error-message" id="password-error"></span>
                 </div>
                 <div class="form-group user-preference">
-                  <label
-                    ><input
-                      type="checkbox"
-                      id="remember-me"
-                      class="checkbox"
-                    />Keep me signedin</label
-                  >
+                  <label><input type="checkbox" id="remember-me" class="checkbox" />Keep me signed in</label>
                   <a href="#">Forgot Password?</a>
                 </div>
-                <button type="submit" class="button button__purple--primary">
-                  Sign In
-                </button>
+                <button type="submit" class="button button__purple--primary">Sign In</button>
               </form>
             </div>
           </div>
