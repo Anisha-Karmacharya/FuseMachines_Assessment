@@ -1,0 +1,177 @@
+@import "../utilities/variables";
+.classes{
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 1.5em;
+        h2{
+            font-family: var(--bold-font);
+            color: #{$text-color};
+            font-size: #{$h2-font-size};
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        p{
+            font-size: #{$small-font-size};
+            color: #{$text-color-alt};
+            text-align: center;
+            line-height: 25px;
+            margin-bottom: 1em;
+        }
+    }
+    &__image{
+        background-color: #{$white};
+        padding: 0.75em;
+        margin: 1em;
+        box-shadow: 0px 50px 170px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        position: relative;
+        z-index: 2;
+        img{
+            border-radius: 15px;
+           
+        }
+        &-extra{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 4em;
+            .receiver{
+                position: absolute;
+                background-color: #{$white};
+                padding: 8px;
+                box-shadow: 0px 50px 170px rgba(0, 0, 0, 0.05);
+                border-radius: 5px;
+                bottom: 10%;
+                left: 5%;
+                width: 20%;
+                img{
+                    border-radius: 5px;
+                }
+            }
+            .button__call{
+                position: absolute;
+                background-color: #{$orange};
+                color: #{$white};
+                padding: 8px;
+                border-radius: 25px;
+                bottom: 10%;
+                left: 45%;
+                width: 35px;
+            }
+            .button__arrow{
+                position: absolute;
+                background-color: #{$purple};
+                color: #{$white};
+                padding: 8px;
+                border-radius: 25px;
+                bottom: 10%;
+                right: 5%;
+                width: 35px;
+            }
+        }
+    }
+    &__features{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
+        padding: 0 1em;
+        div{
+           
+            img{
+                width: 44px;
+                height: 44px;
+            }
+        }
+    }
+    .pattern__orange{
+        position: absolute;
+        z-index: 1;
+        transform: translateY(-265%);
+        left: 80%;
+        width: 20%;
+        height: 20%;
+    }
+}
+/* Tablets and desktops */
+@media screen and (min-width: 768px) {
+    .classes{
+        display: flex;
+        flex-direction: column;
+        /* align-content: center; */
+        justify-content: center;
+        align-items: center;
+        padding: 15px 80px;
+        margin: 3em;
+        &__image{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            &-extra{
+                display: flex;
+                column-gap: 0em;
+                .receiver{
+                    display: flex;
+                    justify-content: center;
+                    // width: 20%;
+                }
+            }
+        }
+        &__features{
+            justify-content: center;
+        }
+        .pattern__orange{
+            transform: translateY(-5%);
+            left: 66%;
+        
+        }
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .classes{
+        .pattern__orange{
+            transform: translateY(-40%);
+            left: 75%;
+        
+        }
+    }
+  }
+  @media screen and (min-width: 1100px) {
+    .classes{
+        &__image{
+            transform: translateX(-1%);
+        }
+        .pattern__orange{
+            transform: translateY(-80%);
+            left: 75%;
+        
+        }
+    }
+  }
+  @media screen and (min-width: 1300px) {
+    .classes{
+        &__image{
+           width: max-content;
+           transform: translateX(1%);
+           &-extra{
+            .receiver{
+                width: max-content;
+            }
+        }
+        }
+        .pattern__orange{
+            transform: translateY(-100%);
+            left: 75%;
+        }
+    }
+  }
+  @media screen and (min-width: 1800px) {
+    .classes{
+        .pattern__orange{
+            transform: translateY(-95%);
+            left: 66%;
+        }
+    }
+  }

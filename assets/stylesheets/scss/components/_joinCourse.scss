@@ -1,0 +1,181 @@
+@import "../utilities/variables";
+.joinCourses {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 1em;
+    background-color: #{$banner-background-light};
+    border-radius: 20px;
+  }
+  &__banner {
+    padding: 1.15em;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    h2 {
+      font-size: #{$h2-font-size};
+      text-align: center;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: #{$small-font-size};
+      text-align: center;
+      line-height: 25px;
+      margin-bottom: 1em;
+    }
+  }
+  &__images {
+    position: relative;
+
+    .mainImage {
+      position: relative;
+      z-index: 2;
+    }
+    .html {
+      position: absolute;
+      top: 5%;
+      left: -10%;
+      z-index: 2;
+    }
+    .java {
+      position: absolute;
+      top: -15%;
+      left: 65%;
+    }
+    .php {
+      position: absolute;
+      top: 10%;
+      left: 55%;
+    }
+    .pattern__purple {
+      position: absolute;
+      top: -7%;
+      left: 15%;
+      width: 125px;
+    }
+  }
+}
+// For tablets
+@media screen and (min-width: 768px) {
+  .joinCourses {
+    &__images {
+      position: relative;
+      top: 45%;
+      .mainImage {
+        position: relative;
+        z-index: 2;
+        left: 6.5%;
+      }
+      .html {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        z-index: 2;
+      }
+      .java {
+        position: absolute;
+        top: -15%;
+        left: 65%;
+        z-index: 2;
+      }
+      .php {
+        position: absolute;
+        top: 20%;
+        left: 65%;
+        z-index: 2;
+      }
+      .pattern__purple {
+        position: absolute;
+        top: -5%;
+        left: 35%;
+        width: 125px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .joinCourses {
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-items: center;
+      padding: 3em 0;
+    }
+    &__info {
+      align-items: flex-start;
+      h2{
+        width: 442px;
+        text-align: left;
+      }
+      p{
+        text-align: left;
+      }
+    }
+    &__images {
+      .mainImage {
+        transform: translateY(-32.5%);
+        left: 0;
+      }
+      .html {
+        top: -35%;
+        left: -5%;
+      }
+      .java {
+        top: -60%;
+        left: 70%;
+      }
+      .php {
+        top: -30%;
+        left: 60%;
+      }
+      .pattern__purple {
+        top: -40%;
+        left: 25%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1100px) {
+  .joinCourses {
+    &__container {
+      margin: 1rem 2.5rem;
+    }
+  }
+}
+@media screen and (min-width: 1300px) {
+  .joinCourses {
+    &__images {
+      .mainImage {
+        transform: translateY(-36.5%);
+        left: 0;
+      }
+      .html {
+        top: -25%;
+        left: -5%;
+      }
+      .java {
+        top: -50%;
+        left: 70%;
+      }
+      .php {
+        top: -25%;
+        left: 60%;
+      }
+      .pattern__purple {
+        top: -40%;
+        left: 30%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1800px) {
+  .joinCourses {
+      padding: 1.75em 7em;
+  }
+}

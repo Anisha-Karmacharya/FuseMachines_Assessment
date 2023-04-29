@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fusemachine-Assessment</title>
+    <link rel="stylesheet" href="../assets/stylesheets/css/main.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__data">
+          <a href="/index.html" class="nav__logo"
+            ><img src="../assets/img/Logo.png" alt="Eduvi logo"
+          /></a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-menu nav__toggle-menu"></i>
+            <i class="bx bx-x nav__toggle-close"></i>
+          </div>
+        </div>
+        <!-- NAV MENU -->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./shop.html" class="nav__link active">Shop</a>
+            </li>
+            <!-- NAV DROPDOWN -->
+            <li class="nav__item dropdown__item">
+              <div class="nav__link dropdown__button">
+                For Kindergarten
+                <i class="bx bx-chevron-down dropdown__arrow"></i>
+              </div>
+              <div class="dropdown__container">
+                <div class="dropdown__content">
+                  <div class="dropdown__group">
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link">Course 1</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Course 2</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Course 3</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav__item dropdown__item">
+              <div class="nav__link dropdown__button">
+                For HighSchool
+                <i class="bx bx-chevron-down dropdown__arrow"></i>
+              </div>
+              <div class="dropdown__container">
+                <div class="dropdown__content">
+                  <div class="dropdown__group">
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link">Course 1</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Course 2</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Course 3</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item dropdown__item">
+              <div class="nav__link dropdown__button">
+                For College <i class="bx bx-chevron-down dropdown__arrow"></i>
+              </div>
+              <div class="dropdown__container">
+                <div class="dropdown__content">
+                  <div class="dropdown__group">
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link">Course 1</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Course 2</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Course 3</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item dropdown__item">
+              <div class="nav__link dropdown__button">
+                Courses <i class="bx bx-chevron-down dropdown__arrow"></i>
+              </div>
+              <div class="dropdown__container">
+                <div class="dropdown__content">
+                  <div class="dropdown__group">
+                    <ul class="dropdown__list">
+                      <li>
+                        <a href="#" class="dropdown__link">Course 1</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Course 2</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown__link">Course 3</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="nav__right">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link"
+                  >Cart <i class="bx bx-shopping-bag"></i
+                ></a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link"
+                  >My Account <i class="bx bx-user-circle"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="shop">
+      <!-- HEADER BANNER -->
+      <section class="banner__header">
+        <p> Home | <span>Shop</span></p>
+        <h2>
+          Eduvi Online<br />
+          Book Shop
+        </h2>
+        <img src="../assets/img/bookshelf.png" alt="" />
+       
+      </section>
+      <section class="bookshop">
+        <div class="bookshop__header">
+          <div class="bookshop__filter">
+            <div class="button button__orange--primary">All Books</div>
+            <div class="button button__white">Kindergarten</div>
+            <div class="button button__white">High School</div>
+            <div class="button button__white">College</div>
+          </div>
+          <div class="bookshop__searchSort">
+            <div class="landing__search">
+              <input
+                type="input"
+                placeholder="Search Class, Course, Book Name"
+                class="landing__input"
+              />
+  
+              <button class="button button__purple--primary">
+                <i class="bx bx-search search__icon"></i>
+              </button>
+            </div>
+            <div class="bookshop__general__sort">
+              <select class="form-control landing__select">
+                <option>Kindergarten</option>
+                <option>HighSchool</option>
+                <option>College</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="bookshop__general">
+          <div class="book__cards">
+             <div class="book__card">
+               <div class="book__card--image"><img src="../assets/img/book-1.png" alt=""></div>
+                 <div class="book__info">
+                   <p class="book__info--title">The Three Musketeers</p>
+                   
+                   <div class="review">
+                    <span class="book__info--price">$40.00</span>
+                    <div>
+                      <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                    </div>
+                    
+                   </div>
+                 </div>
+             </div>
+             <div class="book__card">
+               <div class="book__card--image"><img src="../assets/img/Image.png" alt=""></div>
+               <div class="book__card--detail">
+                 <div class="book__info">
+                   <p class="book__info--title">The Three Musketeers</p>
+                   <div class="review">
+                    <span class="book__info--price">$40.00</span>
+                    <div>
+                      <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                    </div>
+                    
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="book__card">
+               <div class="book__card--image"><img src="../assets/img/book-2.png" alt=""></div>
+               <div class="book__card--detail">
+                 <div class="book__info">
+                   <p class="book__info--title">The Three Musketeers</p>
+                   <div class="review">
+                    <span class="book__info--price">$40.00</span>
+                    <div>
+                      <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                    </div>
+                    
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="book__card">
+               <div class="book__card--image"><img src="../assets/img/book-3.png" alt=""></div>
+               <div class="book__card--detail">
+                 <div class="book__info">
+                   <p class="book__info--title">The Three Musketeers</p>
+                   <div class="review">
+                    <span class="book__info--price">$40.00</span>
+                    <div>
+                      <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                    </div>
+                    
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="book__card">
+               <div class="book__card--image"><img src="../assets/img/book-4.png" alt=""></div>
+               <div class="book__card--detail">
+                 <div class="book__info">
+                   <p class="book__info--title">The Three Musketeers</p>
+                   <div class="review">
+                    <span class="book__info--price">$40.00</span>
+                    <div>
+                      <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                    </div>
+                    
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="book__card">
+               <div class="book__card--image"><img src="../assets/img/book-5.png" alt=""></div>
+               <div class="book__card--detail">
+                 <div class="book__info">
+                   <p class="book__info--title">The Three Musketeers</p>
+                   <div class="review">
+                    <span class="book__info--price">$40.00</span>
+                    <div>
+                      <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                    </div>
+                    
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="book__card">
+               <div class="book__card--image"><img src="../assets/img/book-1.png" alt=""></div>
+               <div class="book__card--detail">
+                 <div class="book__info">
+                   <p class="book__info--title">The Three Musketeers</p>
+                   <div class="review">
+                    <span class="book__info--price">$40.00</span>
+                    <div>
+                      <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                    </div>
+                    
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="book__card">
+               <div class="book__card--image"><img src="../assets/img/Image.png" alt=""></div>
+               <div class="book__card--detail">
+                 <div class="book__info">
+                   <p class="book__info--title">The Three Musketeers</p>
+                   <div class="review">
+                    <span class="book__info--price">$40.00</span>
+                    <div>
+                      <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                    </div>
+                    
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="book__card">
+               <div class="book__card--image"><img src="../assets/img/book-4.png" alt=""></div>
+               <div class="book__card--detail">
+                 <div class="book__info">
+                   <p class="book__info--title">The Three Musketeers</p>
+                   <div class="review">
+                    <span class="book__info--price">$40.00</span>
+                    <div>
+                      <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                    </div>
+                    
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <!-- PAGINATION -->
+          <div class="pagination">
+            <div class="pagination__left">
+              <a href="#" class="prev"><i class='bx bx-chevron-left'></i></i></a>
+            </div>
+            <div class="pagination__page">
+              <p>Page <span class="current" data-current="1">1</span> of  <span class="total"  data-total="4">4</span></p>
+            </div>
+            <div class="pagination__right">
+              <a href="#" class="prev"><i class='bx bx-chevron-right'></i></i></a>
+            </div>
+          </div>
+         </div>
+        <div class="bookshop__popular">
+          <h3>Popular Books</h3>
+          <div class="books">
+            <div class="book">
+              <div class="book__img">
+                <img src="../assets/img/book-1.png" alt="The Three Musketeers" />
+              </div>
+              <div class="book__info">
+                <p class="book__info--title">The Three Musketeers</p>
+                <div class="review">
+                  <span class="book__info--price">$39.00</span>
+                  <div>
+                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                  </div>
+                  
+                 </div>
+              </div>
+            </div>
+            <div class="book">
+              <div class="book__img">
+                <img src="../assets/img/book-2.png" alt="The Three Musketeers" />
+              </div>
+              <div class="book__info">
+                <p class="book__info--title">The Three Musketeers</p>
+                <div class="review">
+                  <span class="book__info--price">$39.00</span>
+                  <div>
+                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                  </div>
+                  
+                 </div>
+              </div>
+            </div>
+            <div class="book">
+              <div class="book__img">
+                <img src="../assets/img/Image.png" alt="The Three Musketeers" />
+              </div>
+              <div class="book__info">
+                <p class="book__info--title">The Three Musketeers</p>
+                <div class="review">
+                  <span class="book__info--price">$39.00</span>
+                  <div>
+                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                  </div>
+                  
+                 </div>
+              </div>
+            </div>
+          
+          </div>
+          <span class="more">See More</span>
+        </div>
+        <div class="bookshop__NewArrival">
+          <h3>New Arrival</h3>
+          <div class="books">
+            <div class="book">
+              <div class="book__img">
+                <img src="../assets/img/book-3.png" alt="The Three Musketeers" />
+              </div>
+              <div class="book__info">
+                <p class="book__info--title">The Three Musketeers</p>
+                <div class="review">
+                  <span class="book__info--price">$39.00</span>
+                  <div>
+                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                  </div>
+                  
+                 </div>
+              </div>
+            </div>
+            <div class="book">
+              <div class="book__img">
+                <img src="../assets/img/book-4.png" alt="The Three Musketeers" />
+              </div>
+              <div class="book__info">
+                <p class="book__info--title">The Three Musketeers</p>
+                <div class="review">
+                  <span class="book__info--price">$39.00</span>
+                  <div>
+                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                  </div>
+                  
+                 </div>
+              </div>
+            </div>
+            <div class="book">
+              <div class="book__img">
+                <img src="../assets/img/book-5.png" alt="The Three Musketeers" />
+              </div>
+              <div class="book__info">
+                <p class="book__info--title">The Three Musketeers</p>
+                <div class="review">
+                  <span class="book__info--price">$39.00</span>
+                  <div>
+                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                  </div>
+                  
+                 </div>
+              </div>
+            </div>
+          </div>
+          <span class="more">See More</span>
+        </div>
+        </div>
+        </div>
+      </section>
+      <!-- SUBSCRIBE SECTION -->
+      <section class="banner__subscribe">
+        <div class="banner__subscribe_container">
+          <div class="banner__subscribe_image-left">
+            <img
+              src="../assets/img/Ellipse 1.png"
+              alt="happy kid image"
+              class="eclipse-1"
+            />
+            <img
+              src="../assets/img/Ellipse 2.png"
+              alt="boy"
+              class="eclipse-2"
+            />
+            <img
+              src="../assets/img/Ellipse 3.png"
+              alt="working person"
+              class="eclipse-3"
+            />
+          </div>
+          <div class="banner__subscribe_info">
+            <h2>Subscribe For Get Update Every New Courses</h2>
+            <p>
+              20k+ students daily learn with Eduvi. Subscribe for new courses.
+            </p>
+            <div class="banner__subscribe_newsletter">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="banner__subscribe_input"
+              />
+
+              <button class="button button__purple--primary">Subscribe</button>
+            </div>
+          </div>
+          <div class="banner__subscribe_image-right">
+            <img
+              src="../assets/img/Ellipse 4.png"
+              alt=" person working on his laptop"
+              class="eclipse-4"
+            />
+            <img
+              src="../assets/img/Ellipse 5.png"
+              alt="graduation"
+              class="eclipse-5"
+            />
+            <img
+              src="../assets/img/Ellipse 6.png"
+              alt="curious child"
+              class="eclipse-6"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__content">
+          <a href="" class="footer__logo"
+            ><img src="../assets/img/Logo.png" alt="Eduvi Logo"
+          /></a>
+          <ul class="footer__data">
+            <div class="footer__social">
+              <a href="#" class="footer__social-link"
+                ><i class="bx bxl-facebook"></i
+              ></a>
+              <a href="#" class="footer__social-link"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a href="#" class="footer__social-link"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a href="#" class="footer__social-link"
+                ><i class="bx bxl-linkedin-square"></i
+              ></a>
+            </div>
+            <li class="footer__information">©2021 Eduvi.co</li>
+            <li class="footer__information">
+              Eduvi is a registered trademark of Eduvi.co
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h4 class="footer__title">Courses</h4>
+          <ul class="footer__data">
+            <li class="footer__information">
+              <a href="#">Classroom courses</a>
+            </li>
+            <li class="footer__information">
+              <a href="#">Virtual classroom courses</a>
+            </li>
+            <li class="footer__information">
+              <a href="#">E-learning courses</a>
+            </li>
+            <li class="footer__information"><a href="#">Video Courses</a></li>
+            <li class="footer__information"><a href="#">Offline Courses</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h4 class="footer__title">Community</h4>
+          <ul class="footer__data">
+            <li class="footer__information"><a href="#">Learners</a></li>
+            <li class="footer__information"><a href="#">Partners</a></li>
+            <li class="footer__information"><a href="#">Developers</a></li>
+            <li class="footer__information"><a href="#">Transactions</a></li>
+            <li class="footer__information"><a href="#">Blog</a></li>
+            <li class="footer__information"><a href="#">Teaching center</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h4 class="footer__title">Quick Links</h4>
+          <ul class="footer__data">
+            <li class="footer__information"><a href="#">Home</a></li>
+            <li class="footer__information">
+              <a href="#">Professional Education</a>
+            </li>
+            <li class="footer__information"><a href="#">Courses</a></li>
+            <li class="footer__information"><a href="#">Admissions</a></li>
+            <li class="footer__information"><a href="#">Testimonial</a></li>
+            <li class="footer__information"><a href="#">Testimonial</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h4 class="footer__title">Move</h4>
+          <ul class="footer__data">
+            <li class="footer__information"><a href="#">Press</a></li>
+            <li class="footer__information"><a href="#">Investors</a></li>
+            <li class="footer__information"><a href="#">Terms</a></li>
+            <li class="footer__information"><a href="#">Privacy</a></li>
+            <li class="footer__information"><a href="#">Help</a></li>
+            <li class="footer__information"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
