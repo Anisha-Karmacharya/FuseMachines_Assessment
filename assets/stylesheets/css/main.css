@@ -1242,6 +1242,9 @@ section {
 /**---Colors---**/
 /**---Z-Index---**/
 @media (max-width: 425px) {
+  .nav__toggle {
+    right: 7%;
+  }
   .overlay .login__container {
     width: 95%;
     padding: 2em 1em;
@@ -1253,6 +1256,11 @@ section {
   }
   .overlay .login__image .login--img {
     display: none;
+  }
+}
+@media (min-width: 425px) {
+  .landing__image {
+    width: 70%;
   }
 }
 @media (max-width: 768px) {

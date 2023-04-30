@@ -1,5 +1,10 @@
 @import "../utilities/variables";
 @media (max-width: #{$breakpoint-small}) {
+  .nav {
+    &__toggle {
+      right: 7%;
+    }
+  }
   .overlay {
     .login {
       &__container {
@@ -16,6 +21,15 @@
           display: none;
         }
       }
+    }
+  }
+}
+@media (min-width: #{$breakpoint-small}) {
+  .landing{
+    &__image{
+      
+    width: 70%;
+
     }
   }
 }
@@ -204,8 +218,8 @@
   }
 }
 @media screen and (min-width: 992px) {
-  .nav{
-    &__toggle{
+  .nav {
+    &__toggle {
       right: 2%;
     }
   }
@@ -221,7 +235,7 @@
       }
     }
     &__image {
-        width: 80% !important;
+      width: 80% !important;
       &--img {
         .main__image {
           transform: translateY(-3%);
@@ -522,7 +536,7 @@
     }
     &__image {
       margin-left: 2em;
-          width: 95% !important;
+      width: 95% !important;
       &--img {
         .main__image {
           width: 406px;
