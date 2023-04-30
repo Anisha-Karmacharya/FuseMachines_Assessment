@@ -472,6 +472,7 @@ p {
   justify-content: center;
   align-items: center;
   padding: 1em 1.5em;
+  position: relative;
 }
 .classes__info h2 {
   font-family: var(--bold-font);
@@ -484,6 +485,12 @@ p {
   text-align: center;
   line-height: 25px;
   margin-bottom: 1em;
+}
+.classes__info .pattern__orange {
+  position: absolute;
+  z-index: 1;
+  top: 80%;
+  left: 85%;
 }
 .classes__image {
   background-color: #FFFFFF;
@@ -554,15 +561,6 @@ p {
 .classes__features div img {
   width: 44px;
   height: 44px;
-}
-.classes .pattern__orange {
-  position: relative;
-  z-index: 1;
-  width: 250px;
-  height: 250px;
-  bottom: 50%;
-  left: 65%;
-  transform: translate(50%, -372%);
 }
 
 /**---Header height---**/
@@ -1292,6 +1290,12 @@ p {
     font-size: 0.75em;
     line-height: 22px;
   }
+  .classes__info .pattern__orange {
+    width: 120px;
+    height: 120px;
+    top: 90%;
+    left: 70%;
+  }
 }
 @media screen and (min-width: 768px) {
   .landing__image {
@@ -1326,6 +1330,10 @@ p {
     padding: 15px 80px 0 80px;
     margin: 3em 3em 0 3em;
   }
+  .classes__info .pattern__orange {
+    top: 85%;
+    left: 75%;
+  }
   .classes__image {
     display: flex;
     justify-content: center;
@@ -1341,9 +1349,6 @@ p {
   }
   .classes__features {
     justify-content: center;
-  }
-  .classes .pattern__orange {
-    transform: translate(-45%, -200%);
   }
   .lesson {
     padding: 15px 80px;
@@ -1612,6 +1617,9 @@ p {
     flex-direction: column;
     row-gap: 1em;
   }
+  .classes__info .pattern__orange {
+    left: 80%;
+  }
 }
 @media screen and (max-width: 1118px) {
   .nav__menu {
@@ -1712,11 +1720,11 @@ p {
   .banner__subscribe {
     margin: 2.5em;
   }
+  .classes .classes__info .pattern__orange {
+    left: 85%;
+  }
   .classes__image {
     transform: translateX(-1%);
-  }
-  .classes .pattern__orange {
-    transform: translate(-78%, -283%);
   }
   .lesson__provided_cards {
     grid-template-columns: repeat(4, 1fr);
@@ -1859,9 +1867,6 @@ p {
   .classes__image-extra .receiver {
     width: max-content;
   }
-  .classes .pattern__orange {
-    transform: translate(-107%, -290%);
-  }
   .lesson__provided > * {
     margin-bottom: 2em;
   }
@@ -1955,8 +1960,8 @@ p {
   .banner__subscribe_container {
     padding: 7em 30em;
   }
-  .classes .pattern__orange {
-    transform: translate(-235%, -294%);
+  .classes__info .pattern__orange {
+    left: 75%;
   }
   .joinCourses {
     padding: 1.75em 7em;

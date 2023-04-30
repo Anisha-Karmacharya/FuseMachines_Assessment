@@ -73,7 +73,16 @@
       }
     }
   }
-  
+  .classes{
+    &__info{
+      .pattern__orange{
+        width: 120px;
+        height: 120px;
+        top: 90%;
+        left: 70%;
+      }
+    }
+  }
 }
 @media screen and (min-width: 768px) {
   .landing {
@@ -111,6 +120,12 @@
     align-items: center;
     padding: 15px 80px 0 80px;
     margin: 3em 3em 0 3em;
+    &__info{
+      .pattern__orange{
+        top: 85%;
+     left: 75%;
+    }
+    }
     &__image {
       display: flex;
       justify-content: center;
@@ -127,9 +142,7 @@
     &__features {
       justify-content: center;
     }
-    .pattern__orange {
-      transform: translate(-45%, -200%);
-    }
+
   }
   .lesson {
     padding: 15px 80px;
@@ -427,6 +440,13 @@
       row-gap: 1em;
     }
   }
+  .classes{
+    &__info{
+      .pattern__orange{
+        left: 80%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1118px) {
@@ -537,12 +557,17 @@
     }
   }
   .classes {
+    .classes{
+      &__info{
+        .pattern__orange{
+          left: 85%;
+        }
+      }
+    }
     &__image {
       transform: translateX(-1%);
     }
-    .pattern__orange {
-      transform: translate(-78%, -283%);
-    }
+
   }
   .lesson {
     &__provided {
@@ -718,9 +743,7 @@
         }
       }
     }
-    .pattern__orange {
-      transform: translate(-107%, -290%);
-    }
+
   }
   .lesson {
     &__provided {
@@ -838,8 +861,11 @@
     }
   }
   .classes {
-    .pattern__orange {
-      transform: translate(-235%, -294%);
+    &__info{
+      .pattern__orange{
+        left: 75%;
+    
+    }
     }
   }
   .joinCourses {
