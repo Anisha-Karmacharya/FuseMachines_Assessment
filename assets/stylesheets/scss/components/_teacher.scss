@@ -26,10 +26,10 @@
     padding: 1em;
     h2{
         color: #{$text-color};
-        font-size: #{$h2-font-size};
         font-family: var(--bold-font);
         line-height: 55px;
         text-align: center;
+        
     }
     p{
         color: #{$text-color-alt};

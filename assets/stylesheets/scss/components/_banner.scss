@@ -68,7 +68,6 @@
                 margin-bottom: 1.5rem;
             }
             p{
-                font-size: #{$small-font-size};
                 color: #{$text-color-alt};
                 margin-bottom: 1.5rem;
             }
@@ -109,7 +108,6 @@
             position: absolute;
             top: 10%;
             left: 5%;
-            font-size: 16px;
             color: rgba(10, 3, 60, 0.4);
             font-weight: 500;
             span{
@@ -119,7 +117,6 @@
         h2{
             font-family: var(--bold-font);
             color: #{$text-color};
-            font-size: 35px;
             margin-bottom: 1.5rem;
         }
         

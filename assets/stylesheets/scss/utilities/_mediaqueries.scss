@@ -1,6 +1,6 @@
 @import "../utilities/variables";
 
-@media (max-width: #{$breakpoint-small}) {
+@media (max-width: 425px) {
   .landing {
     &__image {
       width: 90%;
@@ -10,45 +10,77 @@
     &__general {
       .book__cards {
         .book__card {
-          .book__info {  
+          .book__info {
             &--price {
               font-size: 0.9em;
             }
           }
-         
         }
       }
-
     }
-    .review{
-      .bxs-star{
+    .review {
+      .bxs-star {
         font-size: 0.9em;
       }
     }
   }
+  .lesson {
+    &__info {
+      padding: 1em;
+      h2 {
+        font-family: var(--bold-font);
+        color: #{$text-color};
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      p {
+        font-size: #{$small-font-size};
+        color: #{$text-color-alt};
+        text-align: center;
+        line-height: 25px;
+      }
+    }
+    &__provided {
+      margin: 1em 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &_filter {
+        display: flex;
+        justify-content: center;
+        column-gap: 0.5em;
+        padding: 1em;
+      }
+      &_cards {
+        .lesson__card {
+          & > * {
+            margin-bottom: 0.25em;
+          }
+          & > button {
+            padding: 0.75em 1em;
+            font-size: 0.75em;
+          }
+          h4 {
+            font-size: 20px;
+            line-height: 22px;
+          }
+          p {
+            font-size: 0.75em;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+  
 }
-@media (max-width:  #{$breakpoint-medium}) {
-  // .overlay {
-  //   .login {
-  //     &__content {
-  //       flex-direction: column;
-  //       justify-content: center;
-  //       align-items: center;
-  //     }
-  //     &__image {
-  //       .login--img {
-  //         display: none;
-  //       }
-  //     }
-  //   }
-  // }
-}
-@media screen and (min-width: #{$breakpoint-medium}) {
+@media screen and (min-width: 768px) {
   .landing {
     &__image {
       margin-left: 3em;
       margin-top: 3em;
-      width: 60% !important;
+      width: 60%;
       &--img {
         .main__image {
           transform: translateY(3%);
@@ -77,8 +109,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px 80px;
-    margin: 3em;
+    padding: 15px 80px 0 80px;
+    margin: 3em 3em 0 3em;
     &__image {
       display: flex;
       justify-content: center;
@@ -96,8 +128,7 @@
       justify-content: center;
     }
     .pattern__orange {
-      transform: translateY(-5%);
-      left: 66%;
+      transform: translate(-45%, -200%);
     }
   }
   .lesson {
@@ -212,6 +243,22 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .joinAsTeacher {
+    padding: 1em 6.5em;
+    &__info {
+      h2 {
+        width: 100%;
+      }
+    }
+    &__images {
+      width: 350px;
+      display: flex;
+      justify-content: center;
+      & > img {
+        margin-left: 5em;
+      }
+    }
+  }
   .landing {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -224,10 +271,10 @@
       }
     }
     &__image {
-      width: 80% !important;
+      width: 80%;
       &--img {
         .main__image {
-          transform: translateY(-3%);
+          transform: translateY(4%);
         }
       }
       .object-1 {
@@ -249,29 +296,6 @@
       .object-4 {
         bottom: 40%;
         right: 80%;
-      }
-    }
-  }
-  .banner {
-    &__subscribe {
-      &_container {
-        padding: 6em 1em;
-      }
-    }
-  }
-  .classes {
-    .pattern__orange {
-      transform: translateY(-40%);
-      left: 75%;
-    }
-  }
-  .lesson {
-    &__provided {
-      &_cards {
-        grid-template-columns: repeat(3, 1fr);
-        .lesson__card {
-          padding: 2em 1.75em;
-        }
       }
     }
   }
@@ -315,19 +339,60 @@
       }
     }
   }
-  .joinAsTeacher {
-    padding: 1em 6.5em;
+  .lesson {
+    &__provided {
+      &_cards {
+        grid-template-columns: repeat(3, 1fr);
+        .lesson__card {
+          padding: 2em 1.75em;
+        }
+      }
+    }
+  }
+  .banner {
+    &__subscribe {
+      &_container {
+        padding: 6em 1em;
+      }
+    }
+  }
+  .joinCourses {
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-items: center;
+      padding: 3em 0;
+    }
     &__info {
+      align-items: flex-start;
       h2 {
-        width: 100%;
+        width: 442px;
+        text-align: left;
+      }
+      p {
+        text-align: left;
       }
     }
     &__images {
-      width: 350px;
-      display: flex;
-      justify-content: center;
-      & > img {
-        margin-left: 5em;
+      .mainImage {
+        transform: translateY(-32.5%);
+        left: 0;
+      }
+      .html {
+        top: -35%;
+        left: -5%;
+      }
+      .java {
+        top: -60%;
+        left: 70%;
+      }
+      .php {
+        top: -30%;
+        left: 60%;
+      }
+      .pattern__purple {
+        top: -40%;
+        left: 25%;
       }
     }
   }
@@ -336,34 +401,35 @@
     grid-template-columns: repeat(6, auto);
     grid-template-rows: repeat(6, auto);
     width: auto;
-    .more {
+    .more{
       left: 0;
     }
-    &__header {
+    &__header{
       grid-column: 2/7;
     }
-    &__popular {
+    &__popular{
       grid-column: 1/2;
       grid-row: 1/3;
       display: flex;
       flex-direction: column;
     }
-    &__NewArrival {
+    &__NewArrival{
       grid-column: 1/2;
       grid-row: 3/7;
     }
-    &__general {
+    &__general{
       grid-column: 2/7;
       grid-row: 2/7;
     }
-    .books {
+    .books{
       display: flex;
       flex-direction: column;
       row-gap: 1em;
     }
   }
 }
-@media screen and (max-width: #{$breakpoint-large}) {
+
+@media screen and (max-width: 1118px) {
   .nav {
     &__menu {
       position: absolute;
@@ -380,9 +446,9 @@
     }
   }
 }
-@media screen and (min-width: #{$breakpoint-large}) {
+@media screen and (min-width: 1118px) {
   .header {
-    padding: 15px 80px;
+    padding: 15px 40px;
   }
   .nav {
     // height: calc(#{$header-height}+1rem);
@@ -475,8 +541,7 @@
       transform: translateX(-1%);
     }
     .pattern__orange {
-      transform: translateY(-80%);
-      left: 75%;
+      transform: translate(-78%, -283%);
     }
   }
   .lesson {
@@ -506,11 +571,36 @@
       grid-template-columns: repeat(5, 1fr);
     }
     &__content {
-      width: 150px;
+      width: 180px;
+    }
+  }
+  .overlay {
+    .login {
+      &__header {
+        margin: 0 3em;
+      }
+      &__container {
+        padding: 3em;
+        width: 90%;
+      }
+      &__content {
+        flex-direction: row;
+        align-items: center;
+        column-gap: 1em;
+      }
+      &__image {
+        width: 43%;
+        .login--img {
+          display: block;
+        }
+      }
+    }
+    .line {
+      display: block;
     }
   }
 }
-@media screen and (min-width: #{$breakpoint-xlarge}) {
+@media screen and (min-width: 1400px) {
   .nav {
     &__menu {
       column-gap: 4.5em;
@@ -524,11 +614,12 @@
       }
     }
     &__image {
-      margin-left: 2em;
-      width: 95% !important;
+      margin-left: 8em;
+      width: 95%;
       &--img {
         .main__image {
           width: 406px;
+          transform: translateY(-3%);
         }
       }
       .object-1 {
@@ -611,7 +702,7 @@
       }
     }
     &__header {
-      margin: 7em 3em 1.5em 3em;
+      margin: 4em 3em 1.5em 3em;
       &_container {
         padding: 8em 16em;
       }
@@ -628,8 +719,7 @@
       }
     }
     .pattern__orange {
-      transform: translateY(-100%);
-      left: 75%;
+      transform: translate(-107%, -290%);
     }
   }
   .lesson {
@@ -675,9 +765,6 @@
     &__container {
       column-gap: 6.5em;
     }
-    &__content {
-      width: 180px;
-    }
   }
   .bookshop {
     padding: 1em 2.5em;
@@ -701,12 +788,36 @@
       }
     }
   }
+  .overlay {
+    .login {
+      &__header {
+        margin: 1em 2em;
+      }
+      &__container {
+        padding: 3em;
+        width: 70%;
+      }
+    }
+  }
 }
-@media screen and (min-width: #{$breakpoint-xxlarge}) {
+@media screen and (min-width: 1800px) {
+  h1 {
+    font-size: calc(#{$h1-font-size} + 1.5em);
+  }
+  h2 {
+    font-size: calc(#{$h2-font-size} + 1.5em);
+    line-height: 70px;
+  }
+  h3 {
+    font-size: #{$h3-font-size};
+  }
   .header {
     padding: 1.5em 7em;
   }
   .nav {
+    &__list {
+      column-gap: 2em;
+    }
     &__menu {
       column-gap: 15em;
     }
@@ -715,7 +826,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    column-gap: 22%;
     padding: 1.75em 7em;
     margin-top: 1.5em;
   }
@@ -729,12 +839,16 @@
   }
   .classes {
     .pattern__orange {
-      transform: translateY(-95%);
-      left: 66%;
+      transform: translate(-235%, -294%);
     }
   }
   .joinCourses {
     padding: 1.75em 7em;
+    &__info {
+      h2 {
+        width: 100%;
+      }
+    }
   }
   .joinAsTeacher {
     padding: 1.75em 19em;
@@ -761,6 +875,19 @@
             }
           }
         }
+      }
+    }
+  }
+  .overlay {
+    .login {
+      &__image {
+        h2 {
+          font-size: 3.5em;
+          line-height: 55px;
+        }
+      }
+      &__container {
+        width: 50%;
       }
     }
   }

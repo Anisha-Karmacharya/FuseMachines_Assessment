@@ -35,6 +35,8 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             column-gap: 4em;
+
+
             .receiver{
                 position: absolute;
                 background-color: #{$white};
@@ -55,8 +57,7 @@
                 padding: 8px;
                 border-radius: 25px;
                 bottom: 10%;
-                left: 45%;
-                width: 35px;
+                left: 50%;
             }
             .button__arrow{
                 position: absolute;
@@ -66,7 +67,6 @@
                 border-radius: 25px;
                 bottom: 10%;
                 right: 5%;
-                width: 35px;
             }
         }
     }
@@ -76,6 +76,8 @@
         gap: 1em;
         justify-content: center;
         padding: 0 1em;
+        
+
         & > div{
             display: flex;
             justify-content: space-between;
@@ -96,12 +98,14 @@
         }
     }
     .pattern__orange{
-        position: absolute;
+        position: relative;
         z-index: 1;
-        transform: translateY(-265%);
-        left: 80%;
-        width: 20%;
-        height: 20%;
+        width: 250px;
+        height: 250px;
+        bottom: 50%;
+        left: 65%;
+        transform: translate(50%, -372%);
+    
     }
 }
 

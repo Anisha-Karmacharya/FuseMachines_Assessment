@@ -192,14 +192,15 @@
   }
   .line {
     width: 1px;
+    height: 575px;
     background: linear-gradient(
       180deg,
       rgba(10, 3, 60, 0) 0%,
       #0a033c 51.56%,
       rgba(10, 3, 60, 0) 100%
     );
+    display: none;
   }
-
   .error-message {
     color: red;
     font-size: 12px;
