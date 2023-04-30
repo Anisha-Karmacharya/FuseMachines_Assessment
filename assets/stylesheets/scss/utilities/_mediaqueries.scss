@@ -1,53 +1,47 @@
 @import "../utilities/variables";
+
 @media (max-width: #{$breakpoint-small}) {
-  .nav {
-    &__toggle {
-      right: 7%;
+  .landing {
+    &__image {
+      width: 90%;
     }
   }
-  .overlay {
-    .login {
-      &__container {
-        width: 95%;
-        padding: 2em 1em;
-      }
-      &__content {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      &__image {
-        .login--img {
-          display: none;
+  .bookshop {
+    &__general {
+      .book__cards {
+        .book__card {
+          .book__info {  
+            &--price {
+              font-size: 0.9em;
+            }
+          }
+         
         }
       }
-    }
-  }
-}
-@media (min-width: #{$breakpoint-small}) {
-  .landing{
-    &__image{
-      
-    width: 70%;
 
+    }
+    .review{
+      .bxs-star{
+        font-size: 0.9em;
+      }
     }
   }
 }
 @media (max-width:  #{$breakpoint-medium}) {
-  .overlay {
-    .login {
-      &__content {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      &__image {
-        .login--img {
-          display: none;
-        }
-      }
-    }
-  }
+  // .overlay {
+  //   .login {
+  //     &__content {
+  //       flex-direction: column;
+  //       justify-content: center;
+  //       align-items: center;
+  //     }
+  //     &__image {
+  //       .login--img {
+  //         display: none;
+  //       }
+  //     }
+  //   }
+  // }
 }
 @media screen and (min-width: #{$breakpoint-medium}) {
   .landing {
@@ -218,11 +212,6 @@
   }
 }
 @media screen and (min-width: 992px) {
-  .nav {
-    &__toggle {
-      right: 2%;
-    }
-  }
   .landing {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

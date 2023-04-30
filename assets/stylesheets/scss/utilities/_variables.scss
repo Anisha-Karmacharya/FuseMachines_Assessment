@@ -9,14 +9,13 @@ $breakpoint-large: 1118px;
 $breakpoint-xlarge: 1400px;
 $breakpoint-xxlarge: 1800px;
 
-/**---Font-Size---**/ 
-$h1-font-size: 65px;
-$h2-font-size: 45px;
-$h3-font-size: 30px;
-$p-font-size: 22px;
-$normal-font-size: 18px;
-$small-font-size: 16px;
-$smaller-font-size: 14px;
+$h1-font-size: 4.063em; // 65px / 16px = 4.063em
+$h2-font-size: 2.813em; // 45px / 16px = 2.813em
+$h3-font-size: 1.875em; // 30px / 16px = 1.875em
+$p-font-size: 1.375em; // 22px / 16px = 1.375em
+$normal-font-size: 1.125em; // 18px / 16px = 1.125em
+$small-font-size: 1em; // 16px / 16px = 1em
+$smaller-font-size: 0.875em; // 14px / 16px = 0.875em
 
 
 /**---Font-Weight---**/ 
@@ -30,7 +29,6 @@ $background-color: #F7F5FA;
 $banner-background: #0A033C;
 $banner-background-alt:#EDE9F2;
 $banner-background-light:#E4E2F4;
-;
 $text-color: #0A033C;
 $text-color-alt:#5D5A6F;
 $text-color-light:#5D5A6F99;

@@ -1,4 +1,5 @@
 @use './utilities/base';
+@use './utilities/font';
 @use './components/header';
 @use './components/footer';
 @use './components/button';
@@ -11,3 +12,4 @@
 @use './pages/shop';
 @use './pages/login';
 @use './utilities/mediaqueries';
+

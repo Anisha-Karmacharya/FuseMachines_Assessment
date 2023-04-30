@@ -4,7 +4,6 @@
   flex-direction: column;
   padding: 1em;
   h3 {
-    font-size: #{$h3-font-size};
     font-family: var(--semi-bold-font);
     margin-bottom: 0.75em;
   }
@@ -30,8 +29,12 @@
     padding: 0;
     border: none;
   }
+  .landing__search{
+    width: 100%;
+  }
   .landing__select {
     border-radius: 10px;
+    padding: 1.25rem;
   }
   .button__purple--primary {
     padding: 1em;

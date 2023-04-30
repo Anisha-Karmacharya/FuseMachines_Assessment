@@ -1,6 +1,5 @@
 /**---Header height---**/
 /**---Breakpoint---**/
-/**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
 /**---Z-Index---**/
@@ -25,9 +24,9 @@
 :root {
   --primary-font: "Metropolis";
   --secondary-font: "Inter", sans-serif;
-  --bold-font:"Metropolis-Bold";
+  --bold-font: "Metropolis-Bold";
   --semi-bold-font: "Metropolis-Semi-Bold";
-  --medium-font: "Metropolis-Medium" ;
+  --medium-font: "Metropolis-Medium";
 }
 
 * {
@@ -38,6 +37,15 @@
 
 *:focus {
   outline: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 html {
@@ -73,9 +81,25 @@ section {
   padding: 2.5rem 0 1rem;
 }
 
+h1 {
+  font-size: 4.063em;
+}
+
+h2 {
+  font-size: 2.813em;
+}
+
+h3 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 1em;
+}
+
+/**---Media Queries for Font Size---**/
 /**---Header height---**/
 /**---Breakpoint---**/
-/**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
 /**---Z-Index---**/
@@ -101,7 +125,7 @@ section {
   cursor: pointer;
 }
 .nav .dropdown__arrow {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: initial;
   transition: transform 0.4s;
 }
@@ -131,7 +155,7 @@ section {
   row-gap: 0.5rem;
 }
 .nav .dropdown__group .dropdown__list .dropdown__link {
-  font-size: 14px;
+  font-size: 0.875em;
   font-family: var(--semi-bold-font);
   color: #5D5A6F;
   transition: color 0.3s;
@@ -178,12 +202,12 @@ section {
 .nav__right .bx-shopping-bag {
   color: #FF6652;
   padding: 0 0.5rem;
-  font-size: 22px;
+  font-size: 1.375em;
 }
 .nav__right .bx-user-circle {
   color: #9C4DF4;
   padding: 0 0.5rem;
-  font-size: 22px;
+  font-size: 1.375em;
 }
 .nav .show-menu {
   opacity: 1;
@@ -201,7 +225,6 @@ section {
 
 /**---Header height---**/
 /**---Breakpoint---**/
-/**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
 /**---Z-Index---**/
@@ -218,7 +241,7 @@ section {
 }
 .footer__title {
   margin-bottom: 1rem;
-  font-size: 22px;
+  font-size: 1.375em;
   font-family: var(--semi-bold-font);
 }
 .footer__logo img {
@@ -235,7 +258,7 @@ section {
 }
 .footer__data .footer__social-link {
   color: #0A033C;
-  font-size: 18px;
+  font-size: 1.125em;
   background-color: transparent;
   padding: 10px;
   transition: 0.1s;
@@ -247,7 +270,7 @@ section {
   border-radius: 25px;
 }
 .footer__information, .footer__information a {
-  font-size: 16px;
+  font-size: 1em;
   color: #5D5A6F;
 }
 .footer__information a:hover {
@@ -256,12 +279,11 @@ section {
 
 /**---Header height---**/
 /**---Breakpoint---**/
-/**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
 /**---Z-Index---**/
 .button {
-  padding: 1rem 1.75rem;
+  padding: 1rem 0.75rem;
   border-radius: 0.5rem;
   font-weight: 500;
   transition: 0.3s;
@@ -291,14 +313,14 @@ section {
   border: none;
   background-color: #F2E6FF;
   color: #9C4DF4;
-  font-size: 14px;
+  font-size: 0.875em;
   padding: 0.75rem 1.75rem;
 }
 .button__orange--primary {
   background-color: #FF6652;
   color: #FFFFFF;
   font-family: var(--semi-bold-font);
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .button__orange--secondary {
   background-color: transparent;
@@ -309,14 +331,14 @@ section {
   background-color: #FFFFFF;
   color: #FF6652;
   padding: 0.75em 1.25em;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .button__normal {
   border: none;
   background-color: transparent;
   font-family: var(--bold-font);
   color: #0A033C;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .button__normal:hover {
   background-color: #FF6652;
@@ -330,13 +352,11 @@ section {
   background-color: #FFFFFF;
   border-radius: 10px;
   font-family: var(--semi-bold-font);
-  font-size: 14px;
-  padding: 0.5em 1em;
+  font-size: 0.875em;
 }
 
 /**---Header height---**/
 /**---Breakpoint---**/
-/**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
 /**---Z-Index---**/
@@ -345,7 +365,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .landing__info {
   display: flex;
@@ -357,12 +377,10 @@ section {
 .landing__info h1 {
   font-family: var(--bold-font);
   color: #0A033C;
-  font-size: 65px;
   margin-bottom: 1.5rem;
   text-align: center;
 }
 .landing__info p {
-  font-size: 16px;
   color: #5D5A6F;
   text-align: center;
   line-height: 25px;
@@ -399,7 +417,7 @@ section {
   font-family: var(--primary-font);
   color: rgba(93, 90, 111, 0.6);
   border: none;
-  padding: 1.25rem;
+  padding: 0.25rem;
 }
 .landing__select:focus {
   border: none;
@@ -450,7 +468,6 @@ section {
 
 /**---Header height---**/
 /**---Breakpoint---**/
-/**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
 /**---Z-Index---**/
@@ -464,12 +481,10 @@ section {
 .classes__info h2 {
   font-family: var(--bold-font);
   color: #0A033C;
-  font-size: 45px;
   margin-bottom: 1.5rem;
   text-align: center;
 }
 .classes__info p {
-  font-size: 16px;
   color: #5D5A6F;
   text-align: center;
   line-height: 25px;
@@ -532,6 +547,17 @@ section {
   justify-content: center;
   padding: 0 1em;
 }
+.classes__features > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 0.5em;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  font-family: var(--semi-bold-font);
+  font-size: 0.875em;
+  padding: 0.5em 1em;
+}
 .classes__features div img {
   width: 44px;
   height: 44px;
@@ -547,7 +573,6 @@ section {
 
 /**---Header height---**/
 /**---Breakpoint---**/
-/**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
 /**---Z-Index---**/
@@ -557,12 +582,11 @@ section {
 .lesson__info h2 {
   font-family: var(--bold-font);
   color: #0A033C;
-  font-size: 45px;
   margin-bottom: 1.5rem;
   text-align: center;
 }
 .lesson__info p {
-  font-size: 16px;
+  font-size: 1em;
   color: #5D5A6F;
   text-align: center;
   line-height: 25px;
@@ -604,7 +628,7 @@ section {
 }
 .lesson__provided_cards .lesson__card > button {
   padding: 0.75em 1em;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .lesson__provided_cards .lesson__card h4 {
   font-weight: 600;
@@ -613,7 +637,7 @@ section {
   text-align: center;
 }
 .lesson__provided_cards .lesson__card p {
-  font-size: 14px;
+  font-size: 0.875em;
   color: #5D5A6F;
   margin: 10px 0;
   text-align: center;
@@ -623,7 +647,6 @@ section {
 
 /**---Header height---**/
 /**---Breakpoint---**/
-/**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
 /**---Z-Index---**/
@@ -647,12 +670,11 @@ section {
   padding: 1em;
 }
 .joinCourses__info h2 {
-  font-size: 45px;
   text-align: center;
   margin-bottom: 0.5em;
 }
 .joinCourses__info p {
-  font-size: 16px;
+  font-size: 1em;
   text-align: center;
   line-height: 25px;
   margin-bottom: 1em;
@@ -689,7 +711,6 @@ section {
 
 /**---Header height---**/
 /**---Breakpoint---**/
-/**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
 /**---Z-Index---**/
@@ -718,7 +739,7 @@ section {
 }
 .joinAsTeacher__info h2 {
   color: #0A033C;
-  font-size: 45px;
+  font-size: 2.813em;
   font-family: var(--bold-font);
   line-height: 55px;
   text-align: center;
@@ -732,7 +753,6 @@ section {
 
 /**---Header height---**/
 /**---Breakpoint---**/
-/**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
 /**---Z-Index---**/
@@ -796,11 +816,10 @@ section {
 .banner__subscribe_info h2 {
   font-family: var(--bold-font);
   color: #FFFFFF;
-  font-size: 45px;
   margin-bottom: 1.5rem;
 }
 .banner__subscribe_info p {
-  font-size: 16px;
+  font-size: 1em;
   color: #5D5A6F;
   margin-bottom: 1.5rem;
 }
@@ -827,7 +846,7 @@ section {
 }
 .banner__header {
   background-color: #EDE9F2;
-  margin: 6.5em 1em 1em 1em;
+  margin: 2em 1em 1em 1em;
   padding: 3em 2em;
   border-radius: 20px;
   display: grid;
@@ -855,7 +874,6 @@ section {
 
 /**---Header height---**/
 /**---Breakpoint---**/
-/**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
 /**---Z-Index---**/
@@ -865,7 +883,6 @@ section {
   padding: 1em;
 }
 .bookshop h3 {
-  font-size: 30px;
   font-family: var(--semi-bold-font);
   margin-bottom: 0.75em;
 }
@@ -891,14 +908,18 @@ section {
   padding: 0;
   border: none;
 }
+.bookshop .landing__search {
+  width: 100%;
+}
 .bookshop .landing__select {
   border-radius: 10px;
+  padding: 1.25rem;
 }
 .bookshop .button__purple--primary {
   padding: 1em;
 }
 .bookshop .button__purple--primary i {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 600;
 }
 .bookshop__general .book__cards {
@@ -919,12 +940,12 @@ section {
   padding: 1em 0;
 }
 .bookshop__general .book__cards .book__card .book__info--title {
-  font-size: 18px;
+  font-size: 1.125em;
   font-family: var(--semi-bold-font);
   padding: 0.15em 0;
 }
 .bookshop__general .book__cards .book__card .book__info--price {
-  font-size: 16px;
+  font-size: 1em;
   font-family: var(--regular-font);
   font-weight: 600;
   color: #FF6652;
@@ -988,12 +1009,12 @@ section {
   width: 200px;
 }
 .bookshop .books .book .book__info--title {
-  font-size: 18px;
+  font-size: 1.125em;
   font-family: var(--semi-bold-font);
   margin-bottom: 0.5em;
 }
 .bookshop .books .book .book__info--price {
-  font-size: 16px;
+  font-size: 1em;
   font-family: var(--regular-font);
   font-weight: 600;
   color: #FF6652;
@@ -1025,7 +1046,6 @@ section {
 
 /**---Header height---**/
 /**---Breakpoint---**/
-/**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
 /**---Z-Index---**/
@@ -1039,57 +1059,44 @@ section {
   z-index: 9999;
   background-color: rgba(10, 3, 60, 0.5);
 }
-.overlay .login {
-  background: rgba(10, 3, 60, 0.5);
-}
 .overlay .login__container {
-  background-color: #ffffff;
   position: absolute;
+  background-color: #FFFFFF;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding: 3em;
-  border-radius: 15px;
   z-index: 10000;
+  padding: 1.5em;
+  border-radius: 15px;
 }
-.overlay .login .logo {
+.overlay .login__container > * {
+  margin-bottom: 1em;
+}
+.overlay .login__header {
+  display: flex;
+  justify-content: space-between;
+}
+.overlay .login__header .logo {
   width: 80px;
   height: 20px;
 }
-.overlay .login .login__header {
-  justify-content: space-between;
-  display: flex;
-  margin-bottom: 1em;
-}
-.overlay .login .login__header i {
-  font-size: 24px;
-}
-.overlay .login .login__header {
-  justify-content: space-between;
-  display: flex;
-}
-.overlay .login .login__header i {
-  font-size: 24px;
+.overlay .login__header i {
+  font-size: 1.5em;
 }
 .overlay .login__content {
   display: flex;
   justify-content: space-evenly;
-  column-gap: 1em;
+  flex-direction: column;
 }
 .overlay .login__image > * {
   margin-bottom: 1em;
 }
 .overlay .login__image h2 {
-  font-size: 40px;
   font-family: var(--bold-font);
-  width: 355px;
   line-height: 50px;
 }
-.overlay .login__form {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+.overlay .login__image .login--img {
+  display: none;
 }
 .overlay .login__google {
   display: flex;
@@ -1117,7 +1124,7 @@ section {
 .overlay .login__google > div > button {
   background-color: transparent;
   border: none;
-  font-size: 14px;
+  font-size: 0.875em;
   color: #5D5A6F;
   font-family: var(--primary-font);
   margin-left: 20px;
@@ -1129,11 +1136,17 @@ section {
   line-height: 0.1em;
   margin: 10px 0 20px;
   color: #5D5A6F;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .overlay .login__google p span {
   background: #fff;
   padding: 0 10px;
+}
+.overlay .login__form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .overlay .login__email > * {
   margin-bottom: 1em;
@@ -1142,7 +1155,7 @@ section {
   margin-bottom: 1em;
 }
 .overlay .login__email .form-group label {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 600;
   color: #0A033C;
   line-height: 30px;
@@ -1190,7 +1203,7 @@ section {
   align-items: center;
 }
 .overlay .login__email .user-preference label {
-  font-size: 14px;
+  font-size: 0.875em;
   color: #5D5A6F;
   line-height: 30px;
   padding-left: 0.5em;
@@ -1207,7 +1220,7 @@ section {
 }
 .overlay .login__email .user-preference > a {
   color: #9C4DF4;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 600;
 }
 .overlay .login__email button {
@@ -1215,11 +1228,11 @@ section {
   display: flex;
   justify-content: center;
 }
-.overlay .login .line {
+.overlay .line {
   width: 1px;
   background: linear-gradient(180deg, rgba(10, 3, 60, 0) 0%, #0a033c 51.56%, rgba(10, 3, 60, 0) 100%);
 }
-.overlay .login .error-message {
+.overlay .error-message {
   color: red;
   font-size: 12px;
   margin-top: 5px;
@@ -1237,40 +1250,18 @@ section {
 
 /**---Header height---**/
 /**---Breakpoint---**/
-/**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
 /**---Z-Index---**/
 @media (max-width: 425px) {
-  .nav__toggle {
-    right: 7%;
-  }
-  .overlay .login__container {
-    width: 95%;
-    padding: 2em 1em;
-  }
-  .overlay .login__content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .overlay .login__image .login--img {
-    display: none;
-  }
-}
-@media (min-width: 425px) {
   .landing__image {
-    width: 70%;
+    width: 90%;
   }
-}
-@media (max-width: 768px) {
-  .overlay .login__content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .bookshop__general .book__cards .book__card .book__info--price {
+    font-size: 0.9em;
   }
-  .overlay .login__image .login--img {
-    display: none;
+  .bookshop .review .bxs-star {
+    font-size: 0.9em;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1429,9 +1420,6 @@ section {
   }
 }
 @media screen and (min-width: 992px) {
-  .nav__toggle {
-    right: 2%;
-  }
   .landing {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1644,7 +1632,7 @@ section {
     row-gap: 0.75rem;
   }
   .nav .dropdown__link {
-    font-size: 16px;
+    font-size: 1em;
   }
   .nav .dropdown__link:hover {
     color: rgba(93, 90, 111, 0.6);
