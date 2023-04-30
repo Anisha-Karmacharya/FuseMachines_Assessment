@@ -10,16 +10,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1em 1.5em;
+    padding: 1.5em 0;
+    margin-right: 1.5em;
     h1 {
       font-family: var(--bold-font);
       color: #{$text-color};
-      font-size: #{$h1-font-size};
       margin-bottom: 1.5rem;
       text-align: center;
     }
     p {
-      font-size: #{$small-font-size};
       color: #{$text-color-alt};
       text-align: center;
       line-height: 25px;
@@ -57,7 +56,7 @@
     font-family: var(--primary-font);
     color: #{$text-color-light};
     border: none;
-    padding: 1.25rem;
+    padding: 0.25rem;
     &:focus {
       border: none;
     }
@@ -74,7 +73,7 @@
       margin-left: 1em;
       padding: 1em;
       .main__image {
-        position: relative;
+        // position: relative;
         transform: translateY(5%);
         // width: 95% !important;
       }
@@ -107,170 +106,4 @@
       width: 40%;
     }
   }
-}
-/* Tablets and desktops */
-@media screen and (min-width: 768px) {
-  .landing {
-    &__image {
-        margin-left: 3em;
-        margin-top: 3em;
-        width: 60% !important;
-        &--img {
-          .main__image {
-            transform: translateY(-4%);
-          }
-        }
-        .object-1 {
-          left: 82%;
-          bottom: 2%;
-        //   width: 30%;
-        }
-        .object-2 {
-          top: -5%;
-          right: 85%;
-        //   width: 30%;
-        }
-        .object-3 {
-          top: 7%;
-          left: 82%;
-        //   width: 30%;
-        }
-        .object-4 {
-          bottom: 30%;
-          right: 80%;
-        //   width: 40%;
-        }
-      }
-  }
-}
-@media screen and (min-width: 992px) {
-  .landing {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.25em;
-    &__info {
-      align-items: flex-start;
-      h1,
-      p {
-        text-align: left;
-      }
-    }
-    &__image {
-      &--img {
-        .main__image {
-          transform: translateY(-3%);
-        }
-      }
-      .object-1 {
-        left: 75%;
-      }
-      .object-2 {
-        position: absolute;
-        top: -15%;
-        right: 75%;
-        width: 40%;
-      }
-      .object-3 {
-        position: absolute;
-        top: 7%;
-        left: 70%;
-        z-index: 1;
-        width: 40%;
-      }
-      .object-4 {
-        bottom: 40%;
-        right: 80%;
-      }
-    }
-  }
-}
-// @media screen and (min-width: 1250px) {
-//     .landing{
-//         &__search{
-//             & > button > p{
-//                 display: block;
-//             }
-//         }
-//         &__image{
-//             &--img{
-//                 .main__image{
-//                     width: 406px;
-//                 }
-
-//             }
-//             .object-1{
-//                 left: 75%;
-//                 bottom: 2%;
-//                 width: 27%;
-//             }
-//             .object-2{
-//                 top: -10%;
-//                 right: 90%;
-//                 width: 30%;
-
-//             }
-//             .object-3{
-//                 position: absolute;
-//                 top: 7%;
-//                 left: 70%;
-//                 z-index: 1;
-//                 width: 30%;
-//             }
-//             .object-4{
-//                 bottom: 43%;
-//     right: 83%;
-//                 width: 30%;
-//             }
-//         }
-//     }
-// }
-@media screen and (min-width: 1300px) {
-  .landing {
-    padding: 1.75em 5em;
-    &__search {
-      & > button > p {
-        display: block;
-      }
-    }
-    &__image {
-        margin-left: 2em;
-      &--img {
-        .main__image {
-          width: 406px;
-        }
-      }
-      .object-1 {
-        left: 70%;
-        bottom: 2%;
-        width: 27%;
-      }
-      .object-2 {
-        top: -10%;
-        right: 90%;
-        width: 30%;
-      }
-      .object-3 {
-        position: absolute;
-        top: 7%;
-        left: 68%;
-        z-index: 1;
-        width: 30%;
-      }
-      .object-4 {
-        bottom: 43%;
-        right: 83%;
-        width: 30%;
-      }
-    }
-  }
-}
-@media screen and (min-width: 1800px) {
-    .landing{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        column-gap: 22%;
-        padding: 1.75em 7em;
-        margin-top: 1.5em;
-    }
 }

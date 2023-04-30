@@ -40,7 +40,7 @@ const modal = document.querySelector('.overlay');
 const closeModal = document.querySelector('#close-modal');
 setTimeout(() =>{
     modal.classList.toggle('show-modal')
-}, 5000)
+}, 1500)
 closeModal.addEventListener("click", ()=> {
     modal.classList.remove('show-modal');
     modal.classList.add("hide-modal")

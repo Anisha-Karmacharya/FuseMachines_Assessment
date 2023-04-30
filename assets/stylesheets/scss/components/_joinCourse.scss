@@ -19,8 +19,8 @@
     align-items: center;
     padding: 1em;
     h2 {
-      font-size: #{$h2-font-size};
       text-align: center;
+      font-family: var(--bold-font);
       margin-bottom: 0.5em;
     }
     p {
@@ -61,121 +61,4 @@
     }
   }
 }
-// For tablets
-@media screen and (min-width: 768px) {
-  .joinCourses {
-    &__images {
-      position: relative;
-      top: 45%;
-      .mainImage {
-        position: relative;
-        z-index: 2;
-        left: 6.5%;
-      }
-      .html {
-        position: absolute;
-        top: 5%;
-        left: 5%;
-        z-index: 2;
-      }
-      .java {
-        position: absolute;
-        top: -15%;
-        left: 65%;
-        z-index: 2;
-      }
-      .php {
-        position: absolute;
-        top: 20%;
-        left: 65%;
-        z-index: 2;
-      }
-      .pattern__purple {
-        position: absolute;
-        top: -5%;
-        left: 35%;
-        width: 125px;
-      }
-    }
-  }
-}
-@media screen and (min-width: 992px) {
-  .joinCourses {
-    &__container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      place-items: center;
-      padding: 3em 0;
-    }
-    &__info {
-      align-items: flex-start;
-      h2{
-        width: 442px;
-        text-align: left;
-      }
-      p{
-        text-align: left;
-      }
-    }
-    &__images {
-      .mainImage {
-        transform: translateY(-32.5%);
-        left: 0;
-      }
-      .html {
-        top: -35%;
-        left: -5%;
-      }
-      .java {
-        top: -60%;
-        left: 70%;
-      }
-      .php {
-        top: -30%;
-        left: 60%;
-      }
-      .pattern__purple {
-        top: -40%;
-        left: 25%;
-      }
-    }
-  }
-}
-@media screen and (min-width: 1100px) {
-  .joinCourses {
-    &__container {
-      margin: 1rem 2.5rem;
-    }
-  }
-}
-@media screen and (min-width: 1300px) {
-  .joinCourses {
-    &__images {
-      .mainImage {
-        transform: translateY(-36.5%);
-        left: 0;
-      }
-      .html {
-        top: -25%;
-        left: -5%;
-      }
-      .java {
-        top: -50%;
-        left: 70%;
-      }
-      .php {
-        top: -25%;
-        left: 60%;
-      }
-      .pattern__purple {
-        top: -40%;
-        left: 30%;
-      }
-    }
-  }
-}
-@media screen and (min-width: 1800px) {
-  .joinCourses {
-      padding: 1.75em 7em;
-  }
-}
+

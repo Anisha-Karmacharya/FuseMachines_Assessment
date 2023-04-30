@@ -1,67 +1,85 @@
-
-@import './variables';
+@import "./variables";
 // Base
 @font-face {
-    font-family: 'Metropolis-Bold';
-    src: url("../../fonts/Metropolis/Metropolis-Bold.otf");
+  font-family: "Metropolis-Bold";
+  src: url("../../fonts/Metropolis/Metropolis-Bold.otf");
 }
 @font-face {
-    font-family: 'Metropolis-Semi-Bold';
-    src: url("../../fonts/Metropolis/Metropolis-SemiBold.otf");
+  font-family: "Metropolis-Semi-Bold";
+  src: url("../../fonts/Metropolis/Metropolis-SemiBold.otf");
 }
 @font-face {
-    font-family: 'Metropolis-Medium';
-    src: url("../../../fonts/Metropolis/Metropolis-Medium.otf");
+  font-family: "Metropolis-Medium";
+  src: url("../../../fonts/Metropolis/Metropolis-Medium.otf");
 }
 @font-face {
-    font-family: 'Metropolis';
-    src: url("../../fonts/Metropolis/Metropolis-Regular.otf");
+  font-family: "Metropolis";
+  src: url("../../fonts/Metropolis/Metropolis-Regular.otf");
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 
-
-/**---Fonts---**/ 
-:root{
-    --primary-font: 'Metropolis';
-    --secondary-font: 'Inter', sans-serif;
-    --bold-font:'Metropolis-Bold';
-    --semi-bold-font: 'Metropolis-Semi-Bold';
-    --medium-font: 'Metropolis-Medium'
-}
-
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-*:focus{
-    outline: none;
+/**---Fonts---**/
+:root {
+  --primary-font: "Metropolis";
+  --secondary-font: "Inter", sans-serif;
+  --bold-font: "Metropolis-Bold";
+  --semi-bold-font: "Metropolis-Semi-Bold";
+  --medium-font: "Metropolis-Medium";
 }
 
-html{
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+*:focus {
+  outline: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-    }
-body{
-    margin: #{$header-height} 0 0 0;
-    font-family: var(--primary-font);
-    background-color:#{$background-color};
-    overflow-x: hidden;
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
-ul{
-    list-style: none;
-}
-a{
-    text-decoration: none !important;
+body {
+  margin: #{$header-height} 0 0 0;
+  font-family: var(--primary-font);
+  background-color: #{$background-color};
+  overflow-x: hidden;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
+ul {
+  list-style: none;
 }
-section{
-    padding: 2.5rem 0 1rem;}
+a {
+  text-decoration: none !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+section {
+  padding: 2.5rem 0 1rem;
+}
+h1 {
+  font-size: #{$h1-font-size};
+}
+h2 {
+  font-size: #{$h2-font-size};
+}
+h3 {
+  font-size: #{$h3-font-size};
+}
+p {
+  font-size: #{$small-font-size};
+}

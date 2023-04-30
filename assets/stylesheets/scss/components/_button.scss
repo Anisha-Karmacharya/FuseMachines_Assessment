@@ -1,6 +1,6 @@
 @import "../utilities/variables";
 .button {
-  padding: 1rem 1.75rem;
+  padding: 1rem 0.75rem;
   border-radius: 0.5rem;
   font-weight: #{$font-medium};
   transition: 0.3s;
@@ -71,6 +71,5 @@
     border-radius: 10px;
     font-family: var(--semi-bold-font);
     font-size: #{$smaller-font-size};
-    padding: 0.5em 1em;
   }
 }
