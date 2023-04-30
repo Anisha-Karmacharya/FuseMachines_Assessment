@@ -218,39 +218,4 @@
 .hide-modal {
   display: none;
 }
-@media (max-width: 425px) {
-  .overlay {
-    .login {
-      &__container {
-        width: 95%;
-        padding: 2em 1em;
-      }
-      &__content {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      &__image {
-        .login--img {
-          display: none;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 768px) {
-  .overlay {
-    .login {
-      &__content {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      &__image {
-        .login--img {
-          display: none;
-        }
-      }
-    }
-  }
-}
+

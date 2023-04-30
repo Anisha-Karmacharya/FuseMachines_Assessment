@@ -1,4 +1,5 @@
 /**---Header height---**/
+/**---Breakpoint---**/
 /**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
@@ -73,6 +74,7 @@ section {
 }
 
 /**---Header height---**/
+/**---Breakpoint---**/
 /**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
@@ -197,117 +199,8 @@ section {
   transform: rotate(90deg);
 }
 
-@media screen and (max-width: 1118px) {
-  .nav__menu {
-    position: absolute;
-    left: 0;
-    top: 2.5rem;
-    width: 100%;
-    height: calc(100ch - 3.5rem);
-    overflow: auto;
-    padding-block: 1.5rem 4rem;
-    transition: top 0.4s, opacity 0.3s;
-    background-color: #F7F5FA;
-    pointer-events: none;
-    opacity: 0;
-  }
-}
-@media screen and (min-width: 1118px) {
-  .header {
-    padding: 15px 80px;
-  }
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .nav__menu {
-    display: flex;
-    justify-content: space-between;
-  }
-  .nav__link {
-    padding: 1rem 0.5rem;
-  }
-  .nav__link:hover {
-    background-color: transparent;
-    color: #9C4DF4;
-  }
-  .nav__toggle {
-    display: none;
-  }
-  .nav__list {
-    display: flex;
-    column-gap: 0.25rem;
-    height: 100%;
-  }
-  .nav__right {
-    margin-left: 1.35rem;
-  }
-  .nav .dropdown__button {
-    column-gap: 0.25rem;
-  }
-  .nav .dropdown__container {
-    height: max-content;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 6.5rem;
-    background-color: #F7F5FA;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.025);
-    pointer-events: none;
-    opacity: 0;
-    transition: top 0.4s, opacity 0.3s;
-  }
-  .nav .dropdown__content {
-    grid-template-columns: repeat(4, max-content);
-    column-gap: 6rem;
-    max-width: 1120px;
-    margin-inline: auto;
-  }
-  .nav .dropdown__group {
-    padding: 2.5rem 2rem;
-    align-content: baseline;
-    row-gap: 1.25rem;
-  }
-  .nav .dropdown__group:first-child, .nav .dropdown__group:last-child {
-    margin: 0;
-  }
-  .nav .dropdown__list {
-    row-gap: 0.75rem;
-  }
-  .nav .dropdown__link {
-    font-size: 16px;
-  }
-  .nav .dropdown__link:hover {
-    color: rgba(93, 90, 111, 0.6);
-  }
-  .nav .dropdown__item {
-    cursor: pointer;
-  }
-  .nav .dropdown__item:hover .dropdown__arrow {
-    transform: rotate(180deg);
-  }
-  .nav .dropdown__item:hover > .dropdown__container {
-    top: 5.5rem;
-    opacity: 1;
-    pointer-events: initial;
-    cursor: initial;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .nav__menu {
-    column-gap: 4.5em;
-  }
-}
-@media screen and (min-width: 1800px) {
-  .header {
-    padding: 1.5em 7em;
-  }
-  .nav__menu {
-    column-gap: 15em;
-  }
-}
 /**---Header height---**/
+/**---Breakpoint---**/
 /**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
@@ -361,62 +254,8 @@ section {
   color: #9C4DF4;
 }
 
-@media screen and (min-width: 768px) {
-  .footer {
-    padding: 15px 40px;
-  }
-  .footer__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 4.5em;
-  }
-  .footer__title {
-    margin-bottom: 1.5rem;
-  }
-  .footer__data {
-    row-gap: 0.85rem;
-  }
-}
-@media screen and (min-width: 1100px) {
-  .footer {
-    padding: 15px 40px;
-  }
-  .footer__container {
-    column-gap: 3em;
-    grid-template-columns: repeat(5, 1fr);
-  }
-  .footer__content {
-    width: 150px;
-  }
-}
-@media screen and (min-width: 1300px) {
-  .footer {
-    padding: 30px 80px;
-  }
-  .footer__container {
-    column-gap: 6.5em;
-  }
-  .footer__content {
-    width: 150px;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .footer__content {
-    width: 180px;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .footer {
-    padding: 1.75em 7em;
-  }
-  .footer__container {
-    column-gap: 10.5em;
-  }
-  .footer__content {
-    width: 200px;
-  }
-}
 /**---Header height---**/
+/**---Breakpoint---**/
 /**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
@@ -496,6 +335,7 @@ section {
 }
 
 /**---Header height---**/
+/**---Breakpoint---**/
 /**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
@@ -578,7 +418,6 @@ section {
   padding: 1em;
 }
 .landing__image--img .main__image {
-  position: relative;
   transform: translateY(5%);
 }
 .landing__image .object-1 {
@@ -609,117 +448,8 @@ section {
   width: 40%;
 }
 
-/* Tablets and desktops */
-@media screen and (min-width: 768px) {
-  .landing__image {
-    margin-left: 3em;
-    margin-top: 3em;
-    width: 60% !important;
-  }
-  .landing__image--img .main__image {
-    transform: translateY(-4%);
-  }
-  .landing__image .object-1 {
-    left: 82%;
-    bottom: 2%;
-  }
-  .landing__image .object-2 {
-    top: -5%;
-    right: 85%;
-  }
-  .landing__image .object-3 {
-    top: 7%;
-    left: 82%;
-  }
-  .landing__image .object-4 {
-    bottom: 30%;
-    right: 80%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .landing {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.25em;
-  }
-  .landing__info {
-    align-items: flex-start;
-  }
-  .landing__info h1,
-.landing__info p {
-    text-align: left;
-  }
-  .landing__image--img .main__image {
-    transform: translateY(-3%);
-  }
-  .landing__image .object-1 {
-    left: 75%;
-  }
-  .landing__image .object-2 {
-    position: absolute;
-    top: -15%;
-    right: 75%;
-    width: 40%;
-  }
-  .landing__image .object-3 {
-    position: absolute;
-    top: 7%;
-    left: 70%;
-    z-index: 1;
-    width: 40%;
-  }
-  .landing__image .object-4 {
-    bottom: 40%;
-    right: 80%;
-  }
-}
-@media screen and (min-width: 1300px) {
-  .landing {
-    padding: 1.75em 5em;
-  }
-  .landing__search > button > p {
-    display: block;
-  }
-  .landing__image {
-    margin-left: 2em;
-  }
-  .landing__image--img .main__image {
-    width: 406px;
-  }
-  .landing__image .object-1 {
-    left: 70%;
-    bottom: 2%;
-    width: 27%;
-  }
-  .landing__image .object-2 {
-    top: -10%;
-    right: 90%;
-    width: 30%;
-  }
-  .landing__image .object-3 {
-    position: absolute;
-    top: 7%;
-    left: 68%;
-    z-index: 1;
-    width: 30%;
-  }
-  .landing__image .object-4 {
-    bottom: 43%;
-    right: 83%;
-    width: 30%;
-  }
-}
-@media screen and (min-width: 1800px) {
-  .landing {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    column-gap: 22%;
-    padding: 1.75em 7em;
-    margin-top: 1.5em;
-  }
-}
 /**---Header height---**/
+/**---Breakpoint---**/
 /**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
@@ -815,73 +545,8 @@ section {
   height: 20%;
 }
 
-/* Tablets and desktops */
-@media screen and (min-width: 768px) {
-  .classes {
-    display: flex;
-    flex-direction: column;
-    /* align-content: center; */
-    justify-content: center;
-    align-items: center;
-    padding: 15px 80px;
-    margin: 3em;
-  }
-  .classes__image {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  .classes__image-extra {
-    display: flex;
-    column-gap: 0em;
-  }
-  .classes__image-extra .receiver {
-    display: flex;
-    justify-content: center;
-  }
-  .classes__features {
-    justify-content: center;
-  }
-  .classes .pattern__orange {
-    transform: translateY(-5%);
-    left: 66%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .classes .pattern__orange {
-    transform: translateY(-40%);
-    left: 75%;
-  }
-}
-@media screen and (min-width: 1100px) {
-  .classes__image {
-    transform: translateX(-1%);
-  }
-  .classes .pattern__orange {
-    transform: translateY(-80%);
-    left: 75%;
-  }
-}
-@media screen and (min-width: 1300px) {
-  .classes__image {
-    width: max-content;
-    transform: translateX(1%);
-  }
-  .classes__image-extra .receiver {
-    width: max-content;
-  }
-  .classes .pattern__orange {
-    transform: translateY(-100%);
-    left: 75%;
-  }
-}
-@media screen and (min-width: 1800px) {
-  .classes .pattern__orange {
-    transform: translateY(-95%);
-    left: 66%;
-  }
-}
 /**---Header height---**/
+/**---Breakpoint---**/
 /**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
@@ -956,51 +621,8 @@ section {
   font-weight: 400;
 }
 
-/* Tablets and desktops */
-@media screen and (min-width: 768px) {
-  .lesson {
-    padding: 15px 80px;
-  }
-  .lesson__info {
-    margin: 0 5em;
-  }
-  .lesson__provided > * {
-    margin-bottom: 1.25em;
-  }
-  .lesson__provided_cards {
-    display: grid;
-    padding: 0;
-  }
-}
-@media screen and (min-width: 992px) {
-  .lesson__provided_cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .lesson__provided_cards .lesson__card {
-    padding: 2em 1.75em;
-  }
-}
-@media screen and (min-width: 1100px) {
-  .lesson__provided_cards {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .lesson__provided_cards .lesson__card {
-    padding: 2em 1.75em;
-  }
-}
-@media screen and (min-width: 1300px) {
-  .lesson__provided > * {
-    margin-bottom: 2em;
-  }
-  .lesson__provided_cards {
-    gap: 2em;
-  }
-  .lesson__provided_cards .lesson__card {
-    height: 350px;
-    width: 300px;
-  }
-}
 /**---Header height---**/
+/**---Breakpoint---**/
 /**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
@@ -1065,112 +687,8 @@ section {
   width: 125px;
 }
 
-@media screen and (min-width: 768px) {
-  .joinCourses__images {
-    position: relative;
-    top: 45%;
-  }
-  .joinCourses__images .mainImage {
-    position: relative;
-    z-index: 2;
-    left: 6.5%;
-  }
-  .joinCourses__images .html {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    z-index: 2;
-  }
-  .joinCourses__images .java {
-    position: absolute;
-    top: -15%;
-    left: 65%;
-    z-index: 2;
-  }
-  .joinCourses__images .php {
-    position: absolute;
-    top: 20%;
-    left: 65%;
-    z-index: 2;
-  }
-  .joinCourses__images .pattern__purple {
-    position: absolute;
-    top: -5%;
-    left: 35%;
-    width: 125px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .joinCourses__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    padding: 3em 0;
-  }
-  .joinCourses__info {
-    align-items: flex-start;
-  }
-  .joinCourses__info h2 {
-    width: 442px;
-    text-align: left;
-  }
-  .joinCourses__info p {
-    text-align: left;
-  }
-  .joinCourses__images .mainImage {
-    transform: translateY(-32.5%);
-    left: 0;
-  }
-  .joinCourses__images .html {
-    top: -35%;
-    left: -5%;
-  }
-  .joinCourses__images .java {
-    top: -60%;
-    left: 70%;
-  }
-  .joinCourses__images .php {
-    top: -30%;
-    left: 60%;
-  }
-  .joinCourses__images .pattern__purple {
-    top: -40%;
-    left: 25%;
-  }
-}
-@media screen and (min-width: 1100px) {
-  .joinCourses__container {
-    margin: 1rem 2.5rem;
-  }
-}
-@media screen and (min-width: 1300px) {
-  .joinCourses__images .mainImage {
-    transform: translateY(-36.5%);
-    left: 0;
-  }
-  .joinCourses__images .html {
-    top: -25%;
-    left: -5%;
-  }
-  .joinCourses__images .java {
-    top: -50%;
-    left: 70%;
-  }
-  .joinCourses__images .php {
-    top: -25%;
-    left: 60%;
-  }
-  .joinCourses__images .pattern__purple {
-    top: -40%;
-    left: 30%;
-  }
-}
-@media screen and (min-width: 1800px) {
-  .joinCourses {
-    padding: 1.75em 7em;
-  }
-}
 /**---Header height---**/
+/**---Breakpoint---**/
 /**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
@@ -1212,54 +730,8 @@ section {
   line-height: 30px;
 }
 
-@media screen and (min-width: 768px) {
-  .joinAsTeacher {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 0.5em;
-    padding: 1em 2.5em;
-    margin: 2.5em 0;
-  }
-  .joinAsTeacher__info {
-    padding: 0;
-    order: 2;
-    align-items: flex-start;
-  }
-  .joinAsTeacher__info h2 {
-    width: 400px;
-    text-align: left;
-  }
-  .joinAsTeacher__info p {
-    text-align: left;
-  }
-}
-@media screen and (min-width: 992px) {
-  .joinAsTeacher {
-    padding: 1em 6.5em;
-  }
-  .joinAsTeacher__info h2 {
-    width: 100%;
-  }
-  .joinAsTeacher__images {
-    width: 350px;
-    display: flex;
-    justify-content: center;
-  }
-  .joinAsTeacher__images > img {
-    margin-left: 5em;
-  }
-}
-@media screen and (min-width: 1100px) {
-  .joinAsTeacher__images {
-    width: 500px;
-  }
-}
-@media screen and (min-width: 1800px) {
-  .joinAsTeacher {
-    padding: 1.75em 19em;
-  }
-}
 /**---Header height---**/
+/**---Breakpoint---**/
 /**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
@@ -1381,77 +853,8 @@ section {
   margin-bottom: 1.5rem;
 }
 
-@media screen and (min-width: 992px) {
-  .banner__subscribe_container {
-    padding: 6em 1em;
-  }
-}
-@media screen and (min-width: 1100px) {
-  .banner__subscribe {
-    margin: 2.5em;
-  }
-}
-@media screen and (min-width: 1300px) {
-  .banner__subscribe_container {
-    padding: 6em 20em;
-  }
-  .banner__subscribe_image-left .eclipse {
-    width: 75px;
-    height: 75px;
-  }
-  .banner__subscribe_image-left .eclipse-1 {
-    position: absolute;
-    top: 15%;
-    left: 5%;
-  }
-  .banner__subscribe_image-left .eclipse-2 {
-    position: absolute;
-    top: 40%;
-    left: 20%;
-  }
-  .banner__subscribe_image-left .eclipse-3 {
-    position: absolute;
-    top: 70%;
-    left: 10%;
-  }
-  .banner__subscribe_image-right .eclipse {
-    width: 75px;
-    height: 75px;
-  }
-  .banner__subscribe_image-right .eclipse-4 {
-    position: absolute;
-    top: 15%;
-    right: 5%;
-  }
-  .banner__subscribe_image-right .eclipse-5 {
-    position: absolute;
-    top: 40%;
-    right: 20%;
-  }
-  .banner__subscribe_image-right .eclipse-6 {
-    position: absolute;
-    top: 70%;
-    right: 10%;
-  }
-  .banner__subscribe_info > * {
-    margin-bottom: 1em;
-  }
-  .banner__header {
-    margin: 7em 3em 1.5em 3em;
-  }
-  .banner__header_container {
-    padding: 8em 16em;
-  }
-}
-@media screen and (min-width: 1800px) {
-  .banner__subscribe {
-    margin: 1.75em 7em;
-  }
-  .banner__subscribe_container {
-    padding: 7em 30em;
-  }
-}
 /**---Header height---**/
+/**---Breakpoint---**/
 /**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
@@ -1620,94 +1023,8 @@ section {
   background: transparent; /* Optional: just make scrollbar invisible */
 }
 
-@media screen and (min-width: 768px) {
-  .bookshop__searchSort .landing__search {
-    width: 100%;
-  }
-  .bookshop .more {
-    left: 90%;
-  }
-  .bookshop__popular, .bookshop__NewArrival {
-    padding: 1em;
-  }
-  .bookshop__general {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .bookshop__general .book__cards {
-    grid-template-columns: repeat(3, auto);
-    padding: 1em;
-  }
-  .bookshop__general .book__cards > * {
-    margin-bottom: 1em;
-  }
-}
-@media screen and (min-width: 992px) {
-  .bookshop {
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    grid-template-rows: repeat(6, auto);
-    width: auto;
-  }
-  .bookshop .more {
-    left: 0;
-  }
-  .bookshop__header {
-    grid-column: 2/7;
-  }
-  .bookshop__popular {
-    grid-column: 1/2;
-    grid-row: 1/3;
-    display: flex;
-    flex-direction: column;
-  }
-  .bookshop__NewArrival {
-    grid-column: 1/2;
-    grid-row: 3/7;
-  }
-  .bookshop__general {
-    grid-column: 2/7;
-    grid-row: 2/7;
-  }
-  .bookshop .books {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1em;
-  }
-}
-@media screen and (min-width: 1300px) {
-  .bookshop {
-    padding: 1em 2.5em;
-  }
-  .bookshop__header {
-    margin: 1em 1.5em;
-  }
-  .bookshop__popular {
-    white-space: nowrap;
-  }
-  .bookshop__general .book__cards {
-    column-gap: 2.5rem;
-  }
-  .bookshop__general .book__cards .book__card--image img {
-    width: 275px;
-    object-fit: contain;
-  }
-}
-@media screen and (min-width: 1800px) {
-  .bookshop {
-    padding: 1em 6.5em;
-  }
-  .bookshop__general .book__cards {
-    column-gap: 4rem;
-  }
-  .bookshop__general .book__cards .book__card--image img {
-    width: 350px;
-    object-fit: contain;
-  }
-}
 /**---Header height---**/
+/**---Breakpoint---**/
 /**---Font-Size---**/
 /**---Font-Weight---**/
 /**---Colors---**/
@@ -1918,6 +1235,12 @@ section {
   display: none;
 }
 
+/**---Header height---**/
+/**---Breakpoint---**/
+/**---Font-Size---**/
+/**---Font-Weight---**/
+/**---Colors---**/
+/**---Z-Index---**/
 @media (max-width: 425px) {
   .overlay .login__container {
     width: 95%;
@@ -1940,6 +1263,634 @@ section {
   }
   .overlay .login__image .login--img {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .landing__image {
+    margin-left: 3em;
+    margin-top: 3em;
+    width: 60% !important;
+  }
+  .landing__image--img .main__image {
+    transform: translateY(3%);
+  }
+  .landing__image .object-1 {
+    left: 82%;
+    bottom: 2%;
+  }
+  .landing__image .object-2 {
+    top: -5%;
+    right: 85%;
+  }
+  .landing__image .object-3 {
+    top: 7%;
+    left: 82%;
+  }
+  .landing__image .object-4 {
+    bottom: 30%;
+    right: 80%;
+  }
+  .classes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 80px;
+    margin: 3em;
+  }
+  .classes__image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .classes__image-extra {
+    display: flex;
+    column-gap: 0em;
+  }
+  .classes__image-extra .receiver {
+    display: flex;
+    justify-content: center;
+  }
+  .classes__features {
+    justify-content: center;
+  }
+  .classes .pattern__orange {
+    transform: translateY(-5%);
+    left: 66%;
+  }
+  .lesson {
+    padding: 15px 80px;
+  }
+  .lesson__info {
+    margin: 0 5em;
+  }
+  .lesson__provided > * {
+    margin-bottom: 1.25em;
+  }
+  .lesson__provided_cards {
+    display: grid;
+    padding: 0;
+  }
+  .joinCourses__images {
+    position: relative;
+    top: 45%;
+  }
+  .joinCourses__images .mainImage {
+    position: relative;
+    z-index: 2;
+    left: 6.5%;
+  }
+  .joinCourses__images .html {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 2;
+  }
+  .joinCourses__images .java {
+    position: absolute;
+    top: -15%;
+    left: 65%;
+    z-index: 2;
+  }
+  .joinCourses__images .php {
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    z-index: 2;
+  }
+  .joinCourses__images .pattern__purple {
+    position: absolute;
+    top: -5%;
+    left: 35%;
+    width: 125px;
+  }
+  .joinAsTeacher {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5em;
+    padding: 1em 2.5em;
+    margin: 2.5em 0;
+  }
+  .joinAsTeacher__info {
+    padding: 0;
+    order: 2;
+    align-items: flex-start;
+  }
+  .joinAsTeacher__info h2 {
+    width: 400px;
+    text-align: left;
+  }
+  .joinAsTeacher__info p {
+    text-align: left;
+  }
+  .footer {
+    padding: 15px 40px;
+  }
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4.5em;
+  }
+  .footer__title {
+    margin-bottom: 1.5rem;
+  }
+  .footer__data {
+    row-gap: 0.85rem;
+  }
+  .bookshop__searchSort .landing__search {
+    width: 100%;
+  }
+  .bookshop .more {
+    left: 90%;
+  }
+  .bookshop__popular, .bookshop__NewArrival {
+    padding: 1em;
+  }
+  .bookshop__general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .bookshop__general .book__cards {
+    grid-template-columns: repeat(3, auto);
+    padding: 1em;
+  }
+  .bookshop__general .book__cards > * {
+    margin-bottom: 1em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .nav__toggle {
+    right: 2%;
+  }
+  .landing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.25em;
+  }
+  .landing__info {
+    align-items: flex-start;
+  }
+  .landing__info h1,
+.landing__info p {
+    text-align: left;
+  }
+  .landing__image {
+    width: 80% !important;
+  }
+  .landing__image--img .main__image {
+    transform: translateY(-3%);
+  }
+  .landing__image .object-1 {
+    left: 75%;
+  }
+  .landing__image .object-2 {
+    position: absolute;
+    top: -15%;
+    right: 75%;
+    width: 40%;
+  }
+  .landing__image .object-3 {
+    position: absolute;
+    top: 7%;
+    left: 70%;
+    z-index: 1;
+    width: 40%;
+  }
+  .landing__image .object-4 {
+    bottom: 40%;
+    right: 80%;
+  }
+  .banner__subscribe_container {
+    padding: 6em 1em;
+  }
+  .classes .pattern__orange {
+    transform: translateY(-40%);
+    left: 75%;
+  }
+  .lesson__provided_cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .lesson__provided_cards .lesson__card {
+    padding: 2em 1.75em;
+  }
+  .joinCourses__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding: 3em 0;
+  }
+  .joinCourses__info {
+    align-items: flex-start;
+  }
+  .joinCourses__info h2 {
+    width: 442px;
+    text-align: left;
+  }
+  .joinCourses__info p {
+    text-align: left;
+  }
+  .joinCourses__images .mainImage {
+    transform: translateY(-32.5%);
+    left: 0;
+  }
+  .joinCourses__images .html {
+    top: -35%;
+    left: -5%;
+  }
+  .joinCourses__images .java {
+    top: -60%;
+    left: 70%;
+  }
+  .joinCourses__images .php {
+    top: -30%;
+    left: 60%;
+  }
+  .joinCourses__images .pattern__purple {
+    top: -40%;
+    left: 25%;
+  }
+  .joinAsTeacher {
+    padding: 1em 6.5em;
+  }
+  .joinAsTeacher__info h2 {
+    width: 100%;
+  }
+  .joinAsTeacher__images {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+  }
+  .joinAsTeacher__images > img {
+    margin-left: 5em;
+  }
+  .bookshop {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(6, auto);
+    width: auto;
+  }
+  .bookshop .more {
+    left: 0;
+  }
+  .bookshop__header {
+    grid-column: 2/7;
+  }
+  .bookshop__popular {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+  }
+  .bookshop__NewArrival {
+    grid-column: 1/2;
+    grid-row: 3/7;
+  }
+  .bookshop__general {
+    grid-column: 2/7;
+    grid-row: 2/7;
+  }
+  .bookshop .books {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+  }
+}
+@media screen and (max-width: 1118px) {
+  .nav__menu {
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    width: 100%;
+    height: calc(100ch - 3.5rem);
+    overflow: auto;
+    padding-block: 1.5rem 4rem;
+    transition: top 0.4s, opacity 0.3s;
+    background-color: #F7F5FA;
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 1118px) {
+  .header {
+    padding: 15px 80px;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__link {
+    padding: 1rem 0.5rem;
+  }
+  .nav__link:hover {
+    background-color: transparent;
+    color: #9C4DF4;
+  }
+  .nav__toggle {
+    display: none;
+  }
+  .nav__list {
+    display: flex;
+    column-gap: 0.25rem;
+    height: 100%;
+  }
+  .nav__right {
+    margin-left: 1.35rem;
+  }
+  .nav .dropdown__button {
+    column-gap: 0.25rem;
+  }
+  .nav .dropdown__container {
+    height: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 6.5rem;
+    background-color: #F7F5FA;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.025);
+    pointer-events: none;
+    opacity: 0;
+    transition: top 0.4s, opacity 0.3s;
+  }
+  .nav .dropdown__content {
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 6rem;
+    max-width: 1120px;
+    margin-inline: auto;
+  }
+  .nav .dropdown__group {
+    padding: 2.5rem 2rem;
+    align-content: baseline;
+    row-gap: 1.25rem;
+  }
+  .nav .dropdown__group:first-child, .nav .dropdown__group:last-child {
+    margin: 0;
+  }
+  .nav .dropdown__list {
+    row-gap: 0.75rem;
+  }
+  .nav .dropdown__link {
+    font-size: 16px;
+  }
+  .nav .dropdown__link:hover {
+    color: rgba(93, 90, 111, 0.6);
+  }
+  .nav .dropdown__item {
+    cursor: pointer;
+  }
+  .nav .dropdown__item:hover .dropdown__arrow {
+    transform: rotate(180deg);
+  }
+  .nav .dropdown__item:hover > .dropdown__container {
+    top: 5.5rem;
+    opacity: 1;
+    pointer-events: initial;
+    cursor: initial;
+  }
+  .banner__subscribe {
+    margin: 2.5em;
+  }
+  .classes__image {
+    transform: translateX(-1%);
+  }
+  .classes .pattern__orange {
+    transform: translateY(-80%);
+    left: 75%;
+  }
+  .lesson__provided_cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .lesson__provided_cards .lesson__card {
+    padding: 2em 1.75em;
+  }
+  .joinCourses__container {
+    margin: 1rem 2.5rem;
+  }
+  .joinAsTeacher__images {
+    width: 500px;
+  }
+  .footer {
+    padding: 15px 40px;
+  }
+  .footer__container {
+    column-gap: 3em;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .footer__content {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .nav__menu {
+    column-gap: 4.5em;
+  }
+  .landing {
+    padding: 1.75em 5em;
+  }
+  .landing__search > button > p {
+    display: block;
+  }
+  .landing__image {
+    margin-left: 2em;
+    width: 95% !important;
+  }
+  .landing__image--img .main__image {
+    width: 406px;
+  }
+  .landing__image .object-1 {
+    left: 70%;
+    bottom: 2%;
+    width: 27%;
+  }
+  .landing__image .object-2 {
+    top: -10%;
+    right: 90%;
+    width: 30%;
+  }
+  .landing__image .object-3 {
+    position: absolute;
+    top: 7%;
+    left: 68%;
+    z-index: 1;
+    width: 30%;
+  }
+  .landing__image .object-4 {
+    bottom: 43%;
+    right: 83%;
+    width: 30%;
+  }
+  .banner__subscribe_container {
+    padding: 6em 20em;
+  }
+  .banner__subscribe_image-left .eclipse {
+    width: 75px;
+    height: 75px;
+  }
+  .banner__subscribe_image-left .eclipse-1 {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+  }
+  .banner__subscribe_image-left .eclipse-2 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+  }
+  .banner__subscribe_image-left .eclipse-3 {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+  }
+  .banner__subscribe_image-right .eclipse {
+    width: 75px;
+    height: 75px;
+  }
+  .banner__subscribe_image-right .eclipse-4 {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+  }
+  .banner__subscribe_image-right .eclipse-5 {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+  }
+  .banner__subscribe_image-right .eclipse-6 {
+    position: absolute;
+    top: 70%;
+    right: 10%;
+  }
+  .banner__subscribe_info > * {
+    margin-bottom: 1em;
+  }
+  .banner__header {
+    margin: 7em 3em 1.5em 3em;
+  }
+  .banner__header_container {
+    padding: 8em 16em;
+  }
+  .classes__image {
+    width: max-content;
+    transform: translateX(1%);
+  }
+  .classes__image-extra .receiver {
+    width: max-content;
+  }
+  .classes .pattern__orange {
+    transform: translateY(-100%);
+    left: 75%;
+  }
+  .lesson__provided > * {
+    margin-bottom: 2em;
+  }
+  .lesson__provided_cards {
+    gap: 2em;
+  }
+  .lesson__provided_cards .lesson__card {
+    height: 350px;
+    width: 300px;
+  }
+  .joinCourses__images .mainImage {
+    transform: translateY(-36.5%);
+    left: 0;
+  }
+  .joinCourses__images .html {
+    top: -25%;
+    left: -5%;
+  }
+  .joinCourses__images .java {
+    top: -50%;
+    left: 70%;
+  }
+  .joinCourses__images .php {
+    top: -25%;
+    left: 60%;
+  }
+  .joinCourses__images .pattern__purple {
+    top: -40%;
+    left: 30%;
+  }
+  .footer {
+    padding: 30px 80px;
+  }
+  .footer__container {
+    column-gap: 6.5em;
+  }
+  .footer__content {
+    width: 180px;
+  }
+  .bookshop {
+    padding: 1em 2.5em;
+  }
+  .bookshop__header {
+    margin: 1em 1.5em;
+  }
+  .bookshop__popular {
+    white-space: nowrap;
+  }
+  .bookshop__general .book__cards {
+    column-gap: 2.5rem;
+  }
+  .bookshop__general .book__cards .book__card--image img {
+    width: 275px;
+    object-fit: contain;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .header {
+    padding: 1.5em 7em;
+  }
+  .nav__menu {
+    column-gap: 15em;
+  }
+  .landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 22%;
+    padding: 1.75em 7em;
+    margin-top: 1.5em;
+  }
+  .banner__subscribe {
+    margin: 1.75em 7em;
+  }
+  .banner__subscribe_container {
+    padding: 7em 30em;
+  }
+  .classes .pattern__orange {
+    transform: translateY(-95%);
+    left: 66%;
+  }
+  .joinCourses {
+    padding: 1.75em 7em;
+  }
+  .joinAsTeacher {
+    padding: 1.75em 19em;
+  }
+  .footer {
+    padding: 1.75em 7em;
+  }
+  .footer__container {
+    column-gap: 10.5em;
+  }
+  .footer__content {
+    width: 200px;
+  }
+  .bookshop {
+    padding: 1em 6.5em;
+  }
+  .bookshop__general .book__cards {
+    column-gap: 4rem;
+  }
+  .bookshop__general .book__cards .book__card--image img {
+    width: 350px;
+    object-fit: contain;
   }
 }
 

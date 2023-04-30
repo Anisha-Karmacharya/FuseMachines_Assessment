@@ -1,0 +1,764 @@
+@import "../utilities/variables";
+@media (max-width: #{$breakpoint-small}) {
+  .overlay {
+    .login {
+      &__container {
+        width: 95%;
+        padding: 2em 1em;
+      }
+      &__content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      &__image {
+        .login--img {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width:  #{$breakpoint-medium}) {
+  .overlay {
+    .login {
+      &__content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      &__image {
+        .login--img {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: #{$breakpoint-medium}) {
+  .landing {
+    &__image {
+      margin-left: 3em;
+      margin-top: 3em;
+      width: 60% !important;
+      &--img {
+        .main__image {
+          transform: translateY(3%);
+        }
+      }
+      .object-1 {
+        left: 82%;
+        bottom: 2%;
+      }
+      .object-2 {
+        top: -5%;
+        right: 85%;
+      }
+      .object-3 {
+        top: 7%;
+        left: 82%;
+      }
+      .object-4 {
+        bottom: 30%;
+        right: 80%;
+      }
+    }
+  }
+  .classes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 80px;
+    margin: 3em;
+    &__image {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      &-extra {
+        display: flex;
+        column-gap: 0em;
+        .receiver {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    &__features {
+      justify-content: center;
+    }
+    .pattern__orange {
+      transform: translateY(-5%);
+      left: 66%;
+    }
+  }
+  .lesson {
+    padding: 15px 80px;
+    &__info {
+      margin: 0 5em;
+    }
+    &__provided {
+      & > * {
+        margin-bottom: 1.25em;
+      }
+      &_cards {
+        display: grid;
+        padding: 0;
+      }
+    }
+  }
+  .joinCourses {
+    &__images {
+      position: relative;
+      top: 45%;
+      .mainImage {
+        position: relative;
+        z-index: 2;
+        left: 6.5%;
+      }
+      .html {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        z-index: 2;
+      }
+      .java {
+        position: absolute;
+        top: -15%;
+        left: 65%;
+        z-index: 2;
+      }
+      .php {
+        position: absolute;
+        top: 20%;
+        left: 65%;
+        z-index: 2;
+      }
+      .pattern__purple {
+        position: absolute;
+        top: -5%;
+        left: 35%;
+        width: 125px;
+      }
+    }
+  }
+  .joinAsTeacher {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5em;
+    padding: 1em 2.5em;
+    margin: 2.5em 0;
+    &__info {
+      padding: 0;
+      order: 2;
+      align-items: flex-start;
+      h2 {
+        width: 400px;
+        text-align: left;
+      }
+      p {
+        text-align: left;
+      }
+    }
+  }
+  .footer {
+    padding: 15px 40px;
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 4.5em;
+    }
+    &__title {
+      margin-bottom: 1.5rem;
+    }
+    &__data {
+      row-gap: 0.85rem;
+    }
+  }
+  .bookshop {
+    &__searchSort {
+      .landing__search {
+        width: 100%;
+      }
+    }
+    .more {
+      left: 90%;
+    }
+    &__popular,
+    &__NewArrival {
+      padding: 1em;
+    }
+    &__general {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .book__cards {
+        grid-template-columns: repeat(3, auto);
+        padding: 1em;
+        & > * {
+          margin-bottom: 1em;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .nav{
+    &__toggle{
+      right: 2%;
+    }
+  }
+  .landing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.25em;
+    &__info {
+      align-items: flex-start;
+      h1,
+      p {
+        text-align: left;
+      }
+    }
+    &__image {
+        width: 80% !important;
+      &--img {
+        .main__image {
+          transform: translateY(-3%);
+        }
+      }
+      .object-1 {
+        left: 75%;
+      }
+      .object-2 {
+        position: absolute;
+        top: -15%;
+        right: 75%;
+        width: 40%;
+      }
+      .object-3 {
+        position: absolute;
+        top: 7%;
+        left: 70%;
+        z-index: 1;
+        width: 40%;
+      }
+      .object-4 {
+        bottom: 40%;
+        right: 80%;
+      }
+    }
+  }
+  .banner {
+    &__subscribe {
+      &_container {
+        padding: 6em 1em;
+      }
+    }
+  }
+  .classes {
+    .pattern__orange {
+      transform: translateY(-40%);
+      left: 75%;
+    }
+  }
+  .lesson {
+    &__provided {
+      &_cards {
+        grid-template-columns: repeat(3, 1fr);
+        .lesson__card {
+          padding: 2em 1.75em;
+        }
+      }
+    }
+  }
+  .joinCourses {
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-items: center;
+      padding: 3em 0;
+    }
+    &__info {
+      align-items: flex-start;
+      h2 {
+        width: 442px;
+        text-align: left;
+      }
+      p {
+        text-align: left;
+      }
+    }
+    &__images {
+      .mainImage {
+        transform: translateY(-32.5%);
+        left: 0;
+      }
+      .html {
+        top: -35%;
+        left: -5%;
+      }
+      .java {
+        top: -60%;
+        left: 70%;
+      }
+      .php {
+        top: -30%;
+        left: 60%;
+      }
+      .pattern__purple {
+        top: -40%;
+        left: 25%;
+      }
+    }
+  }
+  .joinAsTeacher {
+    padding: 1em 6.5em;
+    &__info {
+      h2 {
+        width: 100%;
+      }
+    }
+    &__images {
+      width: 350px;
+      display: flex;
+      justify-content: center;
+      & > img {
+        margin-left: 5em;
+      }
+    }
+  }
+  .bookshop {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(6, auto);
+    width: auto;
+    .more {
+      left: 0;
+    }
+    &__header {
+      grid-column: 2/7;
+    }
+    &__popular {
+      grid-column: 1/2;
+      grid-row: 1/3;
+      display: flex;
+      flex-direction: column;
+    }
+    &__NewArrival {
+      grid-column: 1/2;
+      grid-row: 3/7;
+    }
+    &__general {
+      grid-column: 2/7;
+      grid-row: 2/7;
+    }
+    .books {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1em;
+    }
+  }
+}
+@media screen and (max-width: #{$breakpoint-large}) {
+  .nav {
+    &__menu {
+      position: absolute;
+      left: 0;
+      top: 2.5rem;
+      width: 100%;
+      height: calc(100ch - 3.5rem);
+      overflow: auto;
+      padding-block: 1.5rem 4rem;
+      transition: top 0.4s, opacity 0.3s;
+      background-color: #{$background-color};
+      pointer-events: none;
+      opacity: 0;
+    }
+  }
+}
+@media screen and (min-width: #{$breakpoint-large}) {
+  .header {
+    padding: 15px 80px;
+  }
+  .nav {
+    // height: calc(#{$header-height}+1rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__menu {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__link {
+      padding: 1rem 0.5rem;
+      &:hover {
+        background-color: transparent;
+        color: #{$purple};
+      }
+    }
+    &__toggle {
+      display: none;
+    }
+    &__list {
+      display: flex;
+      column-gap: 0.25rem;
+      height: 100%;
+    }
+    &__right {
+      margin-left: 1.35rem;
+    }
+    .dropdown {
+      &__button {
+        column-gap: 0.25rem;
+      }
+      &__container {
+        height: max-content;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 6.5rem;
+        background-color: #{$background-color};
+        box-shadow: 0 6px 8px rgba($color: #000000, $alpha: 0.025);
+        pointer-events: none;
+        opacity: 0;
+        transition: top 0.4s, opacity 0.3s;
+      }
+      &__content {
+        grid-template-columns: repeat(4, max-content);
+        column-gap: 6rem;
+        max-width: 1120px;
+        margin-inline: auto;
+      }
+      &__group {
+        padding: 2.5rem 2rem;
+        align-content: baseline;
+        row-gap: 1.25rem;
+        &:first-child,
+        &:last-child {
+          margin: 0;
+        }
+      }
+      &__list {
+        row-gap: 0.75rem;
+      }
+      &__link {
+        font-size: #{$small-font-size};
+        &:hover {
+          color: #{$text-color-light};
+        }
+      }
+      &__item {
+        cursor: pointer;
+        &:hover .dropdown__arrow {
+          transform: rotate(180deg);
+        }
+        &:hover > .dropdown__container {
+          top: 5.5rem;
+          opacity: 1;
+          pointer-events: initial;
+          cursor: initial;
+        }
+      }
+    }
+  }
+  .banner {
+    &__subscribe {
+      margin: 2.5em;
+    }
+  }
+  .classes {
+    &__image {
+      transform: translateX(-1%);
+    }
+    .pattern__orange {
+      transform: translateY(-80%);
+      left: 75%;
+    }
+  }
+  .lesson {
+    &__provided {
+      &_cards {
+        grid-template-columns: repeat(4, 1fr);
+        .lesson__card {
+          padding: 2em 1.75em;
+        }
+      }
+    }
+  }
+  .joinCourses {
+    &__container {
+      margin: 1rem 2.5rem;
+    }
+  }
+  .joinAsTeacher {
+    &__images {
+      width: 500px;
+    }
+  }
+  .footer {
+    padding: 15px 40px;
+    &__container {
+      column-gap: 3em;
+      grid-template-columns: repeat(5, 1fr);
+    }
+    &__content {
+      width: 150px;
+    }
+  }
+}
+@media screen and (min-width: #{$breakpoint-xlarge}) {
+  .nav {
+    &__menu {
+      column-gap: 4.5em;
+    }
+  }
+  .landing {
+    padding: 1.75em 5em;
+    &__search {
+      & > button > p {
+        display: block;
+      }
+    }
+    &__image {
+      margin-left: 2em;
+          width: 95% !important;
+      &--img {
+        .main__image {
+          width: 406px;
+        }
+      }
+      .object-1 {
+        left: 70%;
+        bottom: 2%;
+        width: 27%;
+      }
+      .object-2 {
+        top: -10%;
+        right: 90%;
+        width: 30%;
+      }
+      .object-3 {
+        position: absolute;
+        top: 7%;
+        left: 68%;
+        z-index: 1;
+        width: 30%;
+      }
+      .object-4 {
+        bottom: 43%;
+        right: 83%;
+        width: 30%;
+      }
+    }
+  }
+  .banner {
+    &__subscribe {
+      &_container {
+        padding: 6em 20em;
+      }
+      &_image-left {
+        .eclipse {
+          width: 75px;
+          height: 75px;
+          &-1 {
+            position: absolute;
+            top: 15%;
+            left: 5%;
+            // z-index: 10;
+          }
+          &-2 {
+            position: absolute;
+            top: 40%;
+            left: 20%;
+          }
+          &-3 {
+            position: absolute;
+            top: 70%;
+            left: 10%;
+          }
+        }
+      }
+      &_image-right {
+        .eclipse {
+          width: 75px;
+          height: 75px;
+          &-4 {
+            position: absolute;
+            top: 15%;
+            right: 5%;
+            // z-index: 10;
+          }
+          &-5 {
+            position: absolute;
+            top: 40%;
+            right: 20%;
+          }
+          &-6 {
+            position: absolute;
+            top: 70%;
+            right: 10%;
+          }
+        }
+      }
+      &_info {
+        & > * {
+          margin-bottom: 1em;
+        }
+      }
+    }
+    &__header {
+      margin: 7em 3em 1.5em 3em;
+      &_container {
+        padding: 8em 16em;
+      }
+    }
+  }
+  .classes {
+    &__image {
+      width: max-content;
+      transform: translateX(1%);
+      &-extra {
+        .receiver {
+          width: max-content;
+        }
+      }
+    }
+    .pattern__orange {
+      transform: translateY(-100%);
+      left: 75%;
+    }
+  }
+  .lesson {
+    &__provided {
+      & > * {
+        margin-bottom: 2em;
+      }
+      &_cards {
+        gap: 2em;
+        .lesson__card {
+          height: 350px;
+          width: 300px;
+        }
+      }
+    }
+  }
+  .joinCourses {
+    &__images {
+      .mainImage {
+        transform: translateY(-36.5%);
+        left: 0;
+      }
+      .html {
+        top: -25%;
+        left: -5%;
+      }
+      .java {
+        top: -50%;
+        left: 70%;
+      }
+      .php {
+        top: -25%;
+        left: 60%;
+      }
+      .pattern__purple {
+        top: -40%;
+        left: 30%;
+      }
+    }
+  }
+  .footer {
+    padding: 30px 80px;
+    &__container {
+      column-gap: 6.5em;
+    }
+    &__content {
+      width: 180px;
+    }
+  }
+  .bookshop {
+    padding: 1em 2.5em;
+    &__header {
+      margin: 1em 1.5em;
+    }
+    &__popular {
+      white-space: nowrap;
+    }
+    &__general {
+      .book__cards {
+        column-gap: 2.5rem;
+        .book__card {
+          &--image {
+            img {
+              width: 275px;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: #{$breakpoint-xxlarge}) {
+  .header {
+    padding: 1.5em 7em;
+  }
+  .nav {
+    &__menu {
+      column-gap: 15em;
+    }
+  }
+  .landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 22%;
+    padding: 1.75em 7em;
+    margin-top: 1.5em;
+  }
+  .banner {
+    &__subscribe {
+      margin: 1.75em 7em;
+      &_container {
+        padding: 7em 30em;
+      }
+    }
+  }
+  .classes {
+    .pattern__orange {
+      transform: translateY(-95%);
+      left: 66%;
+    }
+  }
+  .joinCourses {
+    padding: 1.75em 7em;
+  }
+  .joinAsTeacher {
+    padding: 1.75em 19em;
+  }
+  .footer {
+    padding: 1.75em 7em;
+    &__container {
+      column-gap: 10.5em;
+    }
+    &__content {
+      width: 200px;
+    }
+  }
+  .bookshop {
+    padding: 1em 6.5em;
+    &__general {
+      .book__cards {
+        column-gap: 4rem;
+        .book__card {
+          &--image {
+            img {
+              width: 350px;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+}
