@@ -18,6 +18,12 @@
     flex-wrap: wrap;
     gap: 1em;
     padding: 0 1em;
+    .button__white:hover{
+      background-color: #{$orange};
+      color: #{$white};
+      font-family: var(--semi-bold-font);
+      font-size: #{$smaller-font-size};
+    }
   }
   &__searchSort {
     display: flex;
@@ -52,7 +58,7 @@
       .book__card {
         &--image {
           background-color: #{$white};
-          padding: 0.75em;
+          padding: 0.5em;
           border-radius: 10px;
           img {
             border-radius: 10px;
@@ -82,7 +88,7 @@
       align-items: center;
       flex-direction: row;
       column-gap: 0.75em;
-      margin-bottom: 1em;
+      margin-bottom: 1.75em;
       &__left, &__right{
         background-color: #{$purple-light};
         width: 36px;

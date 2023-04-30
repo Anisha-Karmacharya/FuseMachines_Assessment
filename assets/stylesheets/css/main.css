@@ -881,6 +881,12 @@ p {
   gap: 1em;
   padding: 0 1em;
 }
+.bookshop__filter .button__white:hover {
+  background-color: #FF6652;
+  color: #FFFFFF;
+  font-family: var(--semi-bold-font);
+  font-size: 0.875em;
+}
 .bookshop__searchSort {
   display: flex;
   column-gap: 1em;
@@ -913,7 +919,7 @@ p {
 }
 .bookshop__general .book__cards .book__card--image {
   background-color: #FFFFFF;
-  padding: 0.75em;
+  padding: 0.5em;
   border-radius: 10px;
 }
 .bookshop__general .book__cards .book__card--image img {
@@ -939,7 +945,7 @@ p {
   align-items: center;
   flex-direction: row;
   column-gap: 0.75em;
-  margin-bottom: 1em;
+  margin-bottom: 1.75em;
 }
 .bookshop__general .pagination__left, .bookshop__general .pagination__right {
   background-color: #F2E6FF;
@@ -1245,6 +1251,7 @@ p {
   }
   .bookshop .review .bxs-star {
     font-size: 0.9em;
+    padding: 0;
   }
   .lesson__info {
     padding: 1em;

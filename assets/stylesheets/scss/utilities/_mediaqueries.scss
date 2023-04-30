@@ -13,6 +13,7 @@
           .book__info {
             &--price {
               font-size: 0.9em;
+              
             }
           }
         }
@@ -21,6 +22,7 @@
     .review {
       .bxs-star {
         font-size: 0.9em;
+        padding: 0;
       }
     }
   }
