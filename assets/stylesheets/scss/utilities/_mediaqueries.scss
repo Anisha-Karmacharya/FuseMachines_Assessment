@@ -84,6 +84,14 @@
       }
     }
   }
+  .banner{
+    &__subscribe{
+      &_image-right, &_image-left{
+        img{display: none;}
+        
+      }
+    }
+  }
 }
 @media screen and (min-width: 768px) {
   .landing {
